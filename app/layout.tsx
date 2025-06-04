@@ -10,10 +10,29 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Alexandra Chen - Executive Leader",
+  title: "Daniel Viveiros - Advanced Analytics & AI Leader",
   description:
-    "Chief Executive Officer & Strategic Advisor driving sustainable growth in complex global markets through transformational leadership and operational excellence.",
-    generator: 'v0.dev'
+    "Advanced Analytics & BI Leader with nearly a decade of experience transforming data into strategic advantage through AI-driven analytics and intelligent automation. Aspiring Data Executive.",
+  keywords:
+    "data analytics, business intelligence, AI strategy, machine learning, data science leadership, predictive analytics",
+  authors: [{ name: "Daniel Viveiros" }],
+  creator: "Daniel Viveiros",
+  openGraph: {
+    title: "Daniel Viveiros - Advanced Analytics & AI Leader",
+    description: "Transforming data into strategic advantage through AI-driven analytics and intelligent automation.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Daniel Viveiros - Advanced Analytics & AI Leader",
+    description: "Transforming data into strategic advantage through AI-driven analytics and intelligent automation.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  generator: "v0.dev",
 }
 
 export default function RootLayout({

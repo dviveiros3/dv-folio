@@ -2,6 +2,10 @@
 
 import { useState, useEffect, useRef } from "react"
 import { ChevronDown, Linkedin, Mail } from "lucide-react"
+import { SoundManager } from "@/components/sound-manager"
+import { MagneticCursor } from "@/components/magnetic-cursor"
+import { ScrollProgress } from "@/components/scroll-progress"
+import { TimelineSection } from "@/components/timeline-section"
 
 export default function ExecutiveBrandSite() {
   const [activeSection, setActiveSection] = useState("hero")
@@ -9,6 +13,8 @@ export default function ExecutiveBrandSite() {
   const [isTyping, setIsTyping] = useState(false)
   const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set())
   const [scrollY, setScrollY] = useState(0)
+  const [scrollDirection, setScrollDirection] = useState<"up" | "down">("down")
+  const lastScrollY = useRef(0)
 
   const fullText = "Transforming data into strategic advantage through AI-driven analytics."
 
@@ -17,13 +23,23 @@ export default function ExecutiveBrandSite() {
     philosophy: useRef<HTMLElement>(null),
     impact: useRef<HTMLElement>(null),
     expertise: useRef<HTMLElement>(null),
+    timeline: useRef<HTMLElement>(null),
     engage: useRef<HTMLElement>(null),
   }
 
-  // Scroll position tracking
+  // Scroll position tracking with direction detection
   useEffect(() => {
     const handleScroll = () => {
-      setScrollY(window.scrollY)
+      const currentScrollY = window.scrollY
+      setScrollY(currentScrollY)
+
+      // Detect scroll direction
+      if (currentScrollY > lastScrollY.current) {
+        setScrollDirection("down")
+      } else {
+        setScrollDirection("up")
+      }
+      lastScrollY.current = currentScrollY
 
       // Update active section based on scroll position
       const sections = Object.entries(sectionRefs)
@@ -31,7 +47,8 @@ export default function ExecutiveBrandSite() {
         const [id, ref] = sections[i]
         if (ref.current) {
           const rect = ref.current.getBoundingClientRect()
-          if (rect.top <= window.innerHeight / 2) {
+          // Adjusted threshold for better centering
+          if (rect.top <= window.innerHeight * 0.4) {
             setActiveSection(id)
             break
           }
@@ -69,10 +86,17 @@ export default function ExecutiveBrandSite() {
             if (entry.target.id === "hero" && !isTyping) {
               setTimeout(() => setIsTyping(true), 1000)
             }
+          } else {
+            // Remove sections from visibility when they go out of view (reverse scroll animation)
+            setVisibleSections((prev) => {
+              const newSet = new Set(prev)
+              newSet.delete(entry.target.id)
+              return newSet
+            })
           }
         })
       },
-      { threshold: 0.3 },
+      { threshold: 0.2, rootMargin: "-10% 0px -10% 0px" },
     )
 
     Object.values(sectionRefs).forEach((ref) => {
@@ -85,7 +109,15 @@ export default function ExecutiveBrandSite() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      // Calculate offset to center the section better
+      const elementRect = element.getBoundingClientRect()
+      const absoluteElementTop = elementRect.top + window.pageYOffset
+      const middle = absoluteElementTop - window.innerHeight / 2 + elementRect.height / 2
+
+      window.scrollTo({
+        top: middle,
+        behavior: "smooth",
+      })
       setActiveSection(sectionId)
     }
   }
@@ -121,20 +153,29 @@ export default function ExecutiveBrandSite() {
   const expertiseAreas = [
     {
       category: "Strategy & Leadership",
-      skills: ["AI Strategy & Implementation", "Data Science Leadership", "Cross-functional Collaboration"],
+      skills: ["AI Strategy & Implementation", "Data Science Leadership"],
     },
     {
       category: "Analytics & Intelligence",
-      skills: ["Advanced Analytics & ML", "Business Intelligence Architecture", "Predictive Modeling & Forecasting"],
+      skills: ["Advanced Analytics & ML", "Business Intelligence Architecture"],
     },
     {
       category: "Automation & Systems",
-      skills: ["Automated Decision Systems", "Self-Service Analytics", "Process Optimization"],
+      skills: ["Automated Decision Systems", "Self-Service Analytics"],
+    },
+    {
+      category: "Modeling & Forecasting",
+      skills: ["Predictive Modeling", "Cross-functional Collaboration"],
     },
   ]
 
   const AnimatedCounter = ({ target, duration = 2000 }: { target: string; duration?: number }) => {
-    const [count, setCount] = useState("")
+    const [count, setCount] = useState(() => {
+      if (target.includes("$")) return "$0.0M"
+      if (target.includes("%")) return "0%"
+      if (target.includes("+")) return "0+"
+      return "0"
+    })
     const [hasAnimated, setHasAnimated] = useState(false)
 
     useEffect(() => {
@@ -211,10 +252,22 @@ export default function ExecutiveBrandSite() {
 
           return () => clearInterval(timer)
         }
+      } else if (!visibleSections.has("impact")) {
+        // Reset counter when section is not visible
+        setHasAnimated(false)
+        if (target.includes("$")) {
+          setCount("$0.0M")
+        } else if (target.includes("%")) {
+          setCount("0%")
+        } else if (target.includes("+")) {
+          setCount("0+")
+        } else {
+          setCount("0")
+        }
       }
     }, [visibleSections, target, duration, hasAnimated])
 
-    return <span>{count || target.charAt(0)}</span>
+    return <span>{count}</span>
   }
 
   // Minimal floating elements
@@ -239,20 +292,36 @@ export default function ExecutiveBrandSite() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-stone-50 text-slate-900 overflow-x-hidden">
+      {/* New components */}
+      <SoundManager visibleSections={visibleSections} activeSection={activeSection} />
+      <MagneticCursor />
+      <ScrollProgress />
+
       {/* Minimal floating elements */}
       <FloatingElements />
 
       {/* Clean Navigation */}
       <nav className="fixed top-8 right-8 z-50 flex flex-col gap-3">
-        {["hero", "philosophy", "impact", "expertise", "engage"].map((section) => (
+        {["hero", "philosophy", "impact", "expertise", "timeline", "engage"].map((section) => (
           <button
             key={section}
             onClick={() => scrollToSection(section)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              activeSection === section ? "bg-blue-600 scale-125" : "bg-slate-300 hover:bg-slate-400"
+            className={`w-3 h-3 rounded-full transition-all duration-500 relative group ${
+              activeSection === section
+                ? "bg-blue-600 scale-125 shadow-lg shadow-blue-600/30"
+                : "bg-slate-300 hover:bg-slate-400 hover:scale-110"
             }`}
             aria-label={`Navigate to ${section}`}
-          />
+          >
+            {/* Premium glow effect for active state */}
+            {activeSection === section && (
+              <div className="absolute inset-0 bg-blue-600 rounded-full animate-ping opacity-20" />
+            )}
+            {/* Hover tooltip */}
+            <div className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-slate-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </div>
+          </button>
         ))}
       </nav>
 
@@ -336,11 +405,11 @@ export default function ExecutiveBrandSite() {
         </div>
       </section>
 
-      {/* Impact Section - No icons, cleaner design */}
+      {/* Impact Section - Better centered */}
       <section
         ref={sectionRefs.impact}
         id="impact"
-        className="min-h-screen flex items-center px-8 py-20 bg-slate-50/50"
+        className="min-h-screen flex items-center px-8 py-32 bg-slate-50/50"
       >
         <div className="max-w-6xl mx-auto w-full">
           <div className="space-y-16">
@@ -383,7 +452,7 @@ export default function ExecutiveBrandSite() {
         </div>
       </section>
 
-      {/* Enhanced Expertise Section */}
+      {/* Balanced Expertise Section */}
       <section ref={sectionRefs.expertise} id="expertise" className="min-h-screen flex items-center px-8 py-20">
         <div className="max-w-6xl mx-auto w-full">
           <div className="space-y-20">
@@ -402,21 +471,21 @@ export default function ExecutiveBrandSite() {
               </div>
 
               <div className="col-span-12 lg:col-span-8">
-                <div className="space-y-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {expertiseAreas.map((category, categoryIndex) => (
                     <div
                       key={categoryIndex}
-                      className={`space-y-6 transition-all duration-1000 ${
+                      className={`space-y-4 transition-all duration-1000 ${
                         visibleSections.has("expertise") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                       }`}
-                      style={{ transitionDelay: `${categoryIndex * 200}ms` }}
+                      style={{ transitionDelay: `${categoryIndex * 150}ms` }}
                     >
                       <div className="space-y-3">
                         <h3 className="text-lg font-medium text-slate-800 tracking-wide">{category.category}</h3>
                         <div className="h-px w-12 bg-blue-600/30"></div>
                       </div>
 
-                      <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
+                      <div className="space-y-3">
                         {category.skills.map((skill, skillIndex) => (
                           <div
                             key={skillIndex}
@@ -434,6 +503,17 @@ export default function ExecutiveBrandSite() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Dedicated Timeline Section */}
+      <section
+        ref={sectionRefs.timeline}
+        id="timeline"
+        className="min-h-screen flex items-center px-8 py-20 bg-gradient-to-br from-slate-50 to-blue-50/30"
+      >
+        <div className="max-w-6xl mx-auto w-full">
+          <TimelineSection isVisible={visibleSections.has("timeline")} />
         </div>
       </section>
 
