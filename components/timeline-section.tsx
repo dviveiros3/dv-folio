@@ -55,6 +55,13 @@ const professionalData: TimelineItem[] = [
     current: true,
   },
   {
+    year: "2017",
+    endYear: "2020",
+    title: "Data Scientist",
+    organization: "Disciplined Minds Tutoring",
+    type: "experience",
+  },
+  {
     year: "2020",
     endYear: "2022",
     title: "BI Analyst & Operations Manager",
