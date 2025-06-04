@@ -23,12 +23,12 @@ export default function ExecutiveBrandSite() {
 
   const sectionRefs = {
     hero: useRef<HTMLElement>(null),
-    philosophy: useRef<HTMLElement>(null),
     impact: useRef<HTMLElement>(null),
     expertise: useRef<HTMLElement>(null),
     timeline: useRef<HTMLElement>(null),
-    engage: useRef<HTMLElement>(null),
+    philosophy: useRef<HTMLElement>(null),
     proof: useRef<HTMLElement>(null),
+    engage: useRef<HTMLElement>(null),
   }
 
   // Scroll position tracking with direction detection
@@ -312,7 +312,7 @@ export default function ExecutiveBrandSite() {
 
       {/* Clean Navigation */}
       <nav className="fixed top-8 right-8 z-50 flex flex-col gap-3">
-        {["hero", "philosophy", "impact", "expertise", "timeline", "engage", "proof"].map((section) => (
+        {["hero", "impact", "expertise", "timeline", "philosophy", "proof", "engage"].map((section) => (
           <button
             key={section}
             onClick={() => scrollToSection(section)}
@@ -394,49 +394,11 @@ export default function ExecutiveBrandSite() {
         </div>
 
         <button
-          onClick={() => scrollToSection("philosophy")}
+          onClick={() => scrollToSection("impact")}
           className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 text-slate-400 hover:text-blue-600 transition-all duration-500 ${visibleSections.has("hero") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
         >
           <ChevronDown className="w-6 h-6 animate-bounce" />
         </button>
-      </section>
-
-      {/* Philosophy Section */}
-      <section
-        ref={sectionRefs.philosophy}
-        id="philosophy"
-        className="min-h-screen flex items-center px-8 py-20 relative"
-      >
-        <div className="max-w-6xl mx-auto w-full">
-          <div className="grid grid-cols-12 gap-8">
-            <div className="col-span-12 lg:col-span-6 lg:col-start-4">
-              <div
-                className={`space-y-8 transition-all duration-1000 ${visibleSections.has("philosophy") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
-              >
-                <div className="space-y-4">
-                  <div className="text-sm font-medium text-blue-700 tracking-widest uppercase">
-                    Data Leadership Philosophy
-                  </div>
-                  <div className="h-px w-16 bg-slate-300"></div>
-                </div>
-
-                <div className="space-y-6">
-                  <p className="text-2xl lg:text-3xl font-light leading-relaxed text-slate-800">
-                    Data becomes powerful when{" "}
-                    <em className="text-blue-700 not-italic font-medium">analytical rigor</em> meets
-                    <em className="text-blue-700 not-italic font-medium"> business strategy</em>.
-                  </p>
-
-                  <p className="text-lg text-slate-600 leading-relaxed font-light">
-                    I believe in democratizing data access while maintaining governance excellence. By bridging the gap
-                    between complex analytics and business outcomes, I transform data into strategic assets that drive
-                    measurable growth, operational efficiency, and competitive advantage across diverse industries.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* Impact Section - Better centered */}
@@ -547,7 +509,45 @@ export default function ExecutiveBrandSite() {
         className="min-h-screen flex items-center px-8 py-20 bg-gradient-to-br from-slate-50 to-blue-50/30"
       >
         <div className="max-w-6xl mx-auto w-full">
-          <TimelineSection isVisible={visibleSections.has("timeline")} />
+      <TimelineSection isVisible={visibleSections.has("timeline")} />
+      </div>
+      </section>
+
+      {/* Philosophy Section */}
+      <section
+        ref={sectionRefs.philosophy}
+        id="philosophy"
+        className="min-h-screen flex items-center px-8 py-20 relative"
+      >
+        <div className="max-w-6xl mx-auto w-full">
+          <div className="grid grid-cols-12 gap-8">
+            <div className="col-span-12 lg:col-span-6 lg:col-start-4">
+              <div
+                className={`space-y-8 transition-all duration-1000 ${visibleSections.has("philosophy") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
+              >
+                <div className="space-y-4">
+                  <div className="text-sm font-medium text-blue-700 tracking-widest uppercase">
+                    Data Leadership Philosophy
+                  </div>
+                  <div className="h-px w-16 bg-slate-300"></div>
+                </div>
+
+                <div className="space-y-6">
+                  <p className="text-2xl lg:text-3xl font-light leading-relaxed text-slate-800">
+                    Data becomes powerful when{" "}
+                    <em className="text-blue-700 not-italic font-medium">analytical rigor</em> meets
+                    <em className="text-blue-700 not-italic font-medium"> business strategy</em>.
+                  </p>
+
+                  <p className="text-lg text-slate-600 leading-relaxed font-light">
+                    I believe in democratizing data access while maintaining governance excellence. By bridging the gap
+                    between complex analytics and business outcomes, I transform data into strategic assets that drive
+                    measurable growth, operational efficiency, and competitive advantage across diverse industries.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
