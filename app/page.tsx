@@ -1,0 +1,487 @@
+"use client"
+
+import { useState, useEffect, useRef } from "react"
+import { ChevronDown, Linkedin, Mail } from "lucide-react"
+
+export default function ExecutiveBrandSite() {
+  const [activeSection, setActiveSection] = useState("hero")
+  const [typedText, setTypedText] = useState("")
+  const [isTyping, setIsTyping] = useState(false)
+  const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set())
+  const [scrollY, setScrollY] = useState(0)
+
+  const fullText = "Transforming data into strategic advantage through AI-driven analytics."
+
+  const sectionRefs = {
+    hero: useRef<HTMLElement>(null),
+    philosophy: useRef<HTMLElement>(null),
+    impact: useRef<HTMLElement>(null),
+    expertise: useRef<HTMLElement>(null),
+    engage: useRef<HTMLElement>(null),
+  }
+
+  // Scroll position tracking
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY)
+
+      // Update active section based on scroll position
+      const sections = Object.entries(sectionRefs)
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const [id, ref] = sections[i]
+        if (ref.current) {
+          const rect = ref.current.getBoundingClientRect()
+          if (rect.top <= window.innerHeight / 2) {
+            setActiveSection(id)
+            break
+          }
+        }
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  // Typing animation effect
+  useEffect(() => {
+    if (isTyping) {
+      let index = 0
+      const timer = setInterval(() => {
+        if (index <= fullText.length) {
+          setTypedText(fullText.slice(0, index))
+          index++
+        } else {
+          clearInterval(timer)
+        }
+      }, 50)
+      return () => clearInterval(timer)
+    }
+  }, [isTyping])
+
+  // Intersection Observer for scroll animations
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisibleSections((prev) => new Set([...prev, entry.target.id]))
+            if (entry.target.id === "hero" && !isTyping) {
+              setTimeout(() => setIsTyping(true), 1000)
+            }
+          }
+        })
+      },
+      { threshold: 0.3 },
+    )
+
+    Object.values(sectionRefs).forEach((ref) => {
+      if (ref.current) observer.observe(ref.current)
+    })
+
+    return () => observer.disconnect()
+  }, [isTyping])
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+      setActiveSection(sectionId)
+    }
+  }
+
+  const impactData = [
+    {
+      metric: "$8.2M",
+      description:
+        "Additional revenue attributed through advanced customer segmentation and predictive analytics models",
+      year: "2022-2024",
+      category: "Revenue Growth",
+    },
+    {
+      metric: "65%",
+      description: "Reduction in manual reporting time through automated BI dashboards and self-service analytics",
+      year: "2021-2024",
+      category: "Operational Efficiency",
+    },
+    {
+      metric: "150+",
+      description: "Business stakeholders enabled with data literacy training and self-service analytics tools",
+      year: "2020-2024",
+      category: "Team Enablement",
+    },
+    {
+      metric: "92%",
+      description: "Forecast accuracy achieved in sales and operational planning through ML-enhanced models",
+      year: "2023-2024",
+      category: "Decision Quality",
+    },
+  ]
+
+  const expertiseAreas = [
+    {
+      category: "Strategy & Leadership",
+      skills: ["AI Strategy & Implementation", "Data Science Leadership", "Cross-functional Collaboration"],
+    },
+    {
+      category: "Analytics & Intelligence",
+      skills: ["Advanced Analytics & ML", "Business Intelligence Architecture", "Predictive Modeling & Forecasting"],
+    },
+    {
+      category: "Automation & Systems",
+      skills: ["Automated Decision Systems", "Self-Service Analytics", "Process Optimization"],
+    },
+  ]
+
+  const AnimatedCounter = ({ target, duration = 2000 }: { target: string; duration?: number }) => {
+    const [count, setCount] = useState("")
+    const [hasAnimated, setHasAnimated] = useState(false)
+
+    useEffect(() => {
+      if (visibleSections.has("impact") && !hasAnimated) {
+        setHasAnimated(true)
+
+        // Handle different metric types
+        if (target.includes("$")) {
+          // For dollar amounts like $8.2M
+          const numericValue = Number.parseFloat(target.replace(/[^0-9.]/g, ""))
+          let start = 0
+          const increment = numericValue / (duration / 16)
+
+          const timer = setInterval(() => {
+            start += increment
+            if (start >= numericValue) {
+              setCount(target)
+              clearInterval(timer)
+            } else {
+              setCount(`$${start.toFixed(1)}M`)
+            }
+          }, 16)
+
+          return () => clearInterval(timer)
+        } else if (target.includes("%")) {
+          // For percentages like 65%
+          const numericValue = Number.parseFloat(target.replace(/[^0-9.]/g, ""))
+          let start = 0
+          const increment = numericValue / (duration / 16)
+
+          const timer = setInterval(() => {
+            start += increment
+            if (start >= numericValue) {
+              setCount(target)
+              clearInterval(timer)
+            } else {
+              setCount(`${Math.floor(start)}%`)
+            }
+          }, 16)
+
+          return () => clearInterval(timer)
+        } else if (target.includes("+")) {
+          // For numbers with + like 150+
+          const numericValue = Number.parseFloat(target.replace(/[^0-9.]/g, ""))
+          let start = 0
+          const increment = numericValue / (duration / 16)
+
+          const timer = setInterval(() => {
+            start += increment
+            if (start >= numericValue) {
+              setCount(target)
+              clearInterval(timer)
+            } else {
+              setCount(`${Math.floor(start)}+`)
+            }
+          }, 16)
+
+          return () => clearInterval(timer)
+        } else {
+          // For plain numbers
+          const numericValue = Number.parseFloat(target)
+          let start = 0
+          const increment = numericValue / (duration / 16)
+
+          const timer = setInterval(() => {
+            start += increment
+            if (start >= numericValue) {
+              setCount(target)
+              clearInterval(timer)
+            } else {
+              setCount(Math.floor(start).toString())
+            }
+          }, 16)
+
+          return () => clearInterval(timer)
+        }
+      }
+    }, [visibleSections, target, duration, hasAnimated])
+
+    return <span>{count || target.charAt(0)}</span>
+  }
+
+  // Minimal floating elements
+  const FloatingElements = () => (
+    <div className="fixed inset-0 pointer-events-none overflow-hidden">
+      {[...Array(8)].map((_, i) => (
+        <div
+          key={i}
+          className="absolute opacity-[0.03]"
+          style={{
+            left: `${20 + ((i * 13) % 60)}%`,
+            top: `${15 + ((i * 17) % 70)}%`,
+            transform: `translateY(${scrollY * (0.02 + (i % 2) * 0.01)}px) rotate(${scrollY * 0.02 + i * 20}deg)`,
+            transition: "transform 0.1s ease-out",
+          }}
+        >
+          <div className="w-0.5 h-0.5 bg-blue-400 rounded-full" />
+        </div>
+      ))}
+    </div>
+  )
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-stone-50 text-slate-900 overflow-x-hidden">
+      {/* Minimal floating elements */}
+      <FloatingElements />
+
+      {/* Clean Navigation */}
+      <nav className="fixed top-8 right-8 z-50 flex flex-col gap-3">
+        {["hero", "philosophy", "impact", "expertise", "engage"].map((section) => (
+          <button
+            key={section}
+            onClick={() => scrollToSection(section)}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              activeSection === section ? "bg-blue-600 scale-125" : "bg-slate-300 hover:bg-slate-400"
+            }`}
+            aria-label={`Navigate to ${section}`}
+          />
+        ))}
+      </nav>
+
+      {/* Hero Section */}
+      <section ref={sectionRefs.hero} id="hero" className="min-h-screen flex items-center justify-center relative px-8">
+        <div className="max-w-6xl w-full">
+          <div className="grid grid-cols-12 gap-8 items-center">
+            <div className="col-span-12 lg:col-span-10 lg:col-start-2">
+              <div className="space-y-8">
+                <div
+                  className={`space-y-4 transition-all duration-1000 ${visibleSections.has("hero") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                >
+                  <h1 className="text-6xl lg:text-8xl font-light tracking-tight leading-none text-slate-900">
+                    Daniel
+                    <span className="block text-slate-600 font-extralight">Viveiros</span>
+                  </h1>
+                  <div className="h-px w-24 bg-blue-600 ml-1"></div>
+                </div>
+
+                <div
+                  className={`space-y-6 transition-all duration-1000 delay-300 ${visibleSections.has("hero") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                >
+                  <h2 className="text-xl lg:text-2xl font-light text-slate-700 tracking-wide">
+                    Advanced Analytics & BI Leader | Aspiring Data Executive
+                  </h2>
+                  <div className="text-lg lg:text-xl text-slate-600 font-light leading-relaxed">
+                    {typedText}
+                    <span
+                      className={`inline-block w-0.5 h-6 bg-blue-600 ml-1 ${isTyping ? "animate-pulse" : "opacity-0"}`}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          onClick={() => scrollToSection("philosophy")}
+          className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 text-slate-400 hover:text-blue-600 transition-all duration-500 ${visibleSections.has("hero") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+        >
+          <ChevronDown className="w-6 h-6 animate-bounce" />
+        </button>
+      </section>
+
+      {/* Philosophy Section */}
+      <section
+        ref={sectionRefs.philosophy}
+        id="philosophy"
+        className="min-h-screen flex items-center px-8 py-20 relative"
+      >
+        <div className="max-w-6xl mx-auto w-full">
+          <div className="grid grid-cols-12 gap-8">
+            <div className="col-span-12 lg:col-span-6 lg:col-start-4">
+              <div
+                className={`space-y-8 transition-all duration-1000 ${visibleSections.has("philosophy") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
+              >
+                <div className="space-y-4">
+                  <div className="text-sm font-medium text-blue-700 tracking-widest uppercase">
+                    Data Leadership Philosophy
+                  </div>
+                  <div className="h-px w-16 bg-slate-300"></div>
+                </div>
+
+                <div className="space-y-6">
+                  <p className="text-2xl lg:text-3xl font-light leading-relaxed text-slate-800">
+                    Data becomes powerful when{" "}
+                    <em className="text-blue-700 not-italic font-medium">analytical rigor</em> meets
+                    <em className="text-blue-700 not-italic font-medium"> business strategy</em>.
+                  </p>
+
+                  <p className="text-lg text-slate-600 leading-relaxed font-light">
+                    I believe in democratizing data access while maintaining governance excellence. By bridging the gap
+                    between complex analytics and business outcomes, I transform data into strategic assets that drive
+                    measurable growth, operational efficiency, and competitive advantage across diverse industries.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Impact Section - No icons, cleaner design */}
+      <section
+        ref={sectionRefs.impact}
+        id="impact"
+        className="min-h-screen flex items-center px-8 py-20 bg-slate-50/50"
+      >
+        <div className="max-w-6xl mx-auto w-full">
+          <div className="space-y-16">
+            <div
+              className={`text-center space-y-4 transition-all duration-1000 ${visibleSections.has("impact") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+            >
+              <div className="text-sm font-medium text-blue-700 tracking-widest uppercase">Quantified Impact</div>
+              <div className="h-px w-16 bg-slate-300 mx-auto"></div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+              {impactData.map((item, index) => (
+                <div
+                  key={index}
+                  className={`group relative p-8 hover:bg-white/80 transition-all duration-500 rounded-sm border-l-2 border-transparent hover:border-blue-600 ${
+                    visibleSections.has("impact") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+                  }`}
+                  style={{ transitionDelay: `${index * 200}ms` }}
+                >
+                  <div className="space-y-6">
+                    <div className="flex items-start justify-between">
+                      <div className="space-y-2">
+                        <div className="text-5xl lg:text-6xl font-extralight text-slate-900 group-hover:text-blue-700 transition-colors duration-500 tracking-tight">
+                          <AnimatedCounter target={item.metric} />
+                        </div>
+                        <div className="text-xs font-medium text-blue-700 tracking-widest uppercase opacity-70">
+                          {item.category}
+                        </div>
+                      </div>
+                      <div className="text-xs text-slate-500 font-light bg-slate-100/50 px-3 py-1 rounded-full">
+                        {item.year}
+                      </div>
+                    </div>
+                    <p className="text-slate-700 leading-relaxed font-light text-lg">{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Enhanced Expertise Section */}
+      <section ref={sectionRefs.expertise} id="expertise" className="min-h-screen flex items-center px-8 py-20">
+        <div className="max-w-6xl mx-auto w-full">
+          <div className="space-y-20">
+            <div className="grid grid-cols-12 gap-8">
+              <div
+                className={`col-span-12 lg:col-span-4 transition-all duration-1000 ${visibleSections.has("expertise") ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}
+              >
+                <div className="space-y-6 lg:sticky lg:top-20">
+                  <div className="text-sm font-medium text-blue-700 tracking-widest uppercase">Core Expertise</div>
+                  <div className="h-px w-16 bg-slate-300"></div>
+                  <p className="text-slate-600 font-light leading-relaxed text-lg">
+                    Full-stack analytics capabilities spanning strategy, engineering, and leadership—developed through
+                    nearly a decade of transforming data into business value across diverse industries and functions.
+                  </p>
+                </div>
+              </div>
+
+              <div className="col-span-12 lg:col-span-8">
+                <div className="space-y-12">
+                  {expertiseAreas.map((category, categoryIndex) => (
+                    <div
+                      key={categoryIndex}
+                      className={`space-y-6 transition-all duration-1000 ${
+                        visibleSections.has("expertise") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                      }`}
+                      style={{ transitionDelay: `${categoryIndex * 200}ms` }}
+                    >
+                      <div className="space-y-3">
+                        <h3 className="text-lg font-medium text-slate-800 tracking-wide">{category.category}</h3>
+                        <div className="h-px w-12 bg-blue-600/30"></div>
+                      </div>
+
+                      <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
+                        {category.skills.map((skill, skillIndex) => (
+                          <div
+                            key={skillIndex}
+                            className="group p-4 border border-slate-200/50 hover:border-blue-200 hover:bg-blue-50/20 transition-all duration-300 hover:scale-[1.02] hover:shadow-md rounded-lg"
+                          >
+                            <span className="text-slate-700 font-light group-hover:text-blue-800 transition-colors duration-300">
+                              {skill}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Engage Section */}
+      <section
+        ref={sectionRefs.engage}
+        id="engage"
+        className="min-h-screen flex items-center px-8 py-20 bg-slate-900 text-white"
+      >
+        <div className="max-w-6xl mx-auto w-full">
+          <div className="grid grid-cols-12 gap-8 items-center">
+            <div
+              className={`col-span-12 lg:col-span-8 lg:col-start-3 text-center transition-all duration-1000 ${visibleSections.has("engage") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
+            >
+              <div className="space-y-12">
+                <div className="space-y-6">
+                  <h2 className="text-4xl lg:text-5xl font-light leading-tight">
+                    Ready to transform your organization's
+                    <span className="text-blue-400"> data strategy</span>?
+                  </h2>
+                  <p className="text-xl text-slate-300 font-light max-w-2xl mx-auto">
+                    Let's discuss how strategic analytics leadership can drive measurable business outcomes and
+                    competitive advantage.
+                  </p>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                  <a
+                    href="https://linkedin.com/in/daniel-viveiros"
+                    className="group flex items-center gap-3 px-8 py-4 border border-slate-600 hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 text-slate-300 hover:text-blue-400 hover:scale-105"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                    <span className="font-light">Connect on LinkedIn</span>
+                  </a>
+
+                  <a
+                    href="mailto:daniel.viveiros@analytics.com"
+                    className="group flex items-center gap-3 px-8 py-4 bg-blue-600 hover:bg-blue-500 transition-all duration-300 text-white hover:scale-105 hover:shadow-lg"
+                  >
+                    <Mail className="w-5 h-5" />
+                    <span className="font-light">Direct Contact</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
