@@ -400,7 +400,7 @@ export default function ExecutiveBrandSite() {
           <ChevronDown className="w-6 h-6 animate-bounce" />
         </button>
       </section>
-      {/* Flagship Proof Section */}
+      {/* Proof Section */}
       <section
         ref={sectionRefs.proof}
         id="proof"
