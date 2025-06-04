@@ -23,11 +23,11 @@ export default function ExecutiveBrandSite() {
 
   const sectionRefs = {
     hero: useRef<HTMLElement>(null),
-    impact: useRef<HTMLElement>(null),
-    expertise: useRef<HTMLElement>(null),
-    timeline: useRef<HTMLElement>(null),
-    philosophy: useRef<HTMLElement>(null),
     proof: useRef<HTMLElement>(null),
+    impact: useRef<HTMLElement>(null),
+    timeline: useRef<HTMLElement>(null),
+    expertise: useRef<HTMLElement>(null),
+    philosophy: useRef<HTMLElement>(null),
     engage: useRef<HTMLElement>(null),
   }
 
@@ -312,7 +312,7 @@ export default function ExecutiveBrandSite() {
 
       {/* Clean Navigation */}
       <nav className="fixed top-8 right-8 z-50 flex flex-col gap-3">
-        {["hero", "impact", "expertise", "timeline", "philosophy", "proof", "engage"].map((section) => (
+        {["hero", "proof", "impact", "timeline", "expertise", "philosophy", "engage"].map((section) => (
           <button
             key={section}
             onClick={() => scrollToSection(section)}
@@ -394,11 +394,103 @@ export default function ExecutiveBrandSite() {
         </div>
 
         <button
-          onClick={() => scrollToSection("impact")}
+          onClick={() => scrollToSection("proof")}
           className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 text-slate-400 hover:text-blue-600 transition-all duration-500 ${visibleSections.has("hero") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
         >
           <ChevronDown className="w-6 h-6 animate-bounce" />
         </button>
+      </section>
+
+      {/* Flagship Proof Section */}
+      <section
+        ref={sectionRefs.proof}
+        id="proof"
+        className="min-h-screen bg-slate-50 flex items-center justify-center px-6 py-12"
+      >
+        <div className="max-w-4xl w-full space-y-8">
+          <div
+            className={`text-center space-y-4 transition-all duration-1000 ${visibleSections.has("proof") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+          >
+            <h2 className="text-2xl font-bold mb-2 text-slate-900">Snowflake Cost-Governance Playbook</h2>
+          </div>
+
+          {/* Loom Video Embed */}
+          <div
+            className={`w-full max-w-3xl mx-auto transition-all duration-1000 delay-200 ${visibleSections.has("proof") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+          >
+            <div className="relative aspect-video bg-slate-200 rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.loom.com/embed/placeholder"
+                className="w-full h-full"
+                frameBorder="0"
+                allowFullScreen
+                title="Snowflake Cost-Governance Playbook"
+              />
+              {/* Placeholder for demo */}
+              <div className="absolute inset-0 flex items-center justify-center bg-slate-100">
+                <div className="text-center space-y-2">
+                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                  <p className="text-slate-600 font-medium">2-min Loom Video</p>
+                  <p className="text-sm text-slate-500">Snowflake Cost Optimization Case Study</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Case Study Description */}
+          <div
+            className={`text-center transition-all duration-1000 delay-400 ${visibleSections.has("proof") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+          >
+            <p className="text-slate-700 leading-relaxed sm:max-w-2xl mx-auto">
+              <strong>Problem:</strong> Snowflake costs spiraling out of control with 2TB daily data processing.{" "}
+              <strong>Action:</strong> Implemented automated cost governance framework with query optimization and
+              resource scheduling. <strong>Result:</strong> Achieved 32% spend reduction while maintaining performance,
+              saving $180K annually and establishing scalable cost controls for future growth.
+            </p>
+          </div>
+
+          {/* Action Buttons */}
+          <div
+            className={`flex flex-col sm:flex-row gap-4 justify-center items-center transition-all duration-1000 delay-600 ${visibleSections.has("proof") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+          >
+            <a
+              href="/files/playbook.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 border border-slate-300 rounded-lg text-slate-700 font-medium hover:bg-slate-200 transition-colors duration-200"
+            >
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+              Slide Deck PDF
+            </a>
+            <a
+              href="https://notion.so/your-case-study"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 border border-slate-300 rounded-lg text-slate-700 font-medium hover:bg-slate-200 transition-colors duration-200"
+            >
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+              Read Case Details
+            </a>
+          </div>
+        </div>
       </section>
 
       {/* Impact Section - Better centered */}
@@ -445,6 +537,17 @@ export default function ExecutiveBrandSite() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Dedicated Timeline Section */}
+      <section
+        ref={sectionRefs.timeline}
+        id="timeline"
+        className="min-h-screen flex items-center px-8 py-20 bg-gradient-to-br from-slate-50 to-blue-50/30"
+      >
+        <div className="max-w-6xl mx-auto w-full">
+          <TimelineSection isVisible={visibleSections.has("timeline")} />
         </div>
       </section>
 
@@ -502,17 +605,6 @@ export default function ExecutiveBrandSite() {
         </div>
       </section>
 
-      {/* Dedicated Timeline Section */}
-      <section
-        ref={sectionRefs.timeline}
-        id="timeline"
-        className="min-h-screen flex items-center px-8 py-20 bg-gradient-to-br from-slate-50 to-blue-50/30"
-      >
-        <div className="max-w-6xl mx-auto w-full">
-      <TimelineSection isVisible={visibleSections.has("timeline")} />
-      </div>
-      </section>
-
       {/* Philosophy Section */}
       <section
         ref={sectionRefs.philosophy}
@@ -547,91 +639,6 @@ export default function ExecutiveBrandSite() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Flagship Proof Section */}
-      <section
-        ref={sectionRefs.proof}
-        id="proof"
-        className="min-h-screen bg-slate-50 flex items-center justify-center px-6 py-12"
-      >
-        <div className="max-w-4xl w-full space-y-8">
-          <div className="text-center space-y-4">
-            <h2 className="text-2xl font-bold mb-2 text-slate-900">Snowflake Cost-Governance Playbook</h2>
-          </div>
-
-          {/* Loom Video Embed */}
-          <div className="w-full max-w-3xl mx-auto">
-            <div className="relative aspect-video bg-slate-200 rounded-lg overflow-hidden shadow-lg">
-              <iframe
-                src="https://www.loom.com/embed/placeholder"
-                className="w-full h-full"
-                frameBorder="0"
-                allowFullScreen
-                title="Snowflake Cost-Governance Playbook"
-              />
-              {/* Placeholder for demo */}
-              <div className="absolute inset-0 flex items-center justify-center bg-slate-100">
-                <div className="text-center space-y-2">
-                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                  <p className="text-slate-600 font-medium">2-min Loom Video</p>
-                  <p className="text-sm text-slate-500">Snowflake Cost Optimization Case Study</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Case Study Description */}
-          <div className="text-center">
-            <p className="text-slate-700 leading-relaxed sm:max-w-2xl mx-auto">
-              <strong>Problem:</strong> Snowflake costs spiraling out of control with 2TB daily data processing.
-              <strong> Action:</strong> Implemented automated cost governance framework with query optimization and
-              resource scheduling.
-              <strong> Result:</strong> Achieved 32% spend reduction while maintaining performance, saving $180K
-              annually and establishing scalable cost controls for future growth.
-            </p>
-          </div>
-
-          {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
-              href="/files/playbook.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 border border-slate-300 rounded-lg text-slate-700 font-medium hover:bg-slate-200 transition-colors duration-200"
-            >
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                />
-              </svg>
-              Slide Deck PDF
-            </a>
-            <a
-              href="https://notion.so/your-case-study"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 border border-slate-300 rounded-lg text-slate-700 font-medium hover:bg-slate-200 transition-colors duration-200"
-            >
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                />
-              </svg>
-              Read Case Details
-            </a>
           </div>
         </div>
       </section>
