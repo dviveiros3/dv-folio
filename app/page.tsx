@@ -23,12 +23,12 @@ export default function ExecutiveBrandSite() {
 
   const sectionRefs = {
     hero: useRef<HTMLElement>(null),
-    philosophy: useRef<HTMLElement>(null),
-    impact: useRef<HTMLElement>(null),
-    expertise: useRef<HTMLElement>(null),
-    timeline: useRef<HTMLElement>(null),
-    engage: useRef<HTMLElement>(null),
     proof: useRef<HTMLElement>(null),
+    impact: useRef<HTMLElement>(null),
+    timeline: useRef<HTMLElement>(null),
+    expertise: useRef<HTMLElement>(null),
+    philosophy: useRef<HTMLElement>(null),
+    engage: useRef<HTMLElement>(null),
   }
 
   // Scroll position tracking with direction detection
@@ -312,7 +312,7 @@ export default function ExecutiveBrandSite() {
 
       {/* Clean Navigation */}
       <nav className="fixed top-8 right-8 z-50 flex flex-col gap-3">
-        {["hero", "philosophy", "impact", "expertise", "timeline", "engage", "proof"].map((section) => (
+        {["hero", "proof", "impact", "timeline", "expertise", "philosophy", "engage"].map((section) => (
           <button
             key={section}
             onClick={() => scrollToSection(section)}
@@ -394,164 +394,13 @@ export default function ExecutiveBrandSite() {
         </div>
 
         <button
-          onClick={() => scrollToSection("philosophy")}
+          onClick={() => scrollToSection("proof")}
           className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 text-slate-400 hover:text-blue-600 transition-all duration-500 ${visibleSections.has("hero") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
         >
           <ChevronDown className="w-6 h-6 animate-bounce" />
         </button>
       </section>
-
-      {/* Philosophy Section */}
-      <section
-        ref={sectionRefs.philosophy}
-        id="philosophy"
-        className="min-h-screen flex items-center px-8 py-20 relative"
-      >
-        <div className="max-w-6xl mx-auto w-full">
-          <div className="grid grid-cols-12 gap-8">
-            <div className="col-span-12 lg:col-span-6 lg:col-start-4">
-              <div
-                className={`space-y-8 transition-all duration-1000 ${visibleSections.has("philosophy") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
-              >
-                <div className="space-y-4">
-                  <div className="text-sm font-medium text-blue-700 tracking-widest uppercase">
-                    Data Leadership Philosophy
-                  </div>
-                  <div className="h-px w-16 bg-slate-300"></div>
-                </div>
-
-                <div className="space-y-6">
-                  <p className="text-2xl lg:text-3xl font-light leading-relaxed text-slate-800">
-                    Data becomes powerful when{" "}
-                    <em className="text-blue-700 not-italic font-medium">analytical rigor</em> meets
-                    <em className="text-blue-700 not-italic font-medium"> business strategy</em>.
-                  </p>
-
-                  <p className="text-lg text-slate-600 leading-relaxed font-light">
-                    I believe in democratizing data access while maintaining governance excellence. By bridging the gap
-                    between complex analytics and business outcomes, I transform data into strategic assets that drive
-                    measurable growth, operational efficiency, and competitive advantage across diverse industries.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Impact Section - Better centered */}
-      <section
-        ref={sectionRefs.impact}
-        id="impact"
-        className="min-h-screen flex items-center px-8 py-32 bg-slate-50/50"
-      >
-        <div className="max-w-6xl mx-auto w-full">
-          <div className="space-y-16">
-            <div
-              className={`text-center space-y-4 transition-all duration-1000 ${visibleSections.has("impact") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-            >
-              <div className="text-sm font-medium text-blue-700 tracking-widest uppercase">Quantified Impact</div>
-              <div className="h-px w-16 bg-slate-300 mx-auto"></div>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-              {impactData.map((item, index) => (
-                <div
-                  key={index}
-                  className={`group relative p-8 hover:bg-white/80 transition-all duration-500 rounded-sm border-l-2 border-transparent hover:border-blue-600 ${
-                    visibleSections.has("impact") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-                  }`}
-                  style={{ transitionDelay: `${index * 200}ms` }}
-                >
-                  <div className="space-y-6">
-                    <div className="flex items-start justify-between">
-                      <div className="space-y-2">
-                        <div className="text-5xl lg:text-6xl font-extralight text-slate-900 group-hover:text-blue-700 transition-colors duration-500 tracking-tight">
-                          <AnimatedCounter target={item.metric} />
-                        </div>
-                        <div className="text-xs font-medium text-blue-700 tracking-widest uppercase opacity-70">
-                          {item.category}
-                        </div>
-                      </div>
-                      <div className="text-xs text-slate-500 font-light bg-slate-100/50 px-3 py-1 rounded-full">
-                        {item.year}
-                      </div>
-                    </div>
-                    <p className="text-slate-700 leading-relaxed font-light text-lg">{item.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Balanced Expertise Section */}
-      <section ref={sectionRefs.expertise} id="expertise" className="min-h-screen flex items-center px-8 py-20">
-        <div className="max-w-6xl mx-auto w-full">
-          <div className="space-y-20">
-            <div className="grid grid-cols-12 gap-8">
-              <div
-                className={`col-span-12 lg:col-span-4 transition-all duration-1000 ${visibleSections.has("expertise") ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}
-              >
-                <div className="space-y-6 lg:sticky lg:top-20">
-                  <div className="text-sm font-medium text-blue-700 tracking-widest uppercase">Core Expertise</div>
-                  <div className="h-px w-16 bg-slate-300"></div>
-                  <p className="text-slate-600 font-light leading-relaxed text-lg">
-                    Full-stack analytics capabilities spanning strategy, engineering, and leadership—developed through
-                    nearly a decade of transforming data into business value across diverse industries and functions.
-                  </p>
-                </div>
-              </div>
-
-              <div className="col-span-12 lg:col-span-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  {expertiseAreas.map((category, categoryIndex) => (
-                    <div
-                      key={categoryIndex}
-                      className={`space-y-4 transition-all duration-1000 ${
-                        visibleSections.has("expertise") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                      }`}
-                      style={{ transitionDelay: `${categoryIndex * 150}ms` }}
-                    >
-                      <div className="space-y-3">
-                        <h3 className="text-lg font-medium text-slate-800 tracking-wide">{category.category}</h3>
-                        <div className="h-px w-12 bg-blue-600/30"></div>
-                      </div>
-
-                      <div className="space-y-3">
-                        {category.skills.map((skill, skillIndex) => (
-                          <div
-                            key={skillIndex}
-                            className="group p-4 border border-slate-200/50 hover:border-blue-200 hover:bg-blue-50/20 transition-all duration-300 hover:scale-[1.02] hover:shadow-md rounded-lg"
-                          >
-                            <span className="text-slate-700 font-light group-hover:text-blue-800 transition-colors duration-300">
-                              {skill}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Dedicated Timeline Section */}
-      <section
-        ref={sectionRefs.timeline}
-        id="timeline"
-        className="min-h-screen flex items-center px-8 py-20 bg-gradient-to-br from-slate-50 to-blue-50/30"
-      >
-        <div className="max-w-6xl mx-auto w-full">
-          <TimelineSection isVisible={visibleSections.has("timeline")} />
-        </div>
-      </section>
-
-      {/* Flagship Proof Section */}
+      {/* Proof Section */}
       <section
         ref={sectionRefs.proof}
         id="proof"
@@ -635,6 +484,157 @@ export default function ExecutiveBrandSite() {
           </div>
         </div>
       </section>
+
+      {/* Impact Section - Better centered */}
+      <section
+        ref={sectionRefs.impact}
+        id="impact"
+        className="min-h-screen flex items-center px-8 py-32 bg-slate-50/50"
+      >
+        <div className="max-w-6xl mx-auto w-full">
+          <div className="space-y-16">
+            <div
+              className={`text-center space-y-4 transition-all duration-1000 ${visibleSections.has("impact") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+            >
+              <div className="text-sm font-medium text-blue-700 tracking-widest uppercase">Quantified Impact</div>
+              <div className="h-px w-16 bg-slate-300 mx-auto"></div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+              {impactData.map((item, index) => (
+                <div
+                  key={index}
+                  className={`group relative p-8 hover:bg-white/80 transition-all duration-500 rounded-sm border-l-2 border-transparent hover:border-blue-600 ${
+                    visibleSections.has("impact") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+                  }`}
+                  style={{ transitionDelay: `${index * 200}ms` }}
+                >
+                  <div className="space-y-6">
+                    <div className="flex items-start justify-between">
+                      <div className="space-y-2">
+                        <div className="text-5xl lg:text-6xl font-extralight text-slate-900 group-hover:text-blue-700 transition-colors duration-500 tracking-tight">
+                          <AnimatedCounter target={item.metric} />
+                        </div>
+                        <div className="text-xs font-medium text-blue-700 tracking-widest uppercase opacity-70">
+                          {item.category}
+                        </div>
+                      </div>
+                      <div className="text-xs text-slate-500 font-light bg-slate-100/50 px-3 py-1 rounded-full">
+                        {item.year}
+                      </div>
+                    </div>
+                    <p className="text-slate-700 leading-relaxed font-light text-lg">{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Dedicated Timeline Section */}
+      <section
+        ref={sectionRefs.timeline}
+        id="timeline"
+        className="min-h-screen flex items-center px-8 py-20 bg-gradient-to-br from-slate-50 to-blue-50/30"
+      >
+        <div className="max-w-6xl mx-auto w-full">
+      <TimelineSection isVisible={visibleSections.has("timeline")} />
+      </div>
+      </section>
+      {/* Balanced Expertise Section */}
+      <section ref={sectionRefs.expertise} id="expertise" className="min-h-screen flex items-center px-8 py-20">
+        <div className="max-w-6xl mx-auto w-full">
+          <div className="space-y-20">
+            <div className="grid grid-cols-12 gap-8">
+              <div
+                className={`col-span-12 lg:col-span-4 transition-all duration-1000 ${visibleSections.has("expertise") ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}
+              >
+                <div className="space-y-6 lg:sticky lg:top-20">
+                  <div className="text-sm font-medium text-blue-700 tracking-widest uppercase">Core Expertise</div>
+                  <div className="h-px w-16 bg-slate-300"></div>
+                  <p className="text-slate-600 font-light leading-relaxed text-lg">
+                    Full-stack analytics capabilities spanning strategy, engineering, and leadership—developed through
+                    nearly a decade of transforming data into business value across diverse industries and functions.
+                  </p>
+                </div>
+              </div>
+
+              <div className="col-span-12 lg:col-span-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  {expertiseAreas.map((category, categoryIndex) => (
+                    <div
+                      key={categoryIndex}
+                      className={`space-y-4 transition-all duration-1000 ${
+                        visibleSections.has("expertise") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                      }`}
+                      style={{ transitionDelay: `${categoryIndex * 150}ms` }}
+                    >
+                      <div className="space-y-3">
+                        <h3 className="text-lg font-medium text-slate-800 tracking-wide">{category.category}</h3>
+                        <div className="h-px w-12 bg-blue-600/30"></div>
+                      </div>
+
+                      <div className="space-y-3">
+                        {category.skills.map((skill, skillIndex) => (
+                          <div
+                            key={skillIndex}
+                            className="group p-4 border border-slate-200/50 hover:border-blue-200 hover:bg-blue-50/20 transition-all duration-300 hover:scale-[1.02] hover:shadow-md rounded-lg"
+                          >
+                            <span className="text-slate-700 font-light group-hover:text-blue-800 transition-colors duration-300">
+                              {skill}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Philosophy Section */}
+      <section
+        ref={sectionRefs.philosophy}
+        id="philosophy"
+        className="min-h-screen flex items-center px-8 py-20 relative"
+      >
+        <div className="max-w-6xl mx-auto w-full">
+          <div className="grid grid-cols-12 gap-8">
+            <div className="col-span-12 lg:col-span-6 lg:col-start-4">
+              <div
+                className={`space-y-8 transition-all duration-1000 ${visibleSections.has("philosophy") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
+              >
+                <div className="space-y-4">
+                  <div className="text-sm font-medium text-blue-700 tracking-widest uppercase">
+                    Data Leadership Philosophy
+                  </div>
+                  <div className="h-px w-16 bg-slate-300"></div>
+                </div>
+
+                <div className="space-y-6">
+                  <p className="text-2xl lg:text-3xl font-light leading-relaxed text-slate-800">
+                    Data becomes powerful when{" "}
+                    <em className="text-blue-700 not-italic font-medium">analytical rigor</em> meets
+                    <em className="text-blue-700 not-italic font-medium"> business strategy</em>.
+                  </p>
+
+                  <p className="text-lg text-slate-600 leading-relaxed font-light">
+                    I believe in democratizing data access while maintaining governance excellence. By bridging the gap
+                    between complex analytics and business outcomes, I transform data into strategic assets that drive
+                    measurable growth, operational efficiency, and competitive advantage across diverse industries.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Engage Section */}
       <section
