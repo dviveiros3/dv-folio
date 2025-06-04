@@ -6,6 +6,8 @@ import { SoundManager } from "@/components/sound-manager"
 import { MagneticCursor } from "@/components/magnetic-cursor"
 import { ScrollProgress } from "@/components/scroll-progress"
 import { TimelineSection } from "@/components/timeline-section"
+import Image from "next/image"
+import { MetricTile } from "@/components/metric-tile"
 
 export default function ExecutiveBrandSite() {
   const [activeSection, setActiveSection] = useState("hero")
@@ -15,6 +17,7 @@ export default function ExecutiveBrandSite() {
   const [scrollY, setScrollY] = useState(0)
   const [scrollDirection, setScrollDirection] = useState<"up" | "down">("down")
   const lastScrollY = useRef(0)
+  const [isVisible, setIsVisible] = useState(false)
 
   const fullText = "Transforming data into strategic advantage through AI-driven analytics."
 
@@ -25,6 +28,7 @@ export default function ExecutiveBrandSite() {
     expertise: useRef<HTMLElement>(null),
     timeline: useRef<HTMLElement>(null),
     engage: useRef<HTMLElement>(null),
+    proof: useRef<HTMLElement>(null),
   }
 
   // Scroll position tracking with direction detection
@@ -105,6 +109,12 @@ export default function ExecutiveBrandSite() {
 
     return () => observer.disconnect()
   }, [isTyping])
+
+  useEffect(() => {
+    // Trigger fade-in animation after component mounts
+    const timer = setTimeout(() => setIsVisible(true), 100)
+    return () => clearTimeout(timer)
+  }, [])
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
@@ -302,7 +312,7 @@ export default function ExecutiveBrandSite() {
 
       {/* Clean Navigation */}
       <nav className="fixed top-8 right-8 z-50 flex flex-col gap-3">
-        {["hero", "philosophy", "impact", "expertise", "timeline", "engage"].map((section) => (
+        {["hero", "philosophy", "impact", "expertise", "timeline", "engage", "proof"].map((section) => (
           <button
             key={section}
             onClick={() => scrollToSection(section)}
@@ -328,32 +338,56 @@ export default function ExecutiveBrandSite() {
       {/* Hero Section */}
       <section ref={sectionRefs.hero} id="hero" className="min-h-screen flex items-center justify-center relative px-8">
         <div className="max-w-6xl w-full">
-          <div className="grid grid-cols-12 gap-8 items-center">
-            <div className="col-span-12 lg:col-span-10 lg:col-start-2">
-              <div className="space-y-8">
-                <div
-                  className={`space-y-4 transition-all duration-1000 ${visibleSections.has("hero") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-                >
-                  <h1 className="text-6xl lg:text-8xl font-light tracking-tight leading-none text-slate-900">
-                    Daniel
-                    <span className="block text-slate-600 font-extralight">Viveiros</span>
-                  </h1>
-                  <div className="h-px w-24 bg-blue-600 ml-1"></div>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Content */}
+            <div
+              className={`space-y-8 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+            >
+              <div className="space-y-4">
+                <h1 className="text-6xl lg:text-8xl font-light tracking-tight leading-none text-slate-900">
+                  Daniel
+                  <span className="block text-slate-600 font-extralight">Viveiros</span>
+                </h1>
+                <div className="h-px w-24 bg-blue-600 ml-1"></div>
+              </div>
 
-                <div
-                  className={`space-y-6 transition-all duration-1000 delay-300 ${visibleSections.has("hero") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+              {/* Metrics Grid */}
+              <div className="grid grid-cols-3 gap-4 max-w-md">
+                <MetricTile value="+$4.2 M" caption="Annual revenue lift" />
+                <MetricTile value="-32 %" caption="Snowflake spend cut" />
+                <MetricTile value="10×" caption="Deploy speed" />
+              </div>
+
+              {/* CTA Button */}
+              <div
+                className={`transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+              >
+                <a
+                  href="https://calendly.com/your-cal-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                 >
-                  <h2 className="text-xl lg:text-2xl font-light text-slate-700 tracking-wide">
-                    Advanced Analytics & BI Leader | Aspiring Data Executive
-                  </h2>
-                  <div className="text-lg lg:text-xl text-slate-600 font-light leading-relaxed">
-                    {typedText}
-                    <span
-                      className={`inline-block w-0.5 h-6 bg-blue-600 ml-1 ${isTyping ? "animate-pulse" : "opacity-0"}`}
-                    />
-                  </div>
-                </div>
+                  Book 15-min intro
+                </a>
+              </div>
+            </div>
+
+            {/* Right Column - Headshot */}
+            <div
+              className={`flex justify-center md:justify-end transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+            >
+              <div className="relative">
+                <Image
+                  src="/placeholder.svg?height=160&width=160"
+                  alt="Daniel Viveiros - Director of Analytics"
+                  width={160}
+                  height={160}
+                  className="rounded-full shadow-lg"
+                  priority
+                />
+                {/* Subtle glow effect */}
+                <div className="absolute inset-0 rounded-full bg-blue-400/10 blur-xl -z-10"></div>
               </div>
             </div>
           </div>
@@ -517,6 +551,91 @@ export default function ExecutiveBrandSite() {
         </div>
       </section>
 
+      {/* Flagship Proof Section */}
+      <section
+        ref={sectionRefs.proof}
+        id="proof"
+        className="min-h-screen bg-slate-50 flex items-center justify-center px-6 py-12"
+      >
+        <div className="max-w-4xl w-full space-y-8">
+          <div className="text-center space-y-4">
+            <h2 className="text-2xl font-bold mb-2 text-slate-900">Snowflake Cost-Governance Playbook</h2>
+          </div>
+
+          {/* Loom Video Embed */}
+          <div className="w-full max-w-3xl mx-auto">
+            <div className="relative aspect-video bg-slate-200 rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.loom.com/embed/placeholder"
+                className="w-full h-full"
+                frameBorder="0"
+                allowFullScreen
+                title="Snowflake Cost-Governance Playbook"
+              />
+              {/* Placeholder for demo */}
+              <div className="absolute inset-0 flex items-center justify-center bg-slate-100">
+                <div className="text-center space-y-2">
+                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                  <p className="text-slate-600 font-medium">2-min Loom Video</p>
+                  <p className="text-sm text-slate-500">Snowflake Cost Optimization Case Study</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Case Study Description */}
+          <div className="text-center">
+            <p className="text-slate-700 leading-relaxed sm:max-w-2xl mx-auto">
+              <strong>Problem:</strong> Snowflake costs spiraling out of control with 2TB daily data processing.
+              <strong> Action:</strong> Implemented automated cost governance framework with query optimization and
+              resource scheduling.
+              <strong> Result:</strong> Achieved 32% spend reduction while maintaining performance, saving $180K
+              annually and establishing scalable cost controls for future growth.
+            </p>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="/files/playbook.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 border border-slate-300 rounded-lg text-slate-700 font-medium hover:bg-slate-200 transition-colors duration-200"
+            >
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+              Slide Deck PDF
+            </a>
+            <a
+              href="https://notion.so/your-case-study"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 border border-slate-300 rounded-lg text-slate-700 font-medium hover:bg-slate-200 transition-colors duration-200"
+            >
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+              Read Case Details
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Engage Section */}
       <section
         ref={sectionRefs.engage}
@@ -562,6 +681,33 @@ export default function ExecutiveBrandSite() {
           </div>
         </div>
       </section>
+
+      {/* Mini Footer */}
+      <footer className="py-6 text-center text-sm text-slate-500 bg-white border-t border-slate-100">
+        <div className="space-x-4">
+          <a href="mailto:daniel.viveiros@analytics.com" className="hover:text-slate-700 transition-colors">
+            email
+          </a>
+          <span>·</span>
+          <a
+            href="https://linkedin.com/in/daniel-viveiros"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-slate-700 transition-colors"
+          >
+            LinkedIn
+          </a>
+          <span>·</span>
+          <a
+            href="/files/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-slate-700 transition-colors"
+          >
+            Download résumé PDF
+          </a>
+        </div>
+      </footer>
     </div>
   )
 }
