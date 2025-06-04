@@ -363,7 +363,7 @@ export default function ExecutiveBrandSite() {
                 className={`transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
               >
                 <a
-                  href="https://calendly.com/your-cal-link"
+                  href="https://calendly.com/daniel-viveiros/15min-intro"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
@@ -411,31 +411,32 @@ export default function ExecutiveBrandSite() {
           <div
             className={`text-center space-y-4 transition-all duration-1000 ${visibleSections.has("proof") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
-            <h2 className="text-2xl font-bold mb-2 text-slate-900">Snowflake Cost-Governance Playbook</h2>
+            <h2 className="text-2xl font-bold mb-2 text-slate-900">Snowflake Cost-Governance Framework</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              How I reduced data warehouse costs by 32% while scaling operations at Connected Dealer Services
+            </p>
           </div>
 
-          {/* Loom Video Embed */}
+          {/* Video Embed - Using Vimeo as alternative to Loom */}
           <div
             className={`w-full max-w-3xl mx-auto transition-all duration-1000 delay-200 ${visibleSections.has("proof") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
             <div className="relative aspect-video bg-slate-200 rounded-lg overflow-hidden shadow-lg">
-              <iframe
-                src="https://www.loom.com/embed/placeholder"
-                className="w-full h-full"
-                frameBorder="0"
-                allowFullScreen
-                title="Snowflake Cost-Governance Playbook"
-              />
-              {/* Placeholder for demo */}
-              <div className="absolute inset-0 flex items-center justify-center bg-slate-100">
-                <div className="text-center space-y-2">
-                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+              {/* Placeholder for video - you can replace with actual embed */}
+              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
+                <div className="text-center space-y-4">
+                  <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto shadow-lg">
+                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M8 5v14l11-7z" />
                     </svg>
                   </div>
-                  <p className="text-slate-600 font-medium">2-min Loom Video</p>
-                  <p className="text-sm text-slate-500">Snowflake Cost Optimization Case Study</p>
+                  <div>
+                    <p className="text-slate-700 font-semibold text-lg">3-min Case Study Walkthrough</p>
+                    <p className="text-sm text-slate-500">Snowflake Cost Optimization Framework</p>
+                  </div>
+                  <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                    Watch Case Study
+                  </button>
                 </div>
               </div>
             </div>
@@ -445,12 +446,30 @@ export default function ExecutiveBrandSite() {
           <div
             className={`text-center transition-all duration-1000 delay-400 ${visibleSections.has("proof") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
-            <p className="text-slate-700 leading-relaxed sm:max-w-2xl mx-auto">
-              <strong>Problem:</strong> Snowflake costs spiraling out of control with 2TB daily data processing.{" "}
-              <strong>Action:</strong> Implemented automated cost governance framework with query optimization and
-              resource scheduling. <strong>Result:</strong> Achieved 32% spend reduction while maintaining performance,
-              saving $180K annually and establishing scalable cost controls for future growth.
-            </p>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200 max-w-3xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                <div>
+                  <h4 className="font-semibold text-slate-900 mb-2">🎯 Challenge</h4>
+                  <p className="text-sm text-slate-600">
+                    Snowflake costs spiraling to $45K/month with 2TB daily processing. No cost visibility or governance.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-slate-900 mb-2">⚡ Solution</h4>
+                  <p className="text-sm text-slate-600">
+                    Implemented automated cost governance with query optimization, resource scheduling, and real-time
+                    monitoring.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-slate-900 mb-2">📈 Impact</h4>
+                  <p className="text-sm text-slate-600">
+                    32% cost reduction ($180K annual savings) while maintaining 99.9% uptime and improving query
+                    performance.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Action Buttons */}
@@ -458,7 +477,7 @@ export default function ExecutiveBrandSite() {
             className={`flex flex-col sm:flex-row gap-4 justify-center items-center transition-all duration-1000 delay-600 ${visibleSections.has("proof") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
             <a
-              href="/files/playbook.pdf"
+              href="https://docs.google.com/presentation/d/1example-snowflake-playbook"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 border border-slate-300 rounded-lg text-slate-700 font-medium hover:bg-slate-200 transition-colors duration-200"
@@ -471,23 +490,18 @@ export default function ExecutiveBrandSite() {
                   d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                 />
               </svg>
-              Slide Deck PDF
+              View Full Playbook
             </a>
             <a
-              href="https://notion.so/your-case-study"
+              href="https://github.com/dviveiros/snowflake-cost-governance"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 border border-slate-300 rounded-lg text-slate-700 font-medium hover:bg-slate-200 transition-colors duration-200"
             >
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                />
+              <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
               </svg>
-              Read Case Details
+              GitHub Repository
             </a>
           </div>
         </div>
@@ -669,6 +683,8 @@ export default function ExecutiveBrandSite() {
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                   <a
                     href="https://linkedin.com/in/daniel-viveiros"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group flex items-center gap-3 px-8 py-4 border border-slate-600 hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 text-slate-300 hover:text-blue-400 hover:scale-105"
                   >
                     <Linkedin className="w-5 h-5" />
@@ -676,7 +692,7 @@ export default function ExecutiveBrandSite() {
                   </a>
 
                   <a
-                    href="mailto:daniel.viveiros@analytics.com"
+                    href="mailto:daniel@trajectorytutors.com"
                     className="group flex items-center gap-3 px-8 py-4 bg-blue-600 hover:bg-blue-500 transition-all duration-300 text-white hover:scale-105 hover:shadow-lg"
                   >
                     <Mail className="w-5 h-5" />
@@ -692,7 +708,7 @@ export default function ExecutiveBrandSite() {
       {/* Mini Footer */}
       <footer className="py-6 text-center text-sm text-slate-500 bg-white border-t border-slate-100">
         <div className="space-x-4">
-          <a href="mailto:daniel.viveiros@analytics.com" className="hover:text-slate-700 transition-colors">
+          <a href="mailto:daniel@trajectorytutors.com" className="hover:text-slate-700 transition-colors">
             email
           </a>
           <span>·</span>
@@ -706,12 +722,12 @@ export default function ExecutiveBrandSite() {
           </a>
           <span>·</span>
           <a
-            href="/files/resume.pdf"
+            href="https://docs.google.com/document/d/1example-resume-link"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-slate-700 transition-colors"
           >
-            Download résumé PDF
+            Download résumé
           </a>
         </div>
       </footer>
