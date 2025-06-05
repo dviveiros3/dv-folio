@@ -353,9 +353,21 @@ export default function ExecutiveBrandSite() {
 
               {/* Metrics Grid */}
               <div className="grid grid-cols-3 gap-4 max-w-md">
-                <MetricTile value="+$4.2 M" caption="Annual revenue lift" />
-                <MetricTile value="-32 %" caption="Snowflake spend cut" />
-                <MetricTile value="10×" caption="Deploy speed" />
+                <MetricTile
+                  value="+$4.2 M"
+                  caption="Annual revenue lift"
+                  subCaption="achieved through AI-driven customer segmentation and predictive forecasting models."
+                />
+                <MetricTile
+                  value="-32 %"
+                  caption="Snowflake spend cut"
+                  subCaption="via implementing a comprehensive cost-governance framework and query optimization."
+                />
+                <MetricTile
+                  value="10×"
+                  caption="Deploy speed"
+                  subCaption="for analytics solutions by adopting CI/CD pipelines and modular design."
+                />
               </div>
 
               {/* CTA Button */}
@@ -413,7 +425,7 @@ export default function ExecutiveBrandSite() {
           >
             <h2 className="text-2xl font-bold mb-2 text-slate-900">Snowflake Cost-Governance Framework</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              How I reduced data warehouse costs by 32% while scaling operations at Connected Dealer Services
+              Reduced data warehouse costs by 32% while scaling operations at Connected Dealer Services.
             </p>
           </div>
 
@@ -451,23 +463,29 @@ export default function ExecutiveBrandSite() {
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-2">🎯 Challenge</h4>
                   <p className="text-sm text-slate-600">
-                    Snowflake costs spiraling to $45K/month with 2TB daily processing. No cost visibility or governance.
+                    Spiraling Snowflake costs (reaching $45K/month with 2TB daily processing) lacked visibility and
+                    governance, threatening budget overruns.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-2">⚡ Solution</h4>
                   <p className="text-sm text-slate-600">
-                    Implemented automated cost governance with query optimization, resource scheduling, and real-time
-                    monitoring.
+                    Implemented an automated cost governance framework using Snowflake's resource monitors, usage
+                    dashboards (built with a BI tool), query optimization techniques (e.g., clustering, materialized
+                    views), and scheduled scaling of warehouses.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-2">📈 Impact</h4>
                   <p className="text-sm text-slate-600">
-                    32% cost reduction ($180K annual savings) while maintaining 99.9% uptime and improving query
-                    performance.
+                    Achieved a 32% sustained cost reduction ($180K annual savings), maintained 99.9% data platform
+                    uptime, and improved overall query performance, enabling scalable growth.
                   </p>
                 </div>
+              </div>
+              <div className="mt-4 text-left">
+                <h4 className="font-semibold text-slate-900 mb-1">🛠️ Tech Stack Used:</h4>
+                <p className="text-sm text-slate-600">Snowflake, BI Tool (Looker/Tableau), Python/SQL</p>
               </div>
             </div>
           </div>
@@ -633,7 +651,7 @@ export default function ExecutiveBrandSite() {
               >
                 <div className="space-y-4">
                   <div className="text-sm font-medium text-blue-700 tracking-widest uppercase">
-                    Data Leadership Philosophy
+                    About Me & My Philosophy
                   </div>
                   <div className="h-px w-16 bg-slate-300"></div>
                 </div>
@@ -644,12 +662,29 @@ export default function ExecutiveBrandSite() {
                     <em className="text-blue-700 not-italic font-medium">analytical rigor</em> meets
                     <em className="text-blue-700 not-italic font-medium"> business strategy</em>.
                   </p>
-
+                  <p className="text-lg text-slate-600 leading-relaxed font-light">
+                    I'm driven by the challenge of uncovering hidden patterns in data and translating these insights
+                    into tangible business value and innovative solutions that push the boundaries of what's possible.
+                  </p>
                   <p className="text-lg text-slate-600 leading-relaxed font-light">
                     I believe in democratizing data access while maintaining governance excellence. By bridging the gap
                     between complex analytics and business outcomes, I transform data into strategic assets that drive
-                    measurable growth, operational efficiency, and competitive advantage across diverse industries.
+                    measurable growth, operational efficiency, and competitive advantage across diverse industries. My
+                    goal is to empower organizations to make smarter decisions and to lead data initiatives that not
+                    only meet current needs but also anticipate future trends. I am particularly excited by
+                    opportunities to spearhead data strategy in dynamic environments, build and mentor high-performing
+                    analytics teams, and apply cutting-edge AI to solve impactful business problems.
                   </p>
+                </div>
+                <div className="mt-8 text-center">
+                  <a
+                    href="https://docs.google.com/document/d/1example-resume-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  >
+                    View My Resume
+                  </a>
                 </div>
               </div>
             </div>
@@ -698,6 +733,15 @@ export default function ExecutiveBrandSite() {
                     <Mail className="w-5 h-5" />
                     <span className="font-light">Direct Contact</span>
                   </a>
+                  <a
+                    href="https://docs.google.com/document/d/1example-resume-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-3 px-8 py-4 border border-slate-600 hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 text-slate-300 hover:text-blue-400 hover:scale-105"
+                  >
+                    {/* Consider adding an icon for resume if desired */}
+                    <span className="font-light">Download Resume</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -727,7 +771,7 @@ export default function ExecutiveBrandSite() {
             rel="noopener noreferrer"
             className="hover:text-slate-700 transition-colors"
           >
-            Download résumé
+            Download Resume
           </a>
         </div>
       </footer>
