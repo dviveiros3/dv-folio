@@ -678,7 +678,7 @@ export default function ExecutiveBrandSite() {
                 </div>
                 <div className="mt-8 text-center">
                   <a
-                    href="https://docs.google.com/document/d/1example-resume-link"
+                    href="/res.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
@@ -734,7 +734,7 @@ export default function ExecutiveBrandSite() {
                     <span className="font-light">Direct Contact</span>
                   </a>
                   <a
-                    href="https://docs.google.com/document/d/1example-resume-link"
+                    href="/res.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex items-center gap-3 px-8 py-4 border border-slate-600 hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 text-slate-300 hover:text-blue-400 hover:scale-105"
@@ -766,7 +766,7 @@ export default function ExecutiveBrandSite() {
           </a>
           <span>·</span>
           <a
-            href="https://docs.google.com/document/d/1example-resume-link"
+            href="/res.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-slate-700 transition-colors"
