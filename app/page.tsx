@@ -774,6 +774,39 @@ export default function ExecutiveBrandSite() {
             Download Resume
           </a>
         </div>
+        {/* Portfolio Projects Section */}
+        <div className="mt-4">
+          <p className="font-semibold text-slate-700">Portfolio Projects</p>
+          <div className="space-x-4 mt-2">
+            <a
+              href="/portfolio/edtech-student-success"
+              className="hover:text-slate-700 transition-colors"
+            >
+              EdTech Student Success
+            </a>
+            <span>·</span>
+            <a
+              href="/portfolio/game-theory-policy-impact"
+              className="hover:text-slate-700 transition-colors"
+            >
+              Game Theory Policy Impact
+            </a>
+            <span>·</span>
+            <a
+              href="/portfolio/neuroscience-information-flow"
+              className="hover:text-slate-700 transition-colors"
+            >
+              Neuroscience Information Flow
+            </a>
+            <span>·</span>
+            <a
+              href="/portfolio/snowflake-cost-governance-playbook"
+              className="hover:text-slate-700 transition-colors"
+            >
+              Snowflake Playbook
+            </a>
+          </div>
+        </div>
       </footer>
     </div>
   )
