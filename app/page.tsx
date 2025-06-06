@@ -495,7 +495,7 @@ export default function ExecutiveBrandSite() {
             className={`flex flex-col sm:flex-row gap-4 justify-center items-center transition-all duration-1000 delay-600 ${visibleSections.has("proof") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
             <a
-              href="https://docs.google.com/presentation/d/1example-snowflake-playbook"
+              href="/portfolio/snowflake-cost-governance-playbook"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 border border-slate-300 rounded-lg text-slate-700 font-medium hover:bg-slate-200 transition-colors duration-200"
@@ -511,7 +511,7 @@ export default function ExecutiveBrandSite() {
               View Full Playbook
             </a>
             <a
-              href="https://github.com/dviveiros/snowflake-cost-governance"
+              href="https://github.com/dviveiros3"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 border border-slate-300 rounded-lg text-slate-700 font-medium hover:bg-slate-200 transition-colors duration-200"
@@ -773,39 +773,6 @@ export default function ExecutiveBrandSite() {
           >
             Download Resume
           </a>
-        </div>
-        {/* Portfolio Projects Section */}
-        <div className="mt-4">
-          <p className="font-semibold text-slate-700">Portfolio Projects</p>
-          <div className="space-x-4 mt-2">
-            <a
-              href="/portfolio/edtech-student-success"
-              className="hover:text-slate-700 transition-colors"
-            >
-              EdTech Student Success
-            </a>
-            <span>·</span>
-            <a
-              href="/portfolio/game-theory-policy-impact"
-              className="hover:text-slate-700 transition-colors"
-            >
-              Game Theory Policy Impact
-            </a>
-            <span>·</span>
-            <a
-              href="/portfolio/neuroscience-information-flow"
-              className="hover:text-slate-700 transition-colors"
-            >
-              Neuroscience Information Flow
-            </a>
-            <span>·</span>
-            <a
-              href="/portfolio/snowflake-cost-governance-playbook"
-              className="hover:text-slate-700 transition-colors"
-            >
-              Snowflake Playbook
-            </a>
-          </div>
         </div>
       </footer>
     </div>
