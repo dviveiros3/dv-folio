@@ -48,11 +48,18 @@ const educationData: TimelineItem[] = [
 // Professional Timeline (Focused on executive progression)
 const professionalData: TimelineItem[] = [
   {
-    year: "2016",
-    title: "Founder",
-    organization: "One Home Installations",
+    year: "2014",
+    title: "Principal",
+    organization: "Viveiros Ventures",
     type: "venture",
     current: true,
+  },
+  {
+    year: "2016",
+    endYear: "2017",
+    title: "Data Science Research Intern",
+    organization: "University of South Florida",
+    type: "experience",
   },
   {
     year: "2017",
@@ -64,27 +71,27 @@ const professionalData: TimelineItem[] = [
   {
     year: "2020",
     endYear: "2022",
-    title: "BI Analyst & Operations Manager",
+    title: "BI Analyst (Data Science & Operations)",
     organization: "Tenth Avenue Commerce",
     type: "experience",
   },
   {
-    year: "2021",
-    title: "Founder & Strategic Advisor",
-    organization: "Portfolio Companies",
-    type: "venture",
-    current: true,
-  },
-  {
     year: "2022",
-    title: "Business Intelligence & Advanced Analytics Manager",
+    title: "Advanced Analytics & BI Manager",
     organization: "Connected Dealer Services",
     type: "experience",
     current: true,
   },
   {
+    year: "2023",
+    title: "Co-Founder",
+    organization: "Trajectory Tutors",
+    type: "venture",
+    current: true,
+  },
+  {
     year: "2024",
-    title: "VP & Treasurer",
+    title: "Treasurer & Vice President",
     organization: "Trajectory Foundation",
     type: "venture",
     current: true,

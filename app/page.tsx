@@ -1,11 +1,12 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { ChevronDown, Linkedin, Mail } from "lucide-react"
+import { ChevronDown, Linkedin, Mail } from 'lucide-react'
 import { SoundManager } from "@/components/sound-manager"
 import { MagneticCursor } from "@/components/magnetic-cursor"
 import { ScrollProgress } from "@/components/scroll-progress"
 import { TimelineSection } from "@/components/timeline-section"
+import { StrategyVideo } from "@/components/strategy-video"
 import Image from "next/image"
 import { MetricTile } from "@/components/metric-tile"
 
@@ -423,71 +424,17 @@ export default function ExecutiveBrandSite() {
           <div
             className={`text-center space-y-4 transition-all duration-1000 ${visibleSections.has("proof") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
-            <h2 className="text-2xl font-bold mb-2 text-slate-900">Snowflake Cost-Governance Framework</h2>
+            <h2 className="text-2xl font-bold mb-2 text-slate-900">AI-Enhanced Financial Analytics Platform</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Reduced data warehouse costs by 32% while scaling operations at Connected Dealer Services.
+              How I architected an end-to-end AI system that reduced month-end close from 15 days to 3 days while identifying $2.1M in revenue optimization opportunities
             </p>
           </div>
 
-          {/* Video Embed - Using Vimeo as alternative to Loom */}
+          {/* Interactive Strategy Video */}
           <div
-            className={`w-full max-w-3xl mx-auto transition-all duration-1000 delay-200 ${visibleSections.has("proof") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+            className={`transition-all duration-1000 delay-200 ${visibleSections.has("proof") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
-            <div className="relative aspect-video bg-slate-200 rounded-lg overflow-hidden shadow-lg">
-              {/* Placeholder for video - you can replace with actual embed */}
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
-                <div className="text-center space-y-4">
-                  <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto shadow-lg">
-                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-slate-700 font-semibold text-lg">3-min Case Study Walkthrough</p>
-                    <p className="text-sm text-slate-500">Snowflake Cost Optimization Framework</p>
-                  </div>
-                  <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-                    Watch Case Study
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Case Study Description */}
-          <div
-            className={`text-center transition-all duration-1000 delay-400 ${visibleSections.has("proof") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-          >
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200 max-w-3xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-                <div>
-                  <h4 className="font-semibold text-slate-900 mb-2">🎯 Challenge</h4>
-                  <p className="text-sm text-slate-600">
-                    Spiraling Snowflake costs (reaching $45K/month with 2TB daily processing) lacked visibility and
-                    governance, threatening budget overruns.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-slate-900 mb-2">⚡ Solution</h4>
-                  <p className="text-sm text-slate-600">
-                    Implemented an automated cost governance framework using Snowflake's resource monitors, usage
-                    dashboards (built with a BI tool), query optimization techniques (e.g., clustering, materialized
-                    views), and scheduled scaling of warehouses.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-slate-900 mb-2">📈 Impact</h4>
-                  <p className="text-sm text-slate-600">
-                    Achieved a 32% sustained cost reduction ($180K annual savings), maintained 99.9% data platform
-                    uptime, and improved overall query performance, enabling scalable growth.
-                  </p>
-                </div>
-              </div>
-              <div className="mt-4 text-left">
-                <h4 className="font-semibold text-slate-900 mb-1">🛠️ Tech Stack Used:</h4>
-                <p className="text-sm text-slate-600">Snowflake, BI Tool (Looker/Tableau), Python/SQL</p>
-              </div>
-            </div>
+            <StrategyVideo isVisible={visibleSections.has("proof")} />
           </div>
 
           {/* Action Buttons */}
@@ -495,7 +442,7 @@ export default function ExecutiveBrandSite() {
             className={`flex flex-col sm:flex-row gap-4 justify-center items-center transition-all duration-1000 delay-600 ${visibleSections.has("proof") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
             <a
-              href="/portfolio/snowflake-cost-governance-playbook"
+              href="https://docs.google.com/presentation/d/1example-ai-financial-platform"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 border border-slate-300 rounded-lg text-slate-700 font-medium hover:bg-slate-200 transition-colors duration-200"
@@ -508,10 +455,10 @@ export default function ExecutiveBrandSite() {
                   d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                 />
               </svg>
-              View Full Playbook
+              View Architecture Deck
             </a>
             <a
-              href="https://github.com/dviveiros3"
+              href="https://github.com/dviveiros/ai-financial-analytics"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 border border-slate-300 rounded-lg text-slate-700 font-medium hover:bg-slate-200 transition-colors duration-200"
@@ -667,7 +614,10 @@ export default function ExecutiveBrandSite() {
                     into tangible business value and innovative solutions that push the boundaries of what's possible.
                   </p>
                   <p className="text-lg text-slate-600 leading-relaxed font-light">
-                    I believe in democratizing data access while maintaining governance excellence. By bridging the gap
+                    I believe in democratizing data access while maintaining governance excellence.
+                  </p>
+                  <p className="text-lg text-slate-600 leading-relaxed font-light">
+                    By bridging the gap
                     between complex analytics and business outcomes, I transform data into strategic assets that drive
                     measurable growth, operational efficiency, and competitive advantage across diverse industries. My
                     goal is to empower organizations to make smarter decisions and to lead data initiatives that not
@@ -678,7 +628,7 @@ export default function ExecutiveBrandSite() {
                 </div>
                 <div className="mt-8 text-center">
                   <a
-                    href="/res.pdf"
+                    href="https://docs.google.com/document/d/1example-resume-link"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
@@ -734,7 +684,7 @@ export default function ExecutiveBrandSite() {
                     <span className="font-light">Direct Contact</span>
                   </a>
                   <a
-                    href="/res.pdf"
+                    href="https://docs.google.com/document/d/1example-resume-link"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex items-center gap-3 px-8 py-4 border border-slate-600 hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300 text-slate-300 hover:text-blue-400 hover:scale-105"
@@ -766,7 +716,7 @@ export default function ExecutiveBrandSite() {
           </a>
           <span>·</span>
           <a
-            href="/res.pdf"
+            href="https://docs.google.com/document/d/1example-resume-link"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-slate-700 transition-colors"
@@ -775,6 +725,19 @@ export default function ExecutiveBrandSite() {
           </a>
         </div>
       </footer>
+
+      <style jsx>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
     </div>
   )
 }
