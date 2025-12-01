@@ -62,7 +62,7 @@ export default function ExecutiveBrandSite() {
 
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  }, [sectionRefs])
 
   // Typing animation effect
   useEffect(() => {
@@ -108,7 +108,7 @@ export default function ExecutiveBrandSite() {
     })
 
     return () => observer.disconnect()
-  }, [isTyping])
+  }, [isTyping, sectionRefs])
 
   useEffect(() => {
     // Trigger fade-in animation after component mounts
@@ -261,18 +261,6 @@ export default function ExecutiveBrandSite() {
           }, 16)
 
           return () => clearInterval(timer)
-        }
-      } else if (!visibleSections.has("impact")) {
-        // Reset counter when section is not visible
-        setHasAnimated(false)
-        if (target.includes("$")) {
-          setCount("$0.0M")
-        } else if (target.includes("%")) {
-          setCount("0%")
-        } else if (target.includes("+")) {
-          setCount("0+")
-        } else {
-          setCount("0")
         }
       }
     }, [visibleSections, target, duration, hasAnimated])
@@ -470,7 +458,7 @@ export default function ExecutiveBrandSite() {
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-2">⚡ Solution</h4>
                   <p className="text-sm text-slate-600">
-                    Implemented an automated cost governance framework using Snowflake's resource monitors, usage
+                    Implemented an automated cost governance framework using Snowflake&apos;s resource monitors, usage
                     dashboards (built with a BI tool), query optimization techniques (e.g., clustering, materialized
                     views), and scheduled scaling of warehouses.
                   </p>
@@ -663,8 +651,8 @@ export default function ExecutiveBrandSite() {
                     <em className="text-blue-700 not-italic font-medium"> business strategy</em>.
                   </p>
                   <p className="text-lg text-slate-600 leading-relaxed font-light">
-                    I'm driven by the challenge of uncovering hidden patterns in data and translating these insights
-                    into tangible business value and innovative solutions that push the boundaries of what's possible.
+                    I&apos;m driven by the challenge of uncovering hidden patterns in data and translating these insights
+                    into tangible business value and innovative solutions that push the boundaries of what&apos;s possible.
                   </p>
                   <p className="text-lg text-slate-600 leading-relaxed font-light">
                     I believe in democratizing data access while maintaining governance excellence. By bridging the gap
@@ -706,11 +694,11 @@ export default function ExecutiveBrandSite() {
               <div className="space-y-12">
                 <div className="space-y-6">
                   <h2 className="text-4xl lg:text-5xl font-light leading-tight">
-                    Ready to transform your organization's
+                    Ready to transform your organization&apos;s
                     <span className="text-blue-400"> data strategy</span>?
                   </h2>
                   <p className="text-xl text-slate-300 font-light max-w-2xl mx-auto">
-                    Let's discuss how strategic analytics leadership can drive measurable business outcomes and
+                    Let&apos;s discuss how strategic analytics leadership can drive measurable business outcomes and
                     competitive advantage.
                   </p>
                 </div>
