@@ -1,0 +1,26 @@
+
+> my-v0-project@0.1.0 dev
+> next dev -p 3000
+
+   ▲ Next.js 15.2.4
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.254.144:3000
+
+ ✓ Starting...
+ ✓ Ready in 1076ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1166ms (1546 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 1399ms
+ ✓ Compiled in 402ms (758 modules)
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/danielviveiros/Documents/GitHub/dv-folio/.next/server/next-font-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/danielviveiros/Documents/GitHub/dv-folio/.next/server/next-font-manifest.json',
+  page: '/'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 610ms (1861 modules)
+ GET / 500 in 928ms
+[?25h

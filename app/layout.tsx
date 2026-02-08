@@ -1,6 +1,8 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Inter, JetBrains_Mono } from "next/font/google"
+import { StickyCTA } from "@/components/sticky-cta"
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
 
 const inter = Inter({
@@ -9,18 +11,25 @@ const inter = Inter({
   variable: "--font-inter",
 })
 
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-mono",
+})
+
+
 export const metadata: Metadata = {
-  title: "Daniel Viveiros – Director of Analytics",
+  title: "Fractional Head of Data for Startups | Daniel Viveiros",
   description:
-    "Director of Analytics who lifted ARR +$4.2M through data-driven strategies. EdTech, CivicTech, and Social-impact SaaS expertise with proven cost optimization results.",
+    "Strategic Data Leadership for Founders. I build the Board Deck metrics, Revenue Operations, and Analytics teams that scale startups from Series A to C.",
   keywords:
-    "director of analytics, data analytics, ARR growth, snowflake optimization, edtech analytics, civictech data, social impact saas",
+    "fractional head of data, data strategy, revenue operations, startup advisor, series b metrics, dbt, snowflake, analytics engineering",
   authors: [{ name: "Daniel Viveiros" }],
   creator: "Daniel Viveiros",
   openGraph: {
-    title: "Daniel Viveiros – Director of Analytics",
+    title: "Fractional Head of Data for Startups | Daniel Viveiros",
     description:
-      "Director of Analytics who lifted ARR +$4.2M through data-driven strategies in EdTech, CivicTech, and Social-impact SaaS.",
+      "Strategic Data Leadership for Founders. Stop guessing and start scaling with precision metrics.",
     type: "website",
     locale: "en_US",
     images: [
@@ -28,14 +37,14 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Daniel Viveiros - Director of Analytics",
+        alt: "Daniel Viveiros - Fractional Head of Data",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Daniel Viveiros – Director of Analytics",
-    description: "Director of Analytics who lifted ARR +$4.2M through data-driven strategies.",
+    title: "Fractional Head of Data | Daniel Viveiros",
+    description: "Strategic Data Leadership for Founders who need answers, not just dashboards.",
     images: ["/og.png"],
   },
   robots: {
@@ -43,6 +52,85 @@ export const metadata: Metadata = {
     follow: true,
   },
   generator: "v0.dev",
+}
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://dv-folio.vercel.app/#service",
+      "name": "Daniel Viveiros - Fractional Head of Data",
+      "image": "https://dv-folio.vercel.app/og.png",
+      "description": "Fractional Data Leadership for Series A-C Startups. Specializing in Board Deck Metrics, Revenue Operations, and Data Strategy.",
+      "priceRange": "$$$",
+      "areaServed": "Worldwide",
+      "serviceType": ["Data Strategy Consulting", "Revenue Operations", "Analytics Engineering", "Fractional Executive"],
+      "provider": { "@id": "https://dv-folio.vercel.app/#person" },
+      "url": "https://dv-folio.vercel.app",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Remote",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://dv-folio.vercel.app/#person",
+      "name": "Daniel Viveiros",
+      "jobTitle": "Fractional Head of Data",
+      "description": "Strategic Data Leadership for Founders. Building Board Deck metrics, Revenue Operations, and Analytics teams that scale startups.",
+      "url": "https://dv-folio.vercel.app",
+      "sameAs": [
+        "https://linkedin.com/in/daniel-viveiros"
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Massachusetts Institute of Technology",
+          "sameAs": "https://www.mit.edu"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Harvard University",
+          "sameAs": "https://www.harvard.edu"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of South Florida"
+        }
+      ],
+      "knowsAbout": [
+        "Business Intelligence",
+        "Revenue Operations",
+        "Data Strategy",
+        "dbt",
+        "Snowflake",
+        "Analytics Engineering",
+        "Machine Learning",
+        "Financial Analytics"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "MicroMasters in Data, Economics, and Policy",
+          "credentialCategory": "certificate",
+          "recognizedBy": { "@type": "Organization", "name": "Massachusetts Institute of Technology" }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Executive Management Program",
+          "credentialCategory": "certificate",
+          "recognizedBy": { "@type": "Organization", "name": "Harvard University" }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Lean Six Sigma Green Belt",
+          "credentialCategory": "certificate"
+        }
+      ]
+    }
+  ]
 }
 
 export default function RootLayout({
@@ -54,8 +142,16 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.png" type="image/svg+xml" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
-      <body className={`${inter.variable} font-sans antialiased`}>{children}</body>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
+        {children}
+        <StickyCTA />
+        <Analytics />
+      </body>
     </html>
   )
 }

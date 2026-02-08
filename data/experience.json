@@ -1,0 +1,92 @@
+{
+    "professional": [
+        {
+            "company": "Connected Dealer Services",
+            "role": "Advanced Analytics & BI Manager",
+            "year": "2022",
+            "endYear": null,
+            "current": true,
+            "description": "Leading enterprise data strategy and ML-powered financial analytics."
+        },
+        {
+            "company": "Trajectory Foundation",
+            "role": "Treasurer & Vice President",
+            "year": "2024",
+            "endYear": null,
+            "current": true,
+            "description": "Strategic financial oversight for educational nonprofit."
+        },
+        {
+            "company": "Trajectory Tutors",
+            "role": "Co-Founder",
+            "year": "2023",
+            "endYear": null,
+            "current": true,
+            "description": "Data-driven tutoring platform with AI-enhanced curriculum matching."
+        },
+        {
+            "company": "Viveiros Ventures",
+            "role": "Principal",
+            "year": "2014",
+            "endYear": null,
+            "current": true,
+            "description": "Fractional data leadership and startup advisory."
+        },
+        {
+            "company": "Tenth Avenue Commerce",
+            "role": "BI Analyst (Data Science & Operations)",
+            "year": "2020",
+            "endYear": "2022",
+            "current": false,
+            "description": "Built self-service analytics platform scaling to 150+ users."
+        },
+        {
+            "company": "Disciplined Minds Tutoring",
+            "role": "Data Scientist",
+            "year": "2017",
+            "endYear": "2020",
+            "current": false,
+            "description": "Predictive modeling for student performance optimization."
+        },
+        {
+            "company": "University of South Florida",
+            "role": "Data Science Research Intern",
+            "year": "2016",
+            "endYear": "2017",
+            "current": false,
+            "description": "Academic research in statistical analysis and ML applications."
+        }
+    ],
+    "education": [
+        {
+            "institution": "Massachusetts Institute of Technology",
+            "degree": "MicroMasters, Data, Economics, and Policy",
+            "year": "2024",
+            "description": "Advanced coursework in econometrics and causal inference."
+        },
+        {
+            "institution": "Harvard University",
+            "degree": "Executive Management Program",
+            "year": "2021",
+            "description": "Strategic leadership and organizational management."
+        },
+        {
+            "institution": "IBM",
+            "degree": "IBM Data Science Professional",
+            "year": "2018",
+            "description": "Machine learning and data science certification."
+        },
+        {
+            "institution": "University of South Florida",
+            "degree": "Bachelor's Degree, Mathematics",
+            "year": "2017",
+            "description": "Foundation in statistical theory and mathematical modeling."
+        },
+        {
+            "institution": "Process Excellence Institute",
+            "degree": "Lean Six Sigma Green Belt",
+            "year": "2016",
+            "description": "Process optimization and operational efficiency."
+        }
+    ]
+}

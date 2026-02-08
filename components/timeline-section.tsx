@@ -1,312 +1,131 @@
 "use client"
 
-import { useEffect, useState } from "react"
-
-interface TimelineItem {
-  year: string
-  endYear?: string
-  title: string
-  organization: string
-  type: "education" | "experience" | "certification" | "venture"
-  current?: boolean
-}
-
-// Education & Certifications Timeline (Curated for maximum impact)
-const educationData: TimelineItem[] = [
-  {
-    year: "2016",
-    title: "Lean Six Sigma Green Belt",
-    organization: "Process Excellence Institute",
-    type: "certification",
-  },
-  {
-    year: "2017",
-    title: "Bachelor's Degree, Mathematics",
-    organization: "University of South Florida",
-    type: "education",
-  },
-  {
-    year: "2018",
-    title: "IBM Data Science Professional",
-    organization: "IBM",
-    type: "certification",
-  },
-  {
-    year: "2021",
-    title: "Executive Management Program",
-    organization: "Harvard University",
-    type: "education",
-  },
-  {
-    year: "2024",
-    title: "MicroMasters, Data, Economics, and Policy",
-    organization: "Massachusetts Institute of Technology",
-    type: "education",
-  },
-]
-
-// Professional Timeline (Focused on executive progression)
-const professionalData: TimelineItem[] = [
-  {
-    year: "2014",
-    title: "Principal",
-    organization: "Viveiros Ventures",
-    type: "venture",
-    current: true,
-  },
-  {
-    year: "2016",
-    endYear: "2017",
-    title: "Data Science Research Intern",
-    organization: "University of South Florida",
-    type: "experience",
-  },
-  {
-    year: "2017",
-    endYear: "2020",
-    title: "Data Scientist",
-    organization: "Disciplined Minds Tutoring",
-    type: "experience",
-  },
-  {
-    year: "2020",
-    endYear: "2022",
-    title: "BI Analyst (Data Science & Operations)",
-    organization: "Tenth Avenue Commerce",
-    type: "experience",
-  },
-  {
-    year: "2022",
-    title: "Advanced Analytics & BI Manager",
-    organization: "Connected Dealer Services",
-    type: "experience",
-    current: true,
-  },
-  {
-    year: "2023",
-    title: "Co-Founder",
-    organization: "Trajectory Tutors",
-    type: "venture",
-    current: true,
-  },
-  {
-    year: "2024",
-    title: "Treasurer & Vice President",
-    organization: "Trajectory Foundation",
-    type: "venture",
-    current: true,
-  },
-]
+import { motion } from "framer-motion"
+import { professionalData, educationData } from "@/data/content"
 
 interface TimelineSectionProps {
   isVisible: boolean
 }
 
+interface ProfessionalEntry {
+  company: string
+  role: string
+  year: string
+  endYear: string | null
+  current: boolean
+  description: string
+}
+
+interface EducationEntry {
+  institution: string
+  degree: string
+  year: string
+  description: string
+}
+
 export function TimelineSection({ isVisible }: TimelineSectionProps) {
-  const [visibleItems, setVisibleItems] = useState<Set<string>>(new Set())
-
-  useEffect(() => {
-    if (isVisible) {
-      // Animate education items first
-      educationData.forEach((_, index) => {
-        setTimeout(() => {
-          setVisibleItems((prev) => new Set([...prev, `edu-${index}`]))
-        }, index * 100)
-      })
-
-      // Then animate professional items
-      professionalData.forEach((_, index) => {
-        setTimeout(
-          () => {
-            setVisibleItems((prev) => new Set([...prev, `prof-${index}`]))
-          },
-          educationData.length * 100 + index * 200,
-        )
-      })
-    } else {
-      setVisibleItems(new Set())
-    }
-  }, [isVisible])
-
-  const getTimelinePosition = (year: string) => {
-    const startYear = 2016
-    const endYear = 2024
-    const currentYear = Number.parseInt(year)
-    const totalYears = endYear - startYear
-    const yearsSinceStart = currentYear - startYear
-    return (yearsSinceStart / totalYears) * 60 + 20 // Even more margin for spacing (20% on each side)
+  const formatYear = (year: string, endYear: string | null, current: boolean) => {
+    if (current) return `${year}–Present`
+    if (endYear) return `${year}–${endYear}`
+    return year
   }
 
+  const professional = professionalData
+  const education = educationData
+
   return (
-    <div className="space-y-12">
-      <div
-        className={`text-center space-y-6 transition-all duration-1000 ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-        }`}
+    <div className="space-y-16">
+      {/* Header */}
+      <motion.div
+        className="space-y-4"
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
       >
-        <div className="text-sm font-medium text-blue-700 tracking-widest uppercase">Executive Journey</div>
-        <div className="h-px w-24 bg-blue-600/30 mx-auto"></div>
-        <p className="text-lg text-slate-600 font-light max-w-2xl mx-auto leading-relaxed">
-          Strategic progression combining elite education, advanced certifications, and executive leadership in
-          data-driven organizations.
-        </p>
-      </div>
+        <p className="text-sm font-mono text-slate-500 uppercase tracking-widest">// Journey</p>
+        <h2 className="text-4xl lg:text-5xl font-semibold tracking-tight text-slate-900">
+          Professional Timeline
+        </h2>
+        <div className="line-accent max-w-xs" />
+      </motion.div>
 
-      {/* Dual-Track Timeline (Desktop) */}
-      <div className="hidden lg:block relative max-w-7xl mx-auto space-y-16">
-        {/* Education & Certifications Track */}
-        <div className="relative h-32">
-          <div className="flex items-center mb-8">
-            <div className="text-xs font-semibold text-blue-700 bg-blue-50 px-4 py-2 rounded-full border border-blue-200">
-              EDUCATION & CERTIFICATIONS
-            </div>
-            <div className="flex-1 h-px bg-blue-200 ml-4"></div>
-          </div>
-
-          <div className="absolute left-[20%] right-[20%] top-10 h-0.5 bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200"></div>
-
-          {educationData.map((item, index) => (
-            <div
-              key={index}
-              className={`absolute transition-all duration-700 ${
-                visibleItems.has(`edu-${index}`) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-              }`}
-              style={{
-                left: `${getTimelinePosition(item.year)}%`,
-                transform: "translateX(-50%)",
-                transitionDelay: `${index * 100}ms`,
-              }}
-            >
-              <div className="flex justify-center mb-3">
-                <div
-                  className={`w-3 h-3 rounded-full shadow-md ${
-                    item.type === "education" ? "bg-blue-600 shadow-blue-600/30" : "bg-green-600 shadow-green-600/30"
-                  }`}
-                ></div>
-              </div>
-              <div className="text-center space-y-1 max-w-24">
-                <div className="text-xs font-medium text-blue-700">{item.year}</div>
-                <h4 className="text-xs font-semibold text-slate-800 leading-tight">{item.title}</h4>
-                {item.type === "education" && <p className="text-xs text-blue-600 font-medium">{item.organization}</p>}
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Executive Experience Track */}
-        <div className="relative h-40 mb-8">
-          <div className="flex items-center mb-8">
-            <div className="text-xs font-semibold text-slate-700 bg-slate-50 px-4 py-2 rounded-full border border-slate-200">
-              EXECUTIVE LEADERSHIP
-            </div>
-            <div className="flex-1 h-px bg-slate-200 ml-4"></div>
-          </div>
-
-          <div className="absolute left-[20%] right-[20%] top-10 h-0.5 bg-gradient-to-r from-slate-200 via-slate-400 to-slate-200"></div>
-
-          {professionalData.map((item, index) => (
-            <div
-              key={index}
-              className={`absolute transition-all duration-700 ${
-                visibleItems.has(`prof-${index}`) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-              }`}
-              style={{
-                left: `${getTimelinePosition(item.year)}%`,
-                transform: "translateX(-50%)",
-                transitionDelay: `${educationData.length * 100 + index * 200}ms`,
-              }}
-            >
-              <div className="flex justify-center mb-3">
-                <div
-                  className={`w-3 h-3 rounded-full shadow-md relative ${
-                    item.type === "venture" ? "bg-amber-500 shadow-amber-500/30" : "bg-slate-600 shadow-slate-600/30"
-                  }`}
-                >
-                  {item.current && (
-                    <div className="absolute -inset-1 rounded-full border border-green-400 animate-pulse"></div>
-                  )}
-                </div>
-              </div>
-              <div className="text-center space-y-1 max-w-24">
-                <div className="text-xs font-medium text-slate-700">
-                  {item.endYear ? `${item.year}-${item.endYear}` : `${item.year}+`}
-                </div>
-                <h4 className="text-xs font-semibold text-slate-800 leading-tight">{item.title}</h4>
-                <p className="text-xs text-slate-600">{item.organization}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Mobile Timeline */}
-      <div className="lg:hidden space-y-12">
-        {/* Education & Certifications */}
-        <div>
-          <h3 className="text-sm font-semibold text-blue-700 mb-6 text-center">EDUCATION & CERTIFICATIONS</h3>
-          <div className="relative max-w-sm mx-auto">
-            <div className="absolute left-2 top-0 bottom-0 w-px bg-gradient-to-b from-blue-200 via-blue-400 to-blue-200"></div>
-            <div className="space-y-6">
-              {educationData.map((item, index) => (
-                <div
-                  key={index}
-                  className={`relative pl-8 transition-all duration-700 ${
-                    visibleItems.has(`edu-${index}`) ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"
-                  }`}
-                >
-                  <div
-                    className={`absolute left-1 w-2 h-2 rounded-full ${
-                      item.type === "education" ? "bg-blue-600" : "bg-green-600"
-                    }`}
-                  />
-                  <div className="space-y-1">
-                    <div className="text-xs font-medium text-blue-700">{item.year}</div>
-                    <h4 className="text-sm font-semibold text-slate-800">{item.title}</h4>
-                    {item.type === "education" && (
-                      <p className="text-xs text-blue-600 font-medium">{item.organization}</p>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Executive Leadership */}
-        <div>
-          <h3 className="text-sm font-semibold text-slate-700 mb-6 text-center">EXECUTIVE LEADERSHIP</h3>
-          <div className="relative max-w-sm mx-auto">
-            <div className="absolute left-2 top-0 bottom-0 w-px bg-gradient-to-b from-slate-200 via-slate-400 to-slate-200"></div>
-            <div className="space-y-6">
-              {professionalData.map((item, index) => (
-                <div
-                  key={index}
-                  className={`relative pl-8 transition-all duration-700 ${
-                    visibleItems.has(`prof-${index}`) ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"
-                  }`}
-                >
-                  <div
-                    className={`absolute left-1 w-2 h-2 rounded-full ${
-                      item.type === "venture" ? "bg-amber-500" : "bg-slate-600"
-                    }`}
-                  >
-                    {item.current && (
-                      <div className="absolute -inset-1 rounded-full border border-green-400 animate-pulse"></div>
-                    )}
-                  </div>
-                  <div className="space-y-1">
-                    <div className="text-xs font-medium text-slate-700">
-                      {item.endYear ? `${item.year}-${item.endYear}` : `${item.year}-Present`}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* Experience Column */}
+        <div className="space-y-4">
+          <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-widest pl-2">
+            Experience
+          </h3>
+          <div className="space-y-4">
+            {professional.map((item, index) => (
+              <motion.div
+                key={index}
+                className="card-executive p-6 sm:p-8 group"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
+              >
+                {/* Mobile: Stack year above role; Desktop: Side by side */}
+                <div className="flex flex-col gap-2 mb-4">
+                  {/* Year badge - on top for mobile */}
+                  <div className="flex items-center gap-3 order-first sm:order-last sm:absolute sm:relative">
+                    <div className="font-mono-data text-xs sm:text-sm text-slate-400 tabular-nums bg-slate-50 px-2 sm:px-3 py-1 rounded-full w-fit">
+                      {formatYear(item.year, item.endYear, item.current)}
                     </div>
-                    <h4 className="text-sm font-semibold text-slate-800">{item.title}</h4>
-                    <p className="text-xs text-slate-600">{item.organization}</p>
+                    {item.current && <span className="status-dot-pro sm:hidden" />}
+                  </div>
+
+                  {/* Role and company */}
+                  <div className="flex items-center gap-3">
+                    {item.current && <span className="status-dot-pro hidden sm:block" />}
+                    <h4 className="font-bold text-slate-900 text-base sm:text-lg">{item.title}</h4>
                   </div>
                 </div>
-              ))}
-            </div>
+
+                <div className="text-sm sm:text-base text-slate-600 font-medium pb-3 sm:pb-4 border-b border-slate-100 mb-3 sm:mb-4">
+                  {item.organization}
+                </div>
+
+                <p className="text-slate-500 leading-relaxed text-xs sm:text-sm">
+                  {item.description}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* Education Column */}
+        <div className="space-y-4">
+          <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-widest pl-2">
+            Education
+          </h3>
+          <div className="space-y-4">
+            {education.map((item, index) => (
+              <motion.div
+                key={index}
+                className="card-executive p-6 sm:p-8 group"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
+              >
+                {/* Mobile: Stack year above degree; Desktop: Side by side */}
+                <div className="flex flex-col gap-2 mb-2">
+                  <div className="font-mono-data text-xs sm:text-sm text-slate-400 tabular-nums bg-slate-50 px-2 sm:px-3 py-1 rounded-full w-fit">
+                    {item.year}
+                  </div>
+                  <h4 className="font-bold text-slate-900 text-base sm:text-lg">{item.title}</h4>
+                </div>
+                <div className="text-sm sm:text-base text-slate-500 font-medium">
+                  {item.organization}
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>
     </div>
   )
 }
+

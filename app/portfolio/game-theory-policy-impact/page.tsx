@@ -1,117 +1,180 @@
-// app/portfolio/game-theory-policy-impact/page.tsx
-import React from 'react';
+"use client"
+
+import { motion } from 'framer-motion'
+import { ArrowLeft, Scale, Target, Lightbulb } from 'lucide-react'
+import Link from 'next/link'
 
 export default function GameTheoryPolicyImpactPage() {
   return (
-    <div style={{ padding: '20px', fontFamily: 'sans-serif', lineHeight: '1.6' }}>
-      <header style={{ marginBottom: '40px', borderBottom: '1px solid #eee', paddingBottom: '20px' }}>
-        <h1 style={{ fontSize: '2.5em', marginBottom: '0.5em' }}>The Strategic Impact of Game Theory in Public Policy Design</h1>
-        <p style={{ fontSize: '1.1em', color: '#555' }}>
-          A white paper exploring how game-theoretic models can enhance the effectiveness and foresight of public policy.
-        </p>
-      </header>
+    <div className="min-h-screen bg-white">
+      {/* Back Navigation */}
+      <nav className="fixed top-8 left-8 z-50">
+        <Link
+          href="/"
+          className="flex items-center gap-2 text-slate-500 hover:text-slate-900 transition-colors group"
+        >
+          <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+          <span className="text-sm font-medium">Back to Home</span>
+        </Link>
+      </nav>
 
-      <section style={{ marginBottom: '30px' }}>
-        <h2 style={{ fontSize: '1.8em', marginBottom: '10px', color: '#333' }}>Abstract</h2>
-        <p>
-          Public policy interventions often involve multiple stakeholders with differing incentives and strategic behaviors.
-          This paper argues that incorporating game theory into policy design can lead to more robust,
-          efficient, and equitable outcomes. By modeling strategic interactions, policymakers can anticipate
-          potential responses to interventions, identify points of leverage, and design policies that are resilient
-          to strategic manipulation. This paper draws upon concepts from mathematical economics and insights from the
-          MIT DEDP program to illustrate the practical applications of game theory in policy analysis.
-        </p>
+      {/* Hero */}
+      <section className="min-h-[60vh] flex items-center px-8 pt-32 pb-16 bg-slate-50">
+        <div className="max-w-5xl mx-auto w-full">
+          <motion.div
+            className="space-y-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="flex items-center gap-4">
+              <span className="text-sm font-semibold text-blue-600 uppercase tracking-widest bg-blue-50 px-3 py-1 rounded-full">
+                White Paper
+              </span>
+              <span className="text-sm text-slate-400">Policy Analysis • MIT DEDP</span>
+            </div>
+
+            <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">
+              Game Theory in<br />
+              <span className="text-slate-400">Public Policy Design</span>
+            </h1>
+
+            <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
+              How strategic interaction modeling can anticipate stakeholder responses
+              and design policies that align individual incentives with collective outcomes.
+            </p>
+          </motion.div>
+        </div>
       </section>
 
-      <section style={{ marginBottom: '30px' }}>
-        <h2 style={{ fontSize: '1.8em', marginBottom: '10px', color: '#333' }}>Introduction: Beyond Naive Policy Assumptions</h2>
-        <p>
-          Traditional policy analysis sometimes assumes that individuals or groups will react to policies in a passive or
-          predictable manner. However, economic agents (individuals, firms, even nations) are often strategic, making
-          decisions based on their expectations of how others will behave. Game theory, a branch of mathematical economics,
-          provides a formal framework for analyzing such strategic interactions.
-        </p>
-        <p style={{ marginTop: '10px' }}>
-          By understanding the "rules of the game," the players involved, their potential strategies, and their payoffs,
-          policymakers can better predict equilibrium outcomes and design interventions that align individual incentives
-          with collective goals. This is particularly crucial in areas like environmental regulation, public health initiatives,
-          and international agreements.
-        </p>
+      {/* Key Concepts */}
+      <section className="px-8 py-16 bg-white border-b border-slate-100">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { icon: Scale, title: "Mechanism Design", description: "Creating incentive structures that produce desired outcomes" },
+              { icon: Target, title: "Nash Equilibrium", description: "Identifying stable states where no player benefits from deviation" },
+              { icon: Lightbulb, title: "Strategic Foresight", description: "Anticipating multi-agent responses before policy deployment" },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                className="card-executive p-8"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <item.icon className="w-8 h-8 text-blue-600 mb-4" />
+                <h3 className="font-bold text-slate-900 mb-2">{item.title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{item.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </section>
 
-      <section style={{ marginBottom: '30px' }}>
-        <h2 style={{ fontSize: '1.8em', marginBottom: '10px', color: '#333' }}>Application Example: Designing an Emissions Reduction Policy</h2>
-        <p>
-          Consider the challenge of designing a national policy to reduce industrial carbon emissions. A simple approach might be
-          to impose a uniform emissions tax. However, game theory can help analyze this more deeply:
-        </p>
-        <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-          <li>
-            <strong>Players:</strong> Firms in various industries, government regulatory body, potentially consumer groups.
-          </li>
-          <li>
-            <strong>Strategies:</strong> Firms can choose to invest in green technology, reduce production, pay the tax, or even attempt to lobby for exemptions.
-            The government can set different tax levels or offer subsidies for green tech.
-          </li>
-          <li>
-            <strong>Payoffs:</strong> Firms aim to maximize profits. The government aims to achieve emission targets at minimal economic cost.
-          </li>
-        </ul>
-        <p style={{ marginTop: '10px' }}>
-          A game-theoretic analysis might model this as a "Pollution Game." Key insights could include:
-        </p>
-        <ol style={{ listStyleType: 'decimal', paddingLeft: '20px', marginTop: '10px' }}>
-          <li>
-            <strong>Identifying Potential for "Tragedy of the Commons":</strong> If individual firms find it cheaper to pollute and pay a low tax
-            than to invest in clean tech, the collective outcome could be high pollution (a sub-optimal Nash Equilibrium).
-          </li>
-          <li>
-            <strong>Mechanism Design:</strong> Using game theory to design a better mechanism, such as a cap-and-trade system. This system
-            creates a market for emissions permits, potentially leading to a more efficient allocation of abatement efforts
-            as firms that can reduce emissions cheaply will do so and sell permits to those for whom it is more expensive.
-            The design of auction rules for these permits is itself a game theory problem.
-          </li>
-          <li>
-            <strong>Commitment and Credibility:</strong> Analyzing how the government can credibly commit to a long-term policy,
-            influencing firms' investment decisions in green technology.
-          </li>
-        </ol>
+      {/* Abstract */}
+      <section className="px-8 py-24 bg-white">
+        <div className="max-w-4xl mx-auto space-y-12">
+          <motion.div
+            className="space-y-4"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <p className="text-sm font-semibold text-slate-400 uppercase tracking-widest">Abstract</p>
+            <h2 className="text-3xl font-bold text-slate-900">
+              Beyond Naive Policy Assumptions
+            </h2>
+            <div className="w-12 h-1 bg-slate-900" />
+          </motion.div>
+
+          <div className="prose prose-lg prose-slate max-w-none">
+            <p>
+              Traditional policy analysis often assumes passive stakeholder responses. Economic agents—individuals,
+              firms, and nations—are strategic actors who optimize based on expected behaviors of others.
+            </p>
+            <p>
+              <strong>Game theory provides a framework to:</strong>
+            </p>
+            <ul>
+              <li>Model strategic interactions between multiple stakeholders</li>
+              <li>Predict equilibrium outcomes under different policy designs</li>
+              <li>Design mechanisms that align individual incentives with collective welfare</li>
+              <li>Anticipate unintended consequences before policy deployment</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <section style={{ marginBottom: '30px' }}>
-        <h2 style={{ fontSize: '1.8em', marginBottom: '10px', color: '#333' }}>Broader Policy Implications & Analysis</h2>
-        <p>
-          The application of game theory extends far beyond environmental policy:
-        </p>
-        <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-          <li><strong>Public Health:</strong> Modeling vaccination adoption as a social dilemma (individual vs. collective benefit for herd immunity).</li>
-          <li><strong>Resource Management:</strong> Analyzing strategies for sustainable management of common-pool resources like fisheries.</li>
-          <li><strong>International Negotiations:</strong> Understanding bargaining dynamics in trade agreements or climate change pacts.</li>
-          <li><strong>Behavioral Economics Insights:</strong> Integrating concepts like bounded rationality or fairness preferences into game models for more realistic policy predictions, a key theme in advanced policy economics.</li>
-        </ul>
-        <p style={{ marginTop: '10px' }}>
-          Chaos theory and the study of economic agents can also complement game theory by helping understand how small changes in policy or agent behavior can lead to large, sometimes unpredictable, systemic effects, and how heterogeneous agents might respond differently to the same policy incentives.
-        </p>
+      {/* Application Example */}
+      <section className="px-8 py-24 bg-slate-50">
+        <div className="max-w-4xl mx-auto space-y-12">
+          <motion.div
+            className="space-y-4"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <p className="text-sm font-semibold text-slate-400 uppercase tracking-widest">Application</p>
+            <h2 className="text-3xl font-bold text-slate-900">
+              Emissions Reduction Policy Design
+            </h2>
+            <div className="w-12 h-1 bg-slate-900" />
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {[
+              {
+                title: "Identify the Game",
+                description: "Players: Industrial firms, regulators, consumers. Strategies: Invest in green tech, pay carbon tax, lobby for exemptions."
+              },
+              {
+                title: "Model Payoffs",
+                description: "Firms maximize profit. Government minimizes emissions at minimal economic cost. Consumers prefer low prices."
+              },
+              {
+                title: "Find Equilibrium",
+                description: "Without intervention, 'pollute and pay' dominates. This is the Tragedy of the Commons—a suboptimal Nash Equilibrium."
+              },
+              {
+                title: "Design Mechanism",
+                description: "Cap-and-trade creates a permit market. Firms that can cheaply abate will sell permits to those who can't."
+              },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                className="card-executive p-8"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <h3 className="font-bold text-slate-900 mb-3">{item.title}</h3>
+                <p className="text-slate-600 leading-relaxed text-sm">{item.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2 style={{ fontSize: '1.8em', marginBottom: '10px', color: '#333' }}>Conclusion: Towards Smarter, Strategically-Aware Policy</h2>
-        <p>
-          Incorporating mathematical economics, particularly game theory, into the policy toolkit allows for a more nuanced
-          and effective approach to societal challenges. It encourages policymakers to think critically about incentives,
-          anticipate strategic responses, and design interventions that are robust and sustainable. As data availability
-          and computational tools improve, the potential for sophisticated strategic analysis to inform public policy will only grow.
-          The DEDP program's emphasis on rigorous quantitative analysis provides a strong foundation for such endeavors.
-        </p>
-        <p style={{ marginTop: '15px', fontStyle: 'italic', color: '#555' }}>
-          This white paper reflects an understanding of mathematical economics, game theory, and policy analysis,
-          and the ability to apply these concepts to real-world problems.
-        </p>
+      {/* Footer CTA */}
+      <section className="px-8 py-24 bg-slate-900 text-white">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
+          <h2 className="text-3xl font-bold">Strategic Analysis for Your Organization</h2>
+          <p className="text-slate-400 text-lg">
+            Apply game-theoretic thinking to competitive strategy, pricing, and stakeholder management.
+          </p>
+          <Link
+            href="https://calendly.com/daniel-viveiros/15min-intro"
+            target="_blank"
+            className="inline-flex items-center gap-2 bg-white text-slate-900 px-8 py-4 font-medium hover:bg-slate-100 transition-colors"
+          >
+            Discuss Strategy
+            <ArrowLeft className="w-4 h-4 rotate-180" />
+          </Link>
+        </div>
       </section>
-
-      <footer style={{ marginTop: '50px', paddingTop: '20px', borderTop: '1px solid #eee', textAlign: 'center', fontSize: '0.9em', color: '#777' }}>
-        <p>Portfolio of Daniel Viveiros</p>
-      </footer>
     </div>
-  );
+  )
 }

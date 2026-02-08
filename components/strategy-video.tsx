@@ -3,71 +3,7 @@
 import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react'
 
-interface Slide {
-  title: string
-  subtitle?: string
-  content: string[]
-  highlight?: string
-  visual?: "chart" | "process" | "metrics" | "tech" | "financial"
-}
-
-const slides: Slide[] = [
-  {
-    title: "AI-Enhanced Financial Analytics Platform",
-    subtitle: "Connected Dealer Services • 2022-2024",
-    content: [
-      "Challenge: Manual financial reporting across multiple revenue streams",
-      "Fragmented data sources hindering real-time financial insights",
-      "Need for predictive cash flow and revenue recognition automation"
-    ],
-    visual: "financial"
-  },
-  {
-    title: "Strategic AI Architecture",
-    subtitle: "End-to-End Financial Intelligence System",
-    content: [
-      "ML-powered revenue recognition with 99.2% accuracy",
-      "Automated anomaly detection for financial transactions",
-      "Predictive cash flow modeling using ensemble methods",
-      "Real-time financial dashboard with AI-driven insights"
-    ],
-    visual: "process"
-  },
-  {
-    title: "Technical Implementation",
-    subtitle: "Modern Data Stack + AI/ML Pipeline",
-    content: [
-      "Snowflake data warehouse with dbt transformations",
-      "Python + TensorFlow for predictive financial models",
-      "Apache Airflow orchestrating ML workflows",
-      "Looker dashboards with embedded ML predictions"
-    ],
-    visual: "tech"
-  },
-  {
-    title: "Business Impact",
-    subtitle: "Transformational Financial Operations",
-    content: [
-      "Reduced month-end close time from 15 days to 3 days",
-      "99.2% accuracy in automated revenue recognition",
-      "Identified $2.1M in revenue optimization opportunities",
-      "Enabled real-time financial decision making for C-suite"
-    ],
-    highlight: "$2.1M revenue optimization",
-    visual: "chart"
-  },
-  {
-    title: "Strategic Outcomes",
-    subtitle: "AI-First Financial Operations",
-    content: [
-      "Established foundation for scalable financial analytics",
-      "Created competitive advantage through predictive insights",
-      "Enabled data-driven financial strategy and planning",
-      "Built reusable ML framework for future applications"
-    ],
-    visual: "metrics"
-  }
-]
+import { strategySlides as slides } from "@/data/content"
 
 interface StrategyVideoProps {
   isVisible: boolean
@@ -80,7 +16,7 @@ export function StrategyVideo({ isVisible }: StrategyVideoProps) {
 
   useEffect(() => {
     let interval: NodeJS.Timeout
-    
+
     if (isPlaying && isVisible) {
       interval = setInterval(() => {
         setProgress((prev) => {
@@ -153,12 +89,12 @@ export function StrategyVideo({ isVisible }: StrategyVideoProps) {
                 <div key={i} className="flex flex-col items-center gap-1">
                   <div
                     className="bg-gradient-to-t from-blue-600 to-blue-400 w-8 rounded-t transition-all duration-1000"
-                    style={{ 
+                    style={{
                       height: `${height}px`,
                       animationDelay: `${i * 200}ms`
                     }}
                   />
-                  <div className="text-xs text-slate-500">Q{i+1}</div>
+                  <div className="text-xs text-slate-500">Q{i + 1}</div>
                 </div>
               ))}
             </div>
@@ -298,14 +234,14 @@ export function StrategyVideo({ isVisible }: StrategyVideoProps) {
             >
               <ChevronLeft className="w-4 h-4" />
             </button>
-            
+
             <button
               onClick={togglePlay}
               className="p-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-md transition-colors"
             >
               {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
             </button>
-            
+
             <button
               onClick={nextSlide}
               className="p-2 bg-white/90 hover:bg-white rounded-full shadow-md transition-colors"
@@ -321,9 +257,8 @@ export function StrategyVideo({ isVisible }: StrategyVideoProps) {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2 h-2 rounded-full transition-colors ${
-                  index === currentSlide ? 'bg-blue-600' : 'bg-white/60'
-                }`}
+                className={`w-2 h-2 rounded-full transition-colors ${index === currentSlide ? 'bg-blue-600' : 'bg-white/60'
+                  }`}
               />
             ))}
           </div>
