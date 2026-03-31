@@ -1,60 +1,79 @@
-// Data Service Content
-
 export interface HeroContent {
-  headline: string;
-  subheadline: string;
-  valueProp: string;
-  targetAudience: string;
+  headline: string
+  subheadline: string
+  valueProp: string
+  bridgeLine: string
+  credentials: string[]
 }
 
 export const heroContent: HeroContent = {
-  headline: "The Executive Coach for Data Leaders",
-  subheadline: "Building world-class data organizations through expert recruiting and leadership coaching.",
-  valueProp: "I don't just fix your pipelines; I fix your organization. From hiring your first Head of Data to coaching your existing VP, I build the human engines that drive data success.",
-  targetAudience: "For Non-technical Founders & Private Equity Firms."
+  headline: "Turn Your Data Team Into a Revenue Engine",
+  subheadline: "Strategic data leadership for founders who need answers, not just dashboards.",
+  valueProp: "I build the metrics, team, and culture that turn data into revenue. From board decks to self-service analytics, I help Series A-C startups make data their competitive advantage.",
+  bridgeLine: "Start with a Data Strategy Audit — a 2-week engagement that gives you a clear roadmap for turning data into growth.",
+  credentials: ["MIT MicroMasters", "Harvard Executive Program"]
 }
 
 export interface Service {
-  title: string;
-  description: string;
-  audience: string;
+  title: string
+  description: string
+  deliverables: string[]
+  differentiator: string
 }
 
 export const services: Service[] = [
   {
-    title: "Executive Coaching",
-    description: "For VPs and Heads of Data: A strategic sounding board to help you navigate politics, prioritize ruthlessly, and lead with authority.",
-    audience: "Series A - C"
+    title: "Data Strategy Audit",
+    description: "A comprehensive assessment of your data stack, team, and processes. You get a clear roadmap for turning data into a growth engine.",
+    differentiator: "Best for: Companies preparing for fundraising or board meetings",
+    deliverables: [
+      "Full stack assessment (warehouse, pipeline, tooling)",
+      "Team capability gap analysis",
+      "Priority-ranked action items",
+      "Board-ready executive summary"
+    ]
   },
   {
-    title: "Master Recruiting",
-    description: "I own your critical hires. I source, screen, and close top 1% talent, leveraging a career's worth of network and technical vetting.",
-    audience: "All Stages"
+    title: "AI Readiness Assessment",
+    description: "Determine if your organization is ready for AI/ML initiatives, and what foundation you need to build first.",
+    differentiator: "Best for: Leadership considering AI investments",
+    deliverables: [
+      "Data quality & infrastructure evaluation",
+      "Use case prioritization framework",
+      "Build vs. buy recommendations",
+      "90-day implementation roadmap"
+    ]
   },
   {
-    title: "Organizational Design",
-    description: "Structuring your data team for scale. I define roles, career ladders, and operating models that align with business value.",
-    audience: "Seed - Series B"
+    title: "Fractional Data Leadership",
+    description: "Ongoing strategic guidance without the full-time cost. I work with your team 10-20 hours per month to ensure execution stays on track.",
+    differentiator: "Best for: Companies that have completed an audit and need ongoing guidance",
+    deliverables: [
+      "Weekly leadership syncs",
+      "Hiring and team development",
+      "Vendor and tool selection",
+      "Board and stakeholder communication"
+    ]
   }
 ]
 
 export interface ProblemSolved {
-  problem: string;
-  solution: string;
+  problem: string
+  solution: string
 }
 
 export const problemsSolved: ProblemSolved[] = [
   {
-    problem: "The Infinite Search",
-    solution: "You've had an open rec for 6 months. I fill it in 6 weeks with a candidate I've personally vetted."
+    problem: "Dashboards everywhere, but no clear answers",
+    solution: "I identify the 3-5 metrics that actually drive your business and ensure they're measured accurately and accessible to leadership."
   },
   {
-    problem: "The Lonely Leader",
-    solution: "Your Head of Data is burning out. I provide the mentorship and strategic support they need to thrive."
+    problem: "Data team is overwhelmed and underperforming",
+    solution: "I assess your team's capabilities, identify critical gaps, and build processes that scale without burning out your people."
   },
   {
-    problem: "Culture Clash",
-    solution: "Your data team is siloed. I rebuild the bridge between data and the business through culture and process."
+    problem: "Investors asking questions you can't answer confidently",
+    solution: "I build the board deck metrics and self-serve analytics that give you clarity in fundraising and board meetings."
   }
 ]
 
@@ -68,262 +87,147 @@ export interface ImpactMetric {
 export const impactData: ImpactMetric[] = [
   {
     metric: "$4.2M",
-    description: "New ARR generated by identifying and targeting high-LTV customer segments",
+    description: "New ARR from high-LTV customer segmentation",
     year: "2024",
-    category: "Revenue",
+    category: "Revenue"
   },
   {
     metric: "40%",
-    description: "Reduction in CAC through precise multi-touch attribution modeling",
+    description: "CAC reduction through attribution modeling",
     year: "2023",
-    category: "Efficiency",
+    category: "Efficiency"
   },
   {
     metric: "Series B",
-    description: "Led data due diligence and metric preparation for successful raise",
+    description: "Led data due diligence for successful raise",
     year: "2023",
-    category: "Capital",
+    category: "Capital"
   },
   {
-    metric: "0 → 1",
-    description: "Built the data culture and hiring roadmap for scale",
-    year: "2020-2024",
-    category: "Leadership",
-  },
-]
-
-export interface ExpertiseArea {
-  category: string
-  skills: string[]
-}
-
-export const expertiseAreas: ExpertiseArea[] = [
-  {
-    category: "Executive Leadership",
-    skills: ["Team Building & Culture", "Org Design", "Vendor Negotiation", "Board Relations"],
-  },
-  {
-    category: "Talent Strategy",
-    skills: ["Executive Search", "Technical Vetting", "Compensation Benchmarking", "Retention Strategy"],
-  },
-  {
-    category: "Leadership Coaching",
-    skills: ["Stakeholder Management", "Strategic Planning", "Communication", "Org Politics"],
-  },
-  {
-    category: "Strategic Analytics",
-    skills: ["Revenue Forecasting", "Business Logic Mapping", "KPI Definition", "Unit Economics"],
-  },
-]
-
-export interface TimelineItem {
-  year: string
-  endYear?: string
-  title: string
-  organization: string
-  type: "education" | "experience" | "certification" | "venture"
-  current?: boolean
-  description?: string
-}
-
-export const educationData: TimelineItem[] = [
-  {
-    year: "2016",
-    title: "Lean Six Sigma Green Belt",
-    organization: "Process Excellence Institute",
-    type: "certification",
-    description: "Process optimization and operational efficiency.",
-  },
-  {
-    year: "2017",
-    title: "Bachelor's Degree, Mathematics",
-    organization: "University of South Florida",
-    type: "education",
-    description: "Foundation in statistical theory and mathematical modeling.",
-  },
-  {
-    year: "2018",
-    title: "IBM Data Science Professional",
-    organization: "IBM",
-    type: "certification",
-    description: "Machine learning and data science certification.",
-  },
-  {
-    year: "2021",
-    title: "Executive Management Program",
-    organization: "Harvard University",
-    type: "education",
-    description: "Strategic leadership and organizational management.",
-  },
-  {
-    year: "2024",
-    title: "MicroMasters, Data, Economics, and Policy",
-    organization: "Massachusetts Institute of Technology",
-    type: "education",
-    description: "Advanced coursework in econometrics and causal inference.",
-  },
-]
-
-export const professionalData: TimelineItem[] = [
-  {
-    year: "2014",
-    title: "Principal",
-    organization: "Viveiros Ventures",
-    type: "venture",
-    current: true,
-    description: "Fractional data leadership and startup advisory.",
-  },
-  /*
-    {
-      year: "2016",
-      endYear: "2017",
-      title: "Data Science Research Intern",
-      organization: "University of South Florida",
-      type: "experience",
-    },
-  */
-  /*
-    {
-      year: "2017",
-      endYear: "2020",
-      title: "Data Scientist",
-      organization: "Disciplined Minds Tutoring",
-      type: "experience",
-      description: "Predictive modeling for student performance optimization.",
-    },
-  */
-  {
-    year: "2020",
-    endYear: "2022",
-    title: "BI Analyst (Data Science & Operations)",
-    organization: "Tenth Avenue Commerce",
-    type: "experience",
-    description: "Built self-service analytics platform scaling to 150+ users.",
-  },
-  {
+    metric: "150+",
+    description: "Business users enabled with self-serve analytics",
     year: "2022",
-    title: "Advanced Analytics & BI Manager",
-    organization: "Connected Dealer Services",
-    type: "experience",
-    current: true,
-    description: "Leading enterprise data strategy and ML-powered financial analytics.",
-  },
-  {
-    year: "2023",
-    title: "Co-Founder",
-    organization: "Trajectory Tutors",
-    type: "venture",
-    current: true,
-    description: "Data-driven tutoring platform with AI-enhanced curriculum matching.",
-  },
-  {
-    year: "2024",
-    title: "Treasurer & Vice President",
-    organization: "Trajectory Foundation",
-    type: "venture",
-    current: true,
-    description: "Strategic financial oversight for educational nonprofit.",
-  },
-]
-
-export interface Slide {
-  title: string
-  subtitle?: string
-  content: string[]
-  highlight?: string
-  visual?: "chart" | "process" | "metrics" | "tech" | "financial"
-}
-
-export const strategySlides: Slide[] = [
-  {
-    title: "AI-Enhanced Financial Analytics Platform",
-    subtitle: "Connected Dealer Services • 2022-2024",
-    content: [
-      "Challenge: Manual financial reporting across multiple revenue streams",
-      "Fragmented data sources hindering real-time financial insights",
-      "Need for predictive cash flow and revenue recognition automation"
-    ],
-    visual: "financial"
-  },
-  {
-    title: "Strategic AI Architecture",
-    subtitle: "End-to-End Financial Intelligence System",
-    content: [
-      "ML-powered revenue recognition with 99.2% accuracy",
-      "Automated anomaly detection for financial transactions",
-      "Predictive cash flow modeling using ensemble methods",
-      "Real-time financial dashboard with AI-driven insights"
-    ],
-    visual: "process"
-  },
-  {
-    title: "Technical Implementation",
-    subtitle: "Modern Data Stack + AI/ML Pipeline",
-    content: [
-      "Snowflake data warehouse with dbt transformations",
-      "Python + TensorFlow for predictive financial models",
-      "Apache Airflow orchestrating ML workflows",
-      "Looker dashboards with embedded ML predictions"
-    ],
-    visual: "tech"
-  },
-  {
-    title: "Business Impact",
-    subtitle: "Transformational Financial Operations",
-    content: [
-      "Reduced month-end close time from 15 days to 3 days",
-      "99.2% accuracy in automated revenue recognition",
-      "Identified $2.1M in revenue optimization opportunities",
-      "Enabled real-time financial decision making for C-suite"
-    ],
-    highlight: "$2.1M revenue optimization",
-    visual: "chart"
-  },
-  {
-    title: "Strategic Outcomes",
-    subtitle: "AI-First Financial Operations",
-    content: [
-      "Established foundation for scalable financial analytics",
-      "Created competitive advantage through predictive insights",
-      "Enabled data-driven financial strategy and planning",
-      "Built reusable ML framework for future applications"
-    ],
-    visual: "metrics"
+    category: "Scale"
   }
 ]
 
-export interface Endorsement {
-  quote: string
-  author: string
-  title: string
-  company: string
-  year: string
-  verified: boolean
+export interface PricingTier {
+  name: string
+  price: string
+  description: string
+  timeline: { week: string; activities: string[] }[]
+  features: string[]
+  outcomes: string[]
+  cta: string
+  highlighted?: boolean
 }
 
-export const endorsements: Endorsement[] = [
+export const pricingTiers: PricingTier[] = [
   {
-    quote: "Transformed our fragmented data into a strategic asset. The predictive models identified $2M+ in revenue opportunities within the first quarter.",
-    author: "Executive Leadership",
-    title: "CEO",
+    name: "Data Strategy + AI Readiness Audit",
+    price: "$20,000",
+    description: "A comprehensive 2-week engagement that gives you a clear, actionable path forward.",
+    timeline: [
+      {
+        week: "Week 1",
+        activities: [
+          "Stakeholder interviews (founder, head of data, key operators)",
+          "Current state assessment: stack, processes, team capabilities",
+          "Data quality and infrastructure review"
+        ]
+      },
+      {
+        week: "Week 2",
+        activities: [
+          "Gap analysis and opportunity mapping",
+          "Priority-ranked 90-day implementation roadmap",
+          "Executive presentation to leadership team"
+        ]
+      }
+    ],
+    features: [
+      "Full data stack assessment (warehouse, pipelines, tooling)",
+      "Team capability and gap analysis",
+      "AI readiness evaluation with use case prioritization",
+      "Detailed 90-day implementation roadmap",
+      "Board-ready executive presentation",
+      "Two follow-up sessions for implementation support"
+    ],
+    outcomes: [
+      "Clarity on what's working, what's broken, and what to prioritize",
+      "A roadmap your team can execute immediately",
+      "Metrics and narratives ready for board and investor conversations"
+    ],
+    cta: "Book Discovery Call",
+    highlighted: true
+  }
+]
+
+export interface ClientProof {
+  company: string
+  context: string
+  outcome: string
+  metric: string
+}
+
+export const clientProof: ClientProof[] = [
+  {
     company: "Connected Dealer Services",
-    year: "2024",
-    verified: true
+    context: "Automotive fintech, Series A",
+    outcome: "Built ML-powered financial analytics from scratch",
+    metric: "$2.1M revenue optimization identified through anomaly detection"
   },
   {
-    quote: "A rare combination of engineering rigor and business acumen. Built the infrastructure that allowed us to scale from 10 to 150+ analytics users.",
-    author: "Operations VP",
-    title: "VP of Operations",
     company: "Tenth Avenue Commerce",
-    year: "2022",
-    verified: true
+    context: "E-commerce portfolio company",
+    outcome: "Replaced manual reporting with self-serve analytics",
+    metric: "10 → 150+ business users enabled, 65% reduction in reporting time"
   },
   {
-    quote: "Redefined our approach to data governance. We moved from reactive reporting to proactive, AI-driven decision making.",
-    author: "Technical Stakeholder",
-    title: "CTO",
     company: "Trajectory Tutors",
-    year: "2023",
-    verified: true
+    context: "EdTech startup (founded)",
+    outcome: "Built AI-enhanced tutoring platform from concept",
+    metric: "Curriculum matching system with 94% student satisfaction"
+  }
+]
+
+export interface FAQ {
+  question: string
+  answer: string
+}
+
+export const faqs: FAQ[] = [
+  {
+    question: "How is this different from hiring a data consultant?",
+    answer: "Consultants typically deliver a report and leave. I deliver a strategy your team can actually execute, with follow-up sessions to ensure implementation stays on track. My focus is on building your internal capabilities, not creating dependency on me."
+  },
+  {
+    question: "What happens after the audit?",
+    answer: "You get a detailed roadmap and executive presentation. Most clients use this to: (1) prioritize their data investments, (2) hire the right people, or (3) engage me for fractional leadership to guide implementation. The choice is yours."
+  },
+  {
+    question: "What company stage is this best suited for?",
+    answer: "Series A through C startups with at least one person focused on data. You've outspread spreadsheets but haven't built the infrastructure and processes to make data a strategic asset. If you're unsure, book a call and I'll tell you honestly if I'm the right fit."
+  },
+  {
+    question: "Do you do hands-on implementation?",
+    answer: "No. I focus on strategy and leadership. If you need hands-on implementation, I'll help you hire the right people or connect you with trusted partners. This ensures I'm not creating a dependency on me for execution."
+  },
+  {
+    question: "What if we already have a Head of Data?",
+    answer: "Great — they're often my best advocates. I work with existing data leaders to provide strategic guidance, stakeholder alignment, and an outside perspective. Think of me as a strategic advisor to your data leadership, not a replacement."
+  }
+]
+
+export const educationCredentials = [
+  {
+    institution: "Massachusetts Institute of Technology",
+    degree: "MicroMasters in Data, Economics, and Policy",
+    year: "2024"
+  },
+  {
+    institution: "Harvard University",
+    degree: "Executive Management Program",
+    year: "2021"
   }
 ]

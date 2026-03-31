@@ -17,19 +17,16 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
 })
 
-
 export const metadata: Metadata = {
-  title: "Fractional Head of Data for Startups | Daniel Viveiros",
-  description:
-    "Strategic Data Leadership for Founders. I build the Board Deck metrics, Revenue Operations, and Analytics teams that scale startups from Series A to C.",
-  keywords:
-    "fractional head of data, data strategy, revenue operations, startup advisor, series b metrics, dbt, snowflake, analytics engineering",
+  metadataBase: new URL("https://dv-folio.vercel.app"),
+  title: "Turn Your Data Team Into a Revenue Engine | Daniel Viveiros",
+  description: "Strategic data leadership for founders. I build the metrics, team, and culture that turn data into revenue. Data Strategy Audit, AI Readiness Assessment, Fractional Leadership.",
+  keywords: "fractional head of data, data strategy, revenue operations, startup advisor, series b metrics, analytics engineering, data audit",
   authors: [{ name: "Daniel Viveiros" }],
   creator: "Daniel Viveiros",
   openGraph: {
-    title: "Fractional Head of Data for Startups | Daniel Viveiros",
-    description:
-      "Strategic Data Leadership for Founders. Stop guessing and start scaling with precision metrics.",
+    title: "Turn Your Data Team Into a Revenue Engine | Daniel Viveiros",
+    description: "Strategic data leadership for founders who need answers, not just dashboards.",
     type: "website",
     locale: "en_US",
     images: [
@@ -43,15 +40,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fractional Head of Data | Daniel Viveiros",
-    description: "Strategic Data Leadership for Founders who need answers, not just dashboards.",
+    title: "Turn Your Data Team Into a Revenue Engine | Daniel Viveiros",
+    description: "Strategic data leadership for founders who need answers, not just dashboards.",
     images: ["/og.png"],
   },
   robots: {
     index: true,
     follow: true,
   },
-  generator: "v0.dev",
 }
 
 const jsonLd = {
@@ -62,7 +58,7 @@ const jsonLd = {
       "@id": "https://dv-folio.vercel.app/#service",
       "name": "Daniel Viveiros - Fractional Head of Data",
       "image": "https://dv-folio.vercel.app/og.png",
-      "description": "Fractional Data Leadership for Series A-C Startups. Specializing in Board Deck Metrics, Revenue Operations, and Data Strategy.",
+      "description": "Strategic data leadership for founders. Data Strategy Audit, AI Readiness Assessment, and Fractional Data Leadership for Series A-C startups.",
       "priceRange": "$$$",
       "areaServed": "Worldwide",
       "serviceType": ["Data Strategy Consulting", "Revenue Operations", "Analytics Engineering", "Fractional Executive"],
@@ -79,7 +75,7 @@ const jsonLd = {
       "@id": "https://dv-folio.vercel.app/#person",
       "name": "Daniel Viveiros",
       "jobTitle": "Fractional Head of Data",
-      "description": "Strategic Data Leadership for Founders. Building Board Deck metrics, Revenue Operations, and Analytics teams that scale startups.",
+      "description": "Strategic data leadership for founders. Building metrics, team, and culture that turn data into revenue.",
       "url": "https://dv-folio.vercel.app",
       "sameAs": [
         "https://linkedin.com/in/daniel-viveiros"
@@ -104,8 +100,6 @@ const jsonLd = {
         "Business Intelligence",
         "Revenue Operations",
         "Data Strategy",
-        "dbt",
-        "Snowflake",
         "Analytics Engineering",
         "Machine Learning",
         "Financial Analytics"
@@ -122,11 +116,6 @@ const jsonLd = {
           "name": "Executive Management Program",
           "credentialCategory": "certificate",
           "recognizedBy": { "@type": "Organization", "name": "Harvard University" }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "Lean Six Sigma Green Belt",
-          "credentialCategory": "certificate"
         }
       ]
     }

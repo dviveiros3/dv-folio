@@ -71,26 +71,26 @@ export function ImpactSection({ isVisible, sectionRef }: ImpactSectionProps) {
                     </div>
                 </div>
 
-                {/* Secondary CTA */}
-                <motion.div
-                    className="flex justify-center"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.4 }}
-                >
-                    <a
-                        href="#philosophy"
-                        onClick={(e) => {
-                            e.preventDefault();
-                            document.getElementById('philosophy')?.scrollIntoView({ behavior: 'smooth' });
-                        }}
-                        className="inline-flex items-center gap-2 text-slate-900 font-medium hover:text-green-700 transition-colors"
-                    >
-                        See how we deliver these results
-                        <ArrowRight className="w-4 h-4" />
-                    </a>
-                </motion.div>
+{/* Secondary CTA */}
+        <motion.div
+          className="flex justify-center"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          <a
+            href="#services"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="inline-flex items-center gap-2 text-slate-900 font-medium hover:text-green-700 transition-colors"
+          >
+            See how I deliver these results
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </motion.div>
             </div>
         </section>
     )
