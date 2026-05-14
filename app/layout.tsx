@@ -19,14 +19,14 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dv-folio.vercel.app"),
-  title: "Turn Your Data Team Into a Revenue Engine | Daniel Viveiros",
-  description: "Strategic data leadership for founders. I build the metrics, team, and culture that turn data into revenue. Data Strategy Audit, AI Readiness Assessment, Fractional Leadership.",
-  keywords: "fractional head of data, data strategy, revenue operations, startup advisor, series b metrics, analytics engineering, data audit",
+  title: "Lead Gen Analytics & Data Strategy | Daniel Viveiros",
+  description: "I build analytics systems that track and optimize your ad spend across Google, Facebook, and LinkedIn. Specializing in lead generation tracking, CAC optimization, and BI dashboards for Series A-C startups.",
+  keywords: "lead generation analytics, CAC tracking, ROAS dashboard, Google Ads analytics, Facebook Ads tracking, LinkedIn Ads analytics, fractional head of data, data strategy, revenue operations, startup advisor, series b metrics, analytics engineering, data audit, marketing attribution",
   authors: [{ name: "Daniel Viveiros" }],
   creator: "Daniel Viveiros",
   openGraph: {
-    title: "Turn Your Data Team Into a Revenue Engine | Daniel Viveiros",
-    description: "Strategic data leadership for founders who need answers, not just dashboards.",
+    title: "Lead Gen Analytics & Data Strategy | Daniel Viveiros",
+    description: "Track your true CAC across Google, Facebook & LinkedIn. I build analytics systems that optimize your ad spend and prove ROI.",
     type: "website",
     locale: "en_US",
     images: [
@@ -34,14 +34,14 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Daniel Viveiros - Fractional Head of Data",
+        alt: "Daniel Viveiros - Lead Gen Analytics Specialist",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Turn Your Data Team Into a Revenue Engine | Daniel Viveiros",
-    description: "Strategic data leadership for founders who need answers, not just dashboards.",
+    title: "Lead Gen Analytics & Data Strategy | Daniel Viveiros",
+    description: "Track your true CAC across Google, Facebook & LinkedIn. I build analytics systems that optimize your ad spend and prove ROI.",
     images: ["/og.png"],
   },
   robots: {

@@ -114,14 +114,14 @@ initial={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <div className="relative">
-              <Image
-                src="/placeholder.svg?height=280&width=280"
-                alt="Daniel Viveiros"
-                width={280}
-                height={280}
-                className="grayscale filter contrast-125"
-                priority
-              />
+<Image
+        src="/placeholder-user.jpg"
+        alt="Daniel Viveiros"
+        width={280}
+        height={280}
+        className="grayscale filter contrast-125"
+        priority
+      />
               <div className="absolute -inset-4 border border-slate-200 -z-10" />
             </div>
           </motion.div>

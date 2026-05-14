@@ -9,9 +9,9 @@ export interface HeroContent {
 export const heroContent: HeroContent = {
   headline: "Turn Your Data Team Into a Revenue Engine",
   subheadline: "Strategic data leadership for founders who need answers, not just dashboards.",
-  valueProp: "I build the metrics, team, and culture that turn data into revenue. From board decks to self-service analytics, I help Series A-C startups make data their competitive advantage.",
-  bridgeLine: "Start with a Data Strategy Audit — a 2-week engagement that gives you a clear roadmap for turning data into growth.",
-  credentials: ["MIT MicroMasters", "Harvard Executive Program"]
+  valueProp: "I build the metrics, team, and culture that turn data into revenue. From board decks to self-service analytics, I help Series A-C startups make data their competitive advantage. Specializing in lead generation analytics, attribution modeling, and BI dashboards that drive customer acquisition.",
+  bridgeLine: "Start with a Data Strategy Audit — a 2-week engagement that gives you a clear roadmap for turning data into growth. Also available for lead generation system builds and ad spend optimization.",
+  credentials: ["MIT MicroMasters", "Harvard Executive Program", "Lead Gen & BI Specialist"]
 }
 
 export interface Service {
@@ -23,6 +23,17 @@ export interface Service {
 
 export const services: Service[] = [
   {
+    title: "Lead Gen Analytics System",
+    description: "Complete analytics infrastructure for tracking leads across Google, Facebook, and LinkedIn ads. Built for businesses that need to know their true CAC and LTV.",
+    differentiator: "Best for: Companies spending $5k+/mo on ads who want clarity on ROI",
+    deliverables: [
+      "Multi-channel attribution setup (Google, FB, LinkedIn)",
+      "Lead scoring & qualification tracking",
+      "Real-time CAC & ROAS dashboards",
+      "Weekly automated reporting"
+    ]
+  },
+  {
     title: "Data Strategy Audit",
     description: "A comprehensive assessment of your data stack, team, and processes. You get a clear roadmap for turning data into a growth engine.",
     differentiator: "Best for: Companies preparing for fundraising or board meetings",
@@ -31,17 +42,6 @@ export const services: Service[] = [
       "Team capability gap analysis",
       "Priority-ranked action items",
       "Board-ready executive summary"
-    ]
-  },
-  {
-    title: "AI Readiness Assessment",
-    description: "Determine if your organization is ready for AI/ML initiatives, and what foundation you need to build first.",
-    differentiator: "Best for: Leadership considering AI investments",
-    deliverables: [
-      "Data quality & infrastructure evaluation",
-      "Use case prioritization framework",
-      "Build vs. buy recommendations",
-      "90-day implementation roadmap"
     ]
   },
   {
@@ -124,6 +124,47 @@ export interface PricingTier {
 
 export const pricingTiers: PricingTier[] = [
   {
+    name: "Lead Gen Analytics Build",
+    price: "$15,000",
+    description: "Complete analytics infrastructure for multi-channel lead generation. Know your true CAC, LTV, and ROAS across all channels.",
+    timeline: [
+      {
+        week: "Week 1-2",
+        activities: [
+          "Audit current ad accounts (Google, Facebook, LinkedIn)",
+          "Set up conversion tracking & pixels",
+          "Build UTM parameter framework",
+          "Create lead scoring system"
+        ]
+      },
+      {
+        week: "Week 3-4",
+        activities: [
+          "Build Looker Studio dashboards",
+          "Set up automated reporting",
+          "Train team on analytics stack",
+          "30-day optimization roadmap"
+        ]
+      }
+    ],
+    features: [
+      "Multi-channel attribution tracking setup",
+      "Google Ads, Facebook Ads, LinkedIn Ads integration",
+      "Custom Looker Studio analytics dashboard",
+      "Lead-to-revenue tracking system",
+      "Automated weekly performance reports",
+      "4 weeks of implementation support"
+    ],
+    outcomes: [
+      "Real-time visibility into CAC by channel",
+      "Clear ROAS calculations for every campaign",
+      "Lead quality scoring that predicts LTV",
+      "Data-driven decisions on ad spend allocation"
+    ],
+    cta: "Book Discovery Call",
+    highlighted: true
+  },
+  {
     name: "Data Strategy + AI Readiness Audit",
     price: "$20,000",
     description: "A comprehensive 2-week engagement that gives you a clear, actionable path forward.",
@@ -158,8 +199,7 @@ export const pricingTiers: PricingTier[] = [
       "A roadmap your team can execute immediately",
       "Metrics and narratives ready for board and investor conversations"
     ],
-    cta: "Book Discovery Call",
-    highlighted: true
+    cta: "Book Discovery Call"
   }
 ]
 
