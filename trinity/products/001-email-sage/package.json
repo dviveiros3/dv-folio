@@ -1,0 +1,22 @@
+{
+  "name": "email-sage",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "db:push": "prisma db push"
+  },
+  "dependencies": {
+    "next": "^15",
+    "react": "^19",
+    "prisma": "^6",
+    "openai": "^4",
+    "stripe": "^17",
+    "tailwindcss": "^4"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}
