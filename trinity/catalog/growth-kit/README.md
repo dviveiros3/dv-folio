@@ -24,7 +24,7 @@ Before a full implementation, we recommend starting with the [AI Growth Audit](.
 5.  **Buyer Setup Checklist:** [Preparation requirements](./buyer-setup-checklist.md) for data, tools, and roles.
 6.  **Compliance & Ethics:** [Legal and ethical guardrails](./compliance-and-ethics.md) for outbound and AI usage.
 7.  **QA Rubric:** A [5-point quality check](./qa-rubric.md) for all AI outputs.
-8.  **Examples:** Realistic sample outputs to benchmark your results.
+8.  **Examples:** Simulated sample outputs to benchmark your results, including a [Sample Growth Audit Deliverable](./examples/growth-audit-artifact-sample.md).
 9.  **Sales Page Copy:** Ready-to-use copy to communicate the value of this module to your stakeholders or clients.
 
 ## Operational Leverage, Not Prompts

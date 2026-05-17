@@ -16,8 +16,13 @@ The audit is a 1-week diagnostic engagement resulting in:
 3.  **Custom AI Skill Design:** Architectural design for your first 2 core AI skills (e.g., Founder Insight Extractor and Outbound Atomizer) tailored to your specific voice and market.
 4.  **90-Day Implementation Roadmap:** A prioritized sequence for deploying the Growth Kit modules, starting with the highest-leverage loop first.
 
+[View Sample Deliverable (Simulated)](./examples/growth-audit-artifact-sample.md)
+
 ## What the Audit Requires
-To ensure high-conviction outputs, the buyer must provide:
+To ensure high-conviction outputs, the buyer must provide specific context and assets.
+
+[Download Audit Intake Checklist](./growth-audit-intake.md)
+
 - **Founder Context:** A 15-minute recorded brief on market thesis and ideal buyer pain.
 - **Asset Access:** Samples of previous successful content, sales decks, or customer success stories.
 - **Tech Stack Review:** Overview of current CRM, LinkedIn usage, and email tools.

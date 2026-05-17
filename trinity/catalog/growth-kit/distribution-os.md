@@ -30,7 +30,7 @@ The market should understand the sentence:
 ## Channel System
 The Distribution OS uses channels by job, not vanity.
 
-| Channel | Job | Output |
+| Channel | Job | Target Output Cadence |
 | --- | --- | --- |
 | LinkedIn | Authority and buyer discovery | 3-5 high-signal posts per week |
 | X / Threads | Ideas, sharp takes, and founder network | 5-10 short posts per week |
@@ -150,10 +150,10 @@ Distribution should drive toward a simple product ladder:
 | Premium | Custom AI distribution system | Higher-ticket implementation |
 | Scalable | Templates, prompts, workflows, mini-products | Product revenue |
 
-## Metrics That Matter
-Avoid vanity-only measurement. Track leading indicators tied to market learning and revenue.
+## Metrics That Matter (Planning Assumptions)
+Avoid vanity-only measurement. Track leading indicators tied to market learning and revenue. *Note: These figures represent design goals and planning assumptions for the system.*
 
-| Metric | Why It Matters |
+| Target Indicator | Why It Matters |
 | --- | --- |
 | Qualified conversations per week | Distribution is working only if it creates buyer access |
 | Reply quality | Better than raw impressions for early-stage positioning |
