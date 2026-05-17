@@ -30,4 +30,4 @@ This checklist ensures we have the necessary raw material to perform a high-conv
 - [ ] **Confidentiality:** Confirm if any provided assets are strictly under NDA and cannot be referenced in simulated examples.
 
 ---
-*Next Step: Once these items are collected, upload them to your secure Trinity Audit folder.*
+*Next Step: Once these items are collected, send them through the agreed secure intake channel.*

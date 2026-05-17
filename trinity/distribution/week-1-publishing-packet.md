@@ -89,13 +89,13 @@ Today, I'm introducing the **Trinity Distribution OS**.
 
 This isn't a theory. It’s the operational framework we use to turn raw expertise into a repeatable market presence.
 
-[Image: Screenshot/Diagram of the Distribution OS 4-loop system]
+[Publishing asset needed: create a simple Distribution OS diagram from `trinity/catalog/growth-kit/distribution-os.md` before posting.]
 
 We’re productizing this framework into the **Trinity Growth Kit**.
 Skills. Workflows. QA Rubrics.
-The same systems I used to scale analytics to 150+ users and generate $4.2M in ARR—now applied to founder distribution.
+This extends the operator pattern in my proof inventory: scaling analytics to 150+ users and building high-LTV segmentation work tied to $4.2M in new ARR. Trinity applies that same discipline to founder distribution.
 
-**Suggested CTA:** Read the full Distribution OS documentation here: [Link to trinity/catalog/growth-kit/distribution-os.md or website equivalent]
+**Suggested CTA:** Read the Trinity storefront at `/trinity`. Internal drafting source: `trinity/catalog/growth-kit/distribution-os.md`.
 
 **Intended Signal:** Traffic to the Growth Kit documentation and validation of the "Proof" positioning.
 
@@ -142,4 +142,4 @@ The goal is to show you the "blueprint" of your distribution engine before we ev
 
 **Suggested CTA:** If you want to see what a "Distribution Diagnostic" actually looks like, DM me "AUDIT".
 
-**Intended Signal:** High-intent leads for the AI Growth Audit entry offer.
+**Intended Signal:** High-intent conversations for the AI Growth Audit entry offer.

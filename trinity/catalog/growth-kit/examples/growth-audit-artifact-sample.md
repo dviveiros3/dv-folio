@@ -7,7 +7,7 @@
 ---
 
 ## 1. Executive Summary: The Distribution Bottleneck
-Acme has a strong "Proof Loop" (verified results in the e-commerce sector) but a broken "Conversation Loop." You are publishing proof, but it isn't triggering qualified buyer signals. Your content feels like a portfolio, not a conversation starter.
+Acme has a strong "Proof Loop" (provided proof assets in the e-commerce sector, pending source verification) but a broken "Conversation Loop." You are publishing proof, but it isn't triggering qualified buyer signals. Your content feels like a portfolio, not a conversation starter.
 
 ## 2. POV & Thesis Audit
 - **Current POV:** "We help e-commerce brands scale with data." (Generic/Low Signal)
