@@ -7,10 +7,10 @@ export interface HeroContent {
 }
 
 export const heroContent: HeroContent = {
-  headline: "Turn Your Data Team Into a Revenue Engine",
-  subheadline: "Strategic data leadership for founders who need answers, not just dashboards.",
-  valueProp: "I build the metrics, team, and culture that turn data into revenue. From board decks to self-service analytics, I help Series A-C startups make data their competitive advantage.",
-  bridgeLine: "Start with a Data Strategy Audit — a 2-week engagement that gives you a clear roadmap for turning data into growth.",
+  headline: "Architecting the AI-Powered Growth Engine",
+  subheadline: "Applied AI leadership for founders who need operational leverage, not just prompts.",
+  valueProp: "I am an Applied AI operator and implementation strategist. I bridge the gap between raw data and business leverage, building the systems that turn AI from experimental chatter into functional revenue engines.",
+  bridgeLine: "Start with an Applied AI Systems & Strategy Audit—a 2-week engagement to roadmap your transition from data to AI-powered growth.",
   credentials: ["MIT MicroMasters", "Harvard Executive Program"]
 }
 
@@ -23,36 +23,36 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    title: "Data Strategy Audit",
-    description: "A comprehensive assessment of your data stack, team, and processes. You get a clear roadmap for turning data into a growth engine.",
-    differentiator: "Best for: Companies preparing for fundraising or board meetings",
+    title: "Applied AI Systems & Strategy Audit",
+    description: "A comprehensive assessment of your data foundations and AI potential. You get a clear roadmap for building productized AI workflows aimed at reducing operational overhead.",
+    differentiator: "Best for: Companies preparing for AI transition or fundraising",
     deliverables: [
-      "Full stack assessment (warehouse, pipeline, tooling)",
-      "Team capability gap analysis",
-      "Priority-ranked action items",
+      "Data foundation & AI readiness assessment",
+      "AI workflow opportunity mapping",
+      "Priority-ranked implementation roadmap",
       "Board-ready executive summary"
     ]
   },
   {
-    title: "AI Readiness Assessment",
-    description: "Determine if your organization is ready for AI/ML initiatives, and what foundation you need to build first.",
-    differentiator: "Best for: Leadership considering AI investments",
+    title: "AI Implementation Strategy",
+    description: "Strategic guidance on building and deploying functional AI products that impact the P&L, moving beyond dead pilots to production leverage.",
+    differentiator: "Best for: Leadership considering significant AI investments",
     deliverables: [
-      "Data quality & infrastructure evaluation",
-      "Use case prioritization framework",
-      "Build vs. buy recommendations",
-      "90-day implementation roadmap"
+      "Use case prioritization framework (P&L impact focus)",
+      "Build vs. buy AI architecture recommendations",
+      "90-day AI implementation roadmap",
+      "Technical leadership & oversight for AI builds"
     ]
   },
   {
-    title: "Fractional Data Leadership",
-    description: "Ongoing strategic guidance without the full-time cost. I work with your team 10-20 hours per month to ensure execution stays on track.",
-    differentiator: "Best for: Companies that have completed an audit and need ongoing guidance",
+    title: "Fractional AI Leadership",
+    description: "Ongoing strategic guidance as an Applied AI partner. I work with your team to ensure AI implementation stays on track and drives business leverage.",
+    differentiator: "Best for: Companies that need technical AI leadership without the full-time cost",
     deliverables: [
-      "Weekly leadership syncs",
-      "Hiring and team development",
-      "Vendor and tool selection",
-      "Board and stakeholder communication"
+      "Weekly AI strategy & implementation syncs",
+      "AI team development & hiring guidance",
+      "Vendor and LLM stack selection",
+      "Board-level AI roadmap communication"
     ]
   }
 ]
@@ -64,16 +64,16 @@ export interface ProblemSolved {
 
 export const problemsSolved: ProblemSolved[] = [
   {
-    problem: "Dashboards everywhere, but no clear answers",
-    solution: "I identify the 3-5 metrics that actually drive your business and ensure they're measured accurately and accessible to leadership."
+    problem: "Experimental AI chatter with zero P&L impact",
+    solution: "I identify the AI workflows that actually drive unit economics and ensure they move from pilot to production leverage."
   },
   {
-    problem: "Data team is overwhelmed and underperforming",
-    solution: "I assess your team's capabilities, identify critical gaps, and build processes that scale without burning out your people."
+    problem: "Data foundations that aren't ready for AI",
+    solution: "I assess and architect the data infrastructure required to support high-conviction AI builds, ensuring accuracy and scale."
   },
   {
-    problem: "Investors asking questions you can't answer confidently",
-    solution: "I build the board deck metrics and self-serve analytics that give you clarity in fundraising and board meetings."
+    problem: "Technical teams building 'cool' tech instead of business value",
+    solution: "I provide the strategic leadership to align engineering efforts with founder-led growth goals and operational efficiency."
   }
 ]
 
@@ -124,39 +124,39 @@ export interface PricingTier {
 
 export const pricingTiers: PricingTier[] = [
   {
-    name: "Data Strategy + AI Readiness Audit",
+    name: "Applied AI Systems & Strategy Audit",
     price: "$20,000",
-    description: "A comprehensive 2-week engagement that gives you a clear, actionable path forward.",
+    description: "A comprehensive 2-week engagement that gives you a clear, actionable path from data to AI leverage.",
     timeline: [
       {
         week: "Week 1",
         activities: [
           "Stakeholder interviews (founder, head of data, key operators)",
-          "Current state assessment: stack, processes, team capabilities",
-          "Data quality and infrastructure review"
+          "Data infrastructure, quality & team capability assessment",
+          "AI workflow opportunity mapping"
         ]
       },
       {
         week: "Week 2",
         activities: [
-          "Gap analysis and opportunity mapping",
+          "Gap analysis for AI readiness",
           "Priority-ranked 90-day implementation roadmap",
-          "Executive presentation to leadership team"
+          "Executive presentation: The AI Growth Roadmap"
         ]
       }
     ],
     features: [
-      "Full data stack assessment (warehouse, pipelines, tooling)",
-      "Team capability and gap analysis",
-      "AI readiness evaluation with use case prioritization",
+      "Full data foundation assessment for AI readiness",
+      "Applied AI workflow opportunity audit",
+      "Build vs. buy recommendation matrix",
       "Detailed 90-day implementation roadmap",
       "Board-ready executive presentation",
-      "Two follow-up sessions for implementation support"
+      "Two follow-up strategy sessions"
     ],
     outcomes: [
-      "Clarity on what's working, what's broken, and what to prioritize",
-      "A roadmap your team can execute immediately",
-      "Metrics and narratives ready for board and investor conversations"
+      "Clarity on which AI workflows will drive the most leverage",
+      "A technical roadmap your team can execute immediately",
+      "Strategic alignment between AI investment and P&L impact"
     ],
     cta: "Book Discovery Call",
     highlighted: true
@@ -198,24 +198,24 @@ export interface FAQ {
 
 export const faqs: FAQ[] = [
   {
-    question: "How is this different from hiring a data consultant?",
-    answer: "Consultants typically deliver a report and leave. I deliver a strategy your team can actually execute, with follow-up sessions to ensure implementation stays on track. My focus is on building your internal capabilities, not creating dependency on me."
+    question: "How is this different from an AI agency?",
+    answer: "Most agencies sell 'prompts' and 'wrappers'. I focus on Applied AI systems—the infrastructure, data pipelines, and core product logic that create long-term business leverage. I am a practitioner, not a middleman."
   },
   {
     question: "What happens after the audit?",
-    answer: "You get a detailed roadmap and executive presentation. Most clients use this to: (1) prioritize their data investments, (2) hire the right people, or (3) engage me for fractional leadership to guide implementation. The choice is yours."
+    answer: "You get a detailed roadmap and executive presentation. You can use this to (1) execute with your internal team, (2) hire specifically for the roadmap, or (3) engage me for fractional AI leadership to oversee the implementation."
   },
   {
     question: "What company stage is this best suited for?",
-    answer: "Series A through C startups with at least one person focused on data. You've outspread spreadsheets but haven't built the infrastructure and processes to make data a strategic asset. If you're unsure, book a call and I'll tell you honestly if I'm the right fit."
+    answer: "Series A through C startups who have the data but haven't yet converted it into operational AI leverage. If you're looking to scale without linear headcount growth, this is for you."
   },
   {
     question: "Do you do hands-on implementation?",
-    answer: "No. I focus on strategy and leadership. If you need hands-on implementation, I'll help you hire the right people or connect you with trusted partners. This ensures I'm not creating a dependency on me for execution."
+    answer: "No. I focus on strategy, architecture, and leadership. If you need hands-on engineering, I help you hire the right talent or coordinate with your existing team to ensure the build follows the strategic roadmap."
   },
   {
-    question: "What if we already have a Head of Data?",
-    answer: "Great — they're often my best advocates. I work with existing data leaders to provide strategic guidance, stakeholder alignment, and an outside perspective. Think of me as a strategic advisor to your data leadership, not a replacement."
+    question: "What if we already have a CTO or Head of Data?",
+    answer: "I work alongside them. I provide the 'AI operator' lens that bridges technical capability with founder-led business goals, helping your leadership team prioritize high-conviction AI builds over experimental distractions."
   }
 ]
 
