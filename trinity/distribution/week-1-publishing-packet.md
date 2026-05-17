@@ -89,7 +89,7 @@ Today, I'm introducing the **Trinity Distribution OS**.
 
 This isn't a theory. It’s the operational framework we use to turn raw expertise into a repeatable market presence.
 
-[Publishing asset needed: create a simple Distribution OS diagram from `trinity/catalog/growth-kit/distribution-os.md` before posting.]
+[Visual Asset: See trinity/distribution/visual-distribution-os-spec.md for the 5-loop Distribution OS diagram and copy.]
 
 We’re productizing this framework into the **Trinity Growth Kit**.
 Skills. Workflows. QA Rubrics.
