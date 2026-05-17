@@ -16,12 +16,13 @@ Turn your founder's expertise into a scalable growth engine. The Trinity Growth 
 ## What's Included
 1.  **Skills (AI Instructions):** Modular, high-precision system prompts for ICP definition, positioning, offer generation, lead scoring, content ideation, and outbound drafting.
 2.  **Workflows:** End-to-end specifications for a **Weekly Content Engine** and an **Outbound Prospecting Engine**, including triggers, inputs, steps, and QA checks.
-3.  **Implementation Guide:** Step-by-step setup for LLM providers and optional automation (Make/Zapier/n8n).
-4.  **Buyer Setup Checklist:** [Preparation requirements](./buyer-setup-checklist.md) for data, tools, and roles.
-5.  **Compliance & Ethics:** [Legal and ethical guardrails](./compliance-and-ethics.md) for outbound and AI usage.
-6.  **QA Rubric:** A [5-point quality check](./qa-rubric.md) for all AI outputs.
-7.  **Examples:** Realistic sample outputs to benchmark your results.
-8.  **Sales Page Copy:** Ready-to-use copy to communicate the value of this module to your stakeholders or clients.
+3.  **Distribution OS:** A [solopreneur distribution system](./distribution-os.md) for turning expertise into market presence, qualified conversations, and productized offers.
+4.  **Implementation Guide:** Step-by-step setup for LLM providers and optional automation (Make/Zapier/n8n).
+5.  **Buyer Setup Checklist:** [Preparation requirements](./buyer-setup-checklist.md) for data, tools, and roles.
+6.  **Compliance & Ethics:** [Legal and ethical guardrails](./compliance-and-ethics.md) for outbound and AI usage.
+7.  **QA Rubric:** A [5-point quality check](./qa-rubric.md) for all AI outputs.
+8.  **Examples:** Realistic sample outputs to benchmark your results.
+9.  **Sales Page Copy:** Ready-to-use copy to communicate the value of this module to your stakeholders or clients.
 
 ## Operational Leverage, Not Prompts
 This kit is built on the **Trinity Framework**. We don't just give you "prompts." We give you the logic, the sequence, and the QA mechanisms to build a reliable AI-driven growth department.
