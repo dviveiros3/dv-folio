@@ -1,30 +1,48 @@
-# Executive personal brand
+# Trinity Executive Personal Brand
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+Applied AI Systems & Strategy Audit. Practitioner-led AI that generates business leverage.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/dviveiros3s-projects/v0-executive-personal-brand)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/kjbUM4pytmF)
+## Getting Started
 
-## Overview
+### Prerequisites
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+- [pnpm](https://pnpm.io/) installed.
+
+### Installation
+
+```bash
+pnpm install
+```
+
+### Local Development
+
+Run the development server:
+
+```bash
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Build
+
+To create an optimized production build:
+
+```bash
+pnpm build
+```
+
+### Linting
+
+To run the linter:
+
+```bash
+pnpm lint
+```
 
 ## Deployment
 
-Your project is live at:
+The project is configured for deployment on Vercel.
 
-**[https://vercel.com/dviveiros3s-projects/v0-executive-personal-brand](https://vercel.com/dviveiros3s-projects/v0-executive-personal-brand)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/kjbUM4pytmF](https://v0.dev/chat/projects/kjbUM4pytmF)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+---
+*Built with Next.js and Tailwind CSS.*
