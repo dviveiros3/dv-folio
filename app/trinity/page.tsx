@@ -115,18 +115,18 @@ export default function TrinityStorefront() {
               <button onClick={() => scrollToSection("lab")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">The Lab</button>
               <button onClick={() => scrollToSection("forge")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">The Forge</button>
               <button onClick={() => scrollToSection("distribution")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">Distribution</button>
+              <button onClick={() => scrollToSection("growth-audit")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">Audit</button>
               <button onClick={() => scrollToSection("implementation")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">Services</button>
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <a
-              href="https://calendly.com/daniel-viveiros/15min-intro"
-              target="_blank"
+            <button
+              onClick={() => scrollToSection("growth-audit")}
               className="hidden md:flex items-center gap-2 bg-slate-900 text-white px-4 py-2 text-xs font-bold uppercase tracking-widest hover:bg-slate-800 transition-colors"
             >
               Request Audit
               <ArrowUpRight className="w-3 h-3" />
-            </a>
+            </button>
             <button className="md:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -141,8 +141,9 @@ export default function TrinityStorefront() {
             <button onClick={() => scrollToSection("lab")} className="text-2xl font-bold uppercase tracking-tighter text-left">The Lab</button>
             <button onClick={() => scrollToSection("forge")} className="text-2xl font-bold uppercase tracking-tighter text-left">The Forge</button>
             <button onClick={() => scrollToSection("distribution")} className="text-2xl font-bold uppercase tracking-tighter text-left">Distribution</button>
+            <button onClick={() => scrollToSection("growth-audit")} className="text-2xl font-bold uppercase tracking-tighter text-left">Audit</button>
             <button onClick={() => scrollToSection("implementation")} className="text-2xl font-bold uppercase tracking-tighter text-left">Services</button>
-            <a href="https://calendly.com/daniel-viveiros/15min-intro" target="_blank" className="bg-slate-900 text-white p-4 text-center font-bold uppercase tracking-widest">Request Audit</a>
+            <button onClick={() => scrollToSection("growth-audit")} className="bg-slate-900 text-white p-4 text-center font-bold uppercase tracking-widest">Request Audit</button>
           </div>
         </div>
       )}
@@ -292,7 +293,7 @@ export default function TrinityStorefront() {
                   The Growth Kit is not generic marketing automation. It is a solopreneur distribution system for turning expertise into visible authority, qualified conversations, and productized offers.
                 </p>
                 <button
-                  onClick={() => scrollToSection("implementation")}
+                  onClick={() => scrollToSection("growth-audit")}
                   className="inline-flex items-center gap-2 bg-white text-slate-950 px-6 py-3 text-xs font-bold uppercase tracking-widest hover:bg-slate-200 transition-colors"
                 >
                   Request Growth Audit
@@ -316,6 +317,84 @@ export default function TrinityStorefront() {
                     </div>
                   )
                 })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Growth Audit Section */}
+        <section id="growth-audit" className="py-24 px-6 bg-white border-b border-slate-200">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-12 gap-12 items-start">
+              <div className="lg:col-span-5 space-y-8">
+                <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400">// Entry Offer</div>
+                <h2 className="text-4xl lg:text-7xl font-bold tracking-tighter uppercase leading-[0.9]">
+                  AI Growth <br/>
+                  <span className="text-slate-400">Audit</span>
+                </h2>
+                <p className="text-xl text-slate-600 leading-relaxed max-w-lg">
+                  A 1-week high-conviction diagnostic designed to roadmap your Distribution OS and identify the highest-leverage AI workflows for your specific market.
+                </p>
+
+                <div className="space-y-6 pt-4">
+                  <div className="space-y-2">
+                    <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400">The Requirements</div>
+                    <ul className="space-y-2">
+                      {[
+                        "15-minute founder context brief",
+                        "Previous successful content samples",
+                        "Overview of current sales/marketing stack"
+                      ].map(item => (
+                        <li key={item} className="flex items-center gap-2 text-sm text-slate-600">
+                          <div className="w-1.5 h-1.5 bg-slate-900" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="lg:col-span-7 grid md:grid-cols-2 gap-6">
+                {[
+                  {
+                    title: "POV & Thesis Audit",
+                    desc: "A critical review of your market positioning to sharpen it for AI extraction and authority signaling."
+                  },
+                  {
+                    title: "Loop Diagnostic",
+                    desc: "Mapping your Proof, Conversation, and Offer loops to identify and solve the primary bottleneck."
+                  },
+                  {
+                    title: "Custom AI Skill Design",
+                    desc: "Architectural design for your first 2 core AI skills, tailored to your specific voice and market."
+                  },
+                  {
+                    title: "90-Day Roadmap",
+                    desc: "A prioritized sequence for deploying Growth Kit modules, starting with the highest-leverage loop."
+                  }
+                ].map((item, idx) => (
+                  <div key={idx} className="p-8 border border-slate-200 bg-[#fafafa] space-y-4">
+                    <div className="text-xs font-mono text-slate-400">Deliverable_0{idx + 1}</div>
+                    <h3 className="text-xl font-bold uppercase tracking-tight">{item.title}</h3>
+                    <p className="text-sm text-slate-500 leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+
+                <div className="md:col-span-2 p-8 bg-slate-900 text-white flex flex-col md:flex-row items-center justify-between gap-8">
+                  <div className="space-y-1">
+                    <div className="text-2xl font-bold uppercase tracking-tight">Ready to Roadmap?</div>
+                    <p className="text-slate-400 text-sm">Start with a 15-minute discovery call.</p>
+                  </div>
+                  <a
+                    href="https://calendly.com/daniel-viveiros/15min-intro"
+                    target="_blank"
+                    className="bg-white text-slate-900 px-8 py-4 font-bold uppercase tracking-widest hover:bg-slate-200 transition-all flex items-center gap-2"
+                  >
+                    Book Call
+                    <ArrowUpRight className="w-4 h-4" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -348,9 +427,9 @@ export default function TrinityStorefront() {
                 </ul>
               </div>
               <div className="p-8 lg:p-12 bg-white text-slate-900 space-y-8">
-                <h3 className="text-2xl font-bold uppercase tracking-tight">Request an Audit</h3>
+                <h3 className="text-2xl font-bold uppercase tracking-tight">Systems & Strategy Audit</h3>
                 <p className="text-slate-600 leading-relaxed">
-                  A 2-week deep dive into your operations, data stack, and AI opportunities. You walk away with a clear roadmap for turning AI into leverage.
+                  While the 1-week **AI Growth Audit** focuses on distribution, this 2-week comprehensive engagement is a deep dive into your full operations, data stack, and AI product opportunities.
                 </p>
                 <div className="space-y-4">
                   <a
