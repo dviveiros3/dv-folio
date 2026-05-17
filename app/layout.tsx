@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og.png",
+        url: "/placeholder.jpg",
         width: 1200,
         height: 630,
         alt: "Daniel Viveiros - Fractional Head of Data",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Turn Your Data Team Into a Revenue Engine | Daniel Viveiros",
     description: "Strategic data leadership for founders who need answers, not just dashboards.",
-    images: ["/og.png"],
+    images: ["/placeholder.jpg"],
   },
   robots: {
     index: true,
@@ -57,7 +57,7 @@ const jsonLd = {
       "@type": "ProfessionalService",
       "@id": "https://dv-folio.vercel.app/#service",
       "name": "Daniel Viveiros - Fractional Head of Data",
-      "image": "https://dv-folio.vercel.app/og.png",
+      "image": "https://dv-folio.vercel.app/placeholder.jpg",
       "description": "Strategic data leadership for founders. Data Strategy Audit, AI Readiness Assessment, and Fractional Data Leadership for Series A-C startups.",
       "priceRange": "$$$",
       "areaServed": "Worldwide",
