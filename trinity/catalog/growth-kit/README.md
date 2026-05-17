@@ -1,16 +1,27 @@
-# Trinity Kit: Founder Growth Engine
+# Trinity Growth Kit: AI-Powered Operating Module for Founder-Led B2B
 
-The Founder Growth Engine is a productized AI workflow designed to turn 15 minutes of founder audio into a week's worth of high-signal content and targeted outbound triggers.
+## Product Promise
+Turn your founder's expertise into a scalable growth engine. The Trinity Growth Kit is not a collection of prompts; it is an **operational operating system** that automates the transition from raw insight to qualified pipeline.
 
-## Overview
-This kit is the production-ready version of [Lab Exhibit 001](../../lab/experiments/founder-growth-engine.md). It has been hardened for reliability and voice consistency.
+## Ideal Buyer
+- **Founder-led B2B companies** ($1M–$10M ARR) where the founder is the primary subject matter expert but the bottleneck for marketing and sales.
+- **Lean Growth Teams** looking for high-leverage workflows to scale content and outbound without increasing headcount.
 
-## Modules
-1. **Audio Ingestion & Extraction:** Automated transcription and insight mining.
-2. **Synthetic Ghostwriter:** Voice-matched content generation for LinkedIn and Newsletters.
-3. **Signal-Led Outbound:** Trigger-based prospecting using real-time market data.
+## Outcomes
+- **Consistency:** A weekly content engine that never misses a post, maintaining your brand's authority.
+- **Precision:** AI-driven ICP definition and lead scoring that ensures you only talk to high-intent prospects.
+- **Scale:** Automated outbound drafting that sounds like you, significantly increasing your manual output capacity.
+- **Operational Leverage:** Move from "doing the work" to "reviewing the work."
 
-## Implementation
-This kit is delivered as a 14-day implementation. We set up the infrastructure, tune the voice models to your specific brand, and hand over a turn-key content engine.
+## What's Included
+1.  **Skills (AI Instructions):** Modular, high-precision system prompts for ICP definition, positioning, offer generation, lead scoring, content ideation, and outbound drafting.
+2.  **Workflows:** End-to-end specifications for a **Weekly Content Engine** and an **Outbound Prospecting Engine**, including triggers, inputs, steps, and QA checks.
+3.  **Implementation Guide:** Step-by-step setup for LLM providers and optional automation (Make/Zapier/n8n).
+4.  **Buyer Setup Checklist:** [Preparation requirements](./buyer-setup-checklist.md) for data, tools, and roles.
+5.  **Compliance & Ethics:** [Legal and ethical guardrails](./compliance-and-ethics.md) for outbound and AI usage.
+6.  **QA Rubric:** A [5-point quality check](./qa-rubric.md) for all AI outputs.
+7.  **Examples:** Realistic sample outputs to benchmark your results.
+8.  **Sales Page Copy:** Ready-to-use copy to communicate the value of this module to your stakeholders or clients.
 
-**[Book an Implementation Audit](https://trinity.lab/contact)**
+## Operational Leverage, Not Prompts
+This kit is built on the **Trinity Framework**. We don't just give you "prompts." We give you the logic, the sequence, and the QA mechanisms to build a reliable AI-driven growth department.

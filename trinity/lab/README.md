@@ -23,4 +23,4 @@ When a Lab Exhibit proves successful and repeatable, it is refined, modularized,
 
 If an exhibit addresses a bottleneck in your organization, you don't have to wait for it to become a Kit.
 
-**[Book a Strategy Call](https://trinity.lab/contact)** to discuss implementing a custom version of any Lab experiment within your existing data stack.
+**Contact the Lab** to discuss implementing a custom version of any Lab experiment within your existing data stack.
