@@ -95,6 +95,17 @@ Not v0:
 2. Merge only clean foundation work or hardened product artifacts.
 3. Convert the best Jules outputs into a coherent Trinity v0 bundle.
 4. Push back on anything that weakens the image, overclaims traction, or creates implementation noise.
+5. Keep the next sprint focused on one monetizable loop: Trinity page -> Growth Kit -> Growth Audit -> publishing -> proof capture -> weekly offer improvement.
+
+## Active Sprint
+Current sprint:
+- `trinity/sprints/growth-distribution-sprint.md`
+
+Supporting operating docs:
+- `trinity/distribution/publishing-cadence.md`
+- `trinity/distribution/content-backlog.md`
+- `trinity/distribution/proof-capture-log.md`
+- `trinity/distribution/weekly-offer-review.md`
 
 ## Guiding Standard
 Trinity should feel like a lab with commercial taste: ambitious enough to attract attention, concrete enough to sell, and disciplined enough to be believed.
