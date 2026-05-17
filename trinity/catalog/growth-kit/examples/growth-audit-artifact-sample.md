@@ -16,7 +16,7 @@
 
 ## 2. Proof Asset Inventory
 **Available Proof:**
-- 3 case studies on 15% reduction in "deadhead" miles (Verified).
+- 3 case studies on 15% reduction in "deadhead" miles (Provided by buyer; source verification required).
 - Internal spreadsheet showing $200k/year savings for a mid-market client (Simulated).
 - Founder’s 10 years of experience at a Tier 1 3PL.
 
@@ -30,7 +30,7 @@
 **Assessment:** High engagement on "thought leadership" posts, but low conversion to DMs.
 **Strategy:**
 - Introduce "Signal-Led Outreach": Use AI to scan for logistics disruptions (e.g., port strikes, weather) and trigger personalized, POV-driven messages.
-- Goal: Move from 2 random inbound inquiries/month to 5-10 qualified outbound-initiated conversations/week.
+- **Planning Assumption:** This system is designed to facilitate a target of 5-10 qualified outbound-initiated conversations per week, up from a baseline of 2 random inbound inquiries per month.
 
 ---
 
