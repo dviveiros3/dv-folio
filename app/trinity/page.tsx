@@ -8,14 +8,6 @@ export const metadata: Metadata = {
     title: "Trinity | Applied AI Lab & Product Forge",
     description: "Where engineering taste meets business leverage. Browse the Forge or enter the Lab.",
     type: "website",
-    images: [
-      {
-        url: "/og-trinity.png",
-        width: 1200,
-        height: 630,
-        alt: "Trinity Applied AI Lab",
-      },
-    ],
   },
 }
 
