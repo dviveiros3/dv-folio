@@ -1,11 +1,22 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
-import { ArrowUpRight, Beaker, Zap, Shield, ChevronRight, Menu, X, ArrowRight } from "lucide-react"
+import { useState } from "react"
+import {
+  ArrowUpRight,
+  Beaker,
+  Zap,
+  Shield,
+  ChevronRight,
+  Menu,
+  X,
+  ArrowRight,
+  Target,
+  MessageSquare,
+  Gift,
+  RefreshCw,
+} from "lucide-react"
 import { LiveTelemetry } from "@/components/live-telemetry"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function TrinityStorefront() {
   const [activeSection, setActiveSection] = useState("hero")
@@ -16,8 +27,8 @@ export default function TrinityStorefront() {
       id: "growth",
       name: "Growth Kit",
       status: "v0 / Hardening",
-      description: "AI-powered operating module for founder-led B2B growth. Automate content and outbound engines.",
-      tags: ["Content", "Outbound", "Sales Ops"],
+      description: "Distribution mastery for founders. An AI operating system for POV, proof, conversations, and offers.",
+      tags: ["Distribution OS", "POV", "Outbound"],
       highlight: true
     },
     {
@@ -48,6 +59,39 @@ export default function TrinityStorefront() {
     }
   ]
 
+  const distributionLoops = [
+    {
+      step: "01",
+      name: "Point of View",
+      icon: Target,
+      description: "Extract a defensible market thesis from founder insight, buyer pain, and technical taste.",
+    },
+    {
+      step: "02",
+      name: "Proof",
+      icon: Shield,
+      description: "Turn builds, experiments, teardowns, and lessons into artifacts that make the authority visible.",
+    },
+    {
+      step: "03",
+      name: "Conversations",
+      icon: MessageSquare,
+      description: "Convert audience signals and target-account triggers into qualified buyer conversations.",
+    },
+    {
+      step: "04",
+      name: "Offers",
+      icon: Gift,
+      description: "Translate repeated pain into audits, kits, workflows, and implementation packages.",
+    },
+    {
+      step: "05",
+      name: "Conversion",
+      icon: RefreshCw,
+      description: "Feed replies, objections, and calls back into sharper positioning and productized services.",
+    },
+  ]
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
@@ -70,6 +114,7 @@ export default function TrinityStorefront() {
             <div className="hidden md:flex items-center gap-6">
               <button onClick={() => scrollToSection("lab")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">The Lab</button>
               <button onClick={() => scrollToSection("forge")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">The Forge</button>
+              <button onClick={() => scrollToSection("distribution")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">Distribution</button>
               <button onClick={() => scrollToSection("implementation")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">Services</button>
             </div>
           </div>
@@ -95,6 +140,7 @@ export default function TrinityStorefront() {
           <div className="flex flex-col gap-8">
             <button onClick={() => scrollToSection("lab")} className="text-2xl font-bold uppercase tracking-tighter text-left">The Lab</button>
             <button onClick={() => scrollToSection("forge")} className="text-2xl font-bold uppercase tracking-tighter text-left">The Forge</button>
+            <button onClick={() => scrollToSection("distribution")} className="text-2xl font-bold uppercase tracking-tighter text-left">Distribution</button>
             <button onClick={() => scrollToSection("implementation")} className="text-2xl font-bold uppercase tracking-tighter text-left">Services</button>
             <a href="https://calendly.com/daniel-viveiros/15min-intro" target="_blank" className="bg-slate-900 text-white p-4 text-center font-bold uppercase tracking-widest">Request Audit</a>
           </div>
@@ -144,7 +190,7 @@ export default function TrinityStorefront() {
                     <span className="text-[10px] font-mono text-green-600">Growth Kit v0.1</span>
                   </div>
                   <p className="text-xs font-mono text-slate-500 leading-relaxed">
-                    Deploying modular AI skills for outbound prospecting and weekly content engines. Focus: Founder-led leverage.
+                    Deploying modular AI skills for founder distribution: POV, proof, conversations, offers, and conversion.
                   </p>
                 </div>
               </div>
@@ -229,6 +275,48 @@ export default function TrinityStorefront() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Distribution OS Section */}
+        <section id="distribution" className="py-24 px-6 bg-slate-950 text-white border-b border-slate-800">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-12 gap-12 items-start">
+              <div className="lg:col-span-4 space-y-6 lg:sticky lg:top-28">
+                <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-500">// Growth Kit Core</div>
+                <h2 className="text-4xl lg:text-6xl font-bold tracking-tighter uppercase leading-[0.95]">
+                  Distribution Is the Constraint.
+                </h2>
+                <p className="text-slate-400 leading-relaxed">
+                  The Growth Kit is not generic marketing automation. It is a solopreneur distribution system for turning expertise into visible authority, qualified conversations, and productized offers.
+                </p>
+                <button
+                  onClick={() => scrollToSection("implementation")}
+                  className="inline-flex items-center gap-2 bg-white text-slate-950 px-6 py-3 text-xs font-bold uppercase tracking-widest hover:bg-slate-200 transition-colors"
+                >
+                  Request Growth Audit
+                  <ArrowUpRight className="w-4 h-4" />
+                </button>
+              </div>
+
+              <div className="lg:col-span-8 grid md:grid-cols-2 gap-4">
+                {distributionLoops.map((loop) => {
+                  const Icon = loop.icon
+                  return (
+                    <div key={loop.step} className="border border-slate-800 bg-slate-900/50 p-6 space-y-8">
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-mono text-slate-500">{loop.step}</span>
+                        <Icon className="w-5 h-5 text-slate-500" />
+                      </div>
+                      <div className="space-y-3">
+                        <h3 className="text-2xl font-bold uppercase tracking-tight">{loop.name}</h3>
+                        <p className="text-sm text-slate-400 leading-relaxed">{loop.description}</p>
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
             </div>
           </div>
         </section>
