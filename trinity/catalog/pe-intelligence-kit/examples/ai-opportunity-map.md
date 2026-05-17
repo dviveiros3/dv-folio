@@ -1,4 +1,6 @@
-# Example: AI Opportunity Map
+# Example: AI Opportunity Map (Simulated Data)
+**Note: All company names, financial metrics, and ROI figures in this example are simulated for demonstration purposes.**
+
 **Portfolio:** Trinity Growth Fund I
 **Focus:** Margin Expansion via Operational AI
 

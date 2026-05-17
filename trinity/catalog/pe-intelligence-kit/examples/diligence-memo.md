@@ -1,4 +1,6 @@
-# Example: Preliminary Diligence Memo
+# Example: Preliminary Diligence Memo (Simulated Data)
+**Note: All company names, project code names, and financial data in this example are simulated for demonstration purposes.**
+
 **Company:** Project 'Azure' (Anonymized B2B SaaS)
 **Date:** October 2024
 **Stage:** Preliminary Review

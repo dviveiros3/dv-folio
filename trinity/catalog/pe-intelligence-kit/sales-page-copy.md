@@ -18,7 +18,7 @@ A multi-stage workflow that ingests company data and produces high-grade investm
 A scoring and prioritization framework for Platform teams to deploy AI resources where they will have the highest impact on Enterprise Value.
 
 ## Built for Precision and Restraint
-Aligned with the **Trinity Proof Discipline**, this kit is designed for practitioners. We don't promise "fully automated diligence"—we provide the tools that allow a high-performing VP to do the work of three associates.
+Aligned with the **Trinity Proof Discipline**, this kit is designed for practitioners. We don't promise "fully automated diligence"—we provide the framework that allows investment professionals to focus on high-leverage judgment rather than manual data synthesis.
 
 ## Accessing the Kit
 The PE Intelligence Kit is available as a productized workflow module. It includes all prompts, workflow specifications, implementation guides, and example artifacts.

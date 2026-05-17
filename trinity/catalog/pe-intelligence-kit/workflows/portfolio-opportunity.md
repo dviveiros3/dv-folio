@@ -13,9 +13,9 @@ A framework for PE/VC firms to systematically assess and activate AI-driven valu
 - **Action:** Run `Skill: Portfolio AI Opportunity Scan` on the survey results.
 - **Output:** A prioritized ranking of companies with the highest 'AI Leverage Potential'.
 
-### Step 3: Deep-Dive Workshops (The Top 20%)
+### Step 3: Deep-Dive Workshops
 - **Action:** For the highest-scoring companies, conduct a 1-day 'AI Opportunity Mapping' workshop.
-- **Focus:** Identify specific ROI-positive use cases (e.g., 'If we automate 40% of the customer support volume at Company X, EBITDA increases by Y%').
+- **Focus:** Identify specific ROI-positive use cases (e.g., 'If we automate a portion of high-volume customer support tasks at Company X, how does that impact EBITDA?').
 
 ### Step 4: Pilot Design & Execution
 - **Action:** Select 1-2 'Proof of Concept' (PoC) projects per target company.
@@ -24,5 +24,5 @@ A framework for PE/VC firms to systematically assess and activate AI-driven valu
 ### Step 5: Knowledge Sharing
 - **Action:** Create a portfolio-wide 'AI Playbook' to share learnings and vetted vendors across all companies.
 
-## Outcome
-A measurable increase in portfolio-wide operational efficiency and a stronger 'AI-Enabled' narrative for future exits.
+## Design Goal
+To provide a structured path toward increasing portfolio-wide operational efficiency and building a stronger 'AI-Enabled' narrative for future exits.

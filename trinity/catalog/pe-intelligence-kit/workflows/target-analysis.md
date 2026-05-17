@@ -29,4 +29,4 @@ A structured, multi-step process to move from raw data room access to a finalize
 - **Output:** Final draft memo for internal review.
 
 ## Efficiency Gain
-Estimated time reduction: **60-70%** for the 'Drafting' phase of diligence.
+Hypothesis: **60-70% time reduction** for the initial 'Drafting' and 'Synthesis' phases of diligence, to be verified through user testing.
