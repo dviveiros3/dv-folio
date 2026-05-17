@@ -1,4 +1,4 @@
-# Example: Weekly Operator Report
+# Example: Weekly Operator Report (Simulated)
 *Note: This is a fictional example for illustrative purposes. All data, organizations, and names are hypothetical.*
 
 **Date:** October 27, 2024

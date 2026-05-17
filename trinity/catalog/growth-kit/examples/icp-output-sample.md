@@ -1,4 +1,6 @@
-# Sample Output: ICP Definition
+# Sample Output: ICP Definition (Simulated)
+
+*Note: This is a fictional example for illustrative purposes. All data, organizations, and names are hypothetical.*
 
 **Input:** "We sell AI-powered sales coaching to Series B B2B SaaS companies."
 
