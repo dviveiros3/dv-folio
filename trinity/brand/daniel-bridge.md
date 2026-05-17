@@ -34,20 +34,20 @@ Trinity should be introduced as the **execution and research engine** behind Dan
 
 ### Headline & Subheadline
 *   **Current:** "Turn Your Data Team Into a Revenue Engine"
-*   **Proposed:** "Architecting AI Systems that Drive Revenue"
+*   **Proposed:** "Architecting the AI-Powered Growth Engine"
 *   **Subheadline Proposed:** "Strategic AI and data leadership for founders. I build the systems, workflows, and data foundations that turn emerging AI into your competitive advantage."
 
 ### Proof Points
 *   **Current:** Focuses on $4.2M ARR, CAC reduction, Series B raise.
 *   **Added AI Proof:** "Built an AI-enhanced tutoring platform with 94% satisfaction" (already exists, but elevate it).
-*   **New Framing:** "Reduced operational overhead by 40% through productized AI workflows" or "Deployed proprietary RAG systems for executive decision support."
+*   **New Framing:** "Reduced CAC by 40% through AI-enhanced attribution modeling" or "Deployed proprietary RAG systems for executive decision support."
 
 ### Call to Action (CTA)
 *   **Current:** "Start with a Data Strategy Audit"
-*   **Proposed:** "Book an AI Strategy & Systems Audit" (The 2-week engagement now includes "Applied AI Roadmap").
+*   **Proposed:** "Book an Applied AI Systems & Strategy Audit" (The 2-week engagement now includes "Applied AI Roadmap").
 
 ### Services Language
-1.  **AI Systems & Data Strategy Audit (Premium Entry):** Merging the two current audits into one high-value roadmap.
+1.  **Applied AI Systems & Strategy Audit (Premium Entry):** Merging the two current audits into one high-value roadmap.
 2.  **Applied AI Workflow Implementation:** Building specific, productized AI systems (e.g., automated reporting, customer intelligence).
 3.  **Fractional AI & Data Leadership:** Directing the team to execute on the Trinity-inspired roadmap.
 
@@ -72,8 +72,18 @@ Trinity should be introduced as the **execution and research engine** behind Dan
 
 ---
 
-## 5. Implementation Roadmap for Content.ts
+## 5. Proof Discipline & Claim Guardrails
+To maintain brand credibility and ensure later implementation agents do not include unverified claims, the following rules apply:
+
+*   **Verified Claims Only:** Only metrics supported by `data/content.ts` or `data/experience.json` may be used in live site content.
+*   **Label Aspirational Examples:** Any messaging proposals used as placeholders for "Future State" proof must be explicitly labeled as *[Example]* or *[Aspirational]* in strategy documents.
+*   **Distinguish Trinity R&D:** Claims originating from the Trinity Lab (e.g., proprietary RAG benchmarks) must be distinguished from client-specific ROI results.
+*   **No Invention:** Do not extrapolate "Operational Efficiency" percentages unless specifically measured and documented.
+
+---
+
+## 6. Implementation Roadmap for Content.ts
 *   **Hero:** Update `headline` and `subheadline` to reflect Option 2.
-*   **Services:** Rename "Data Strategy Audit" to "AI Strategy & Data Foundation Audit."
+*   **Services:** Rename "Data Strategy Audit" to "Applied AI Systems & Strategy Audit."
 *   **Impact:** Reframe existing metrics as being "foundation for AI scale."
 *   **Pricing:** Update "Data Strategy + AI Readiness Audit" to "Applied AI Systems & Strategy Audit."
