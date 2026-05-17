@@ -4,7 +4,7 @@
 Standardize and accelerate the "intelligence" phase of the investment lifecycle. This kit provides a structured framework for using Large Language Models to screen targets, extract KPIs from unstructured data, and map AI-driven operational leverage across portfolio companies.
 
 ## Target Buyer
-- **PE Associates & VPs:** Who need to move from raw data to a draft diligence memo in hours, not days.
+- **PE Associates & VPs:** Who need to significantly accelerate the transition from raw data to a draft diligence memo.
 - **VC Platform & Operations Leads:** Who want to provide "AI-readiness" as a value-add service to portfolio companies.
 - **Portfolio Operations Directors:** Tasked with identifying margin expansion opportunities through automation and AI.
 
@@ -27,7 +27,7 @@ All ROI, time-savings, and financial metrics included in this kit's examples are
 - **Portfolio AI Opportunity Scan:** A scoring model to rank companies by "AI leverage potential."
 
 ### 2. Workflows (End-to-End Processes)
-- **Target-Company Analysis Workflow:** From raw input to a structured investment memo.
+- **Target-Company Analysis Workflow:** A structured path from raw input to a draft investment memo.
 - **Portfolio AI-Opportunity Workflow:** A roadmap for assessing and prioritizing AI initiatives across multiple assets.
 
 ### 3. Artifacts & Guides

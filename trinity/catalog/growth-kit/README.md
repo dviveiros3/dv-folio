@@ -1,16 +1,16 @@
 # Trinity Growth Kit: AI-Powered Operating Module for Founder-Led B2B
 
 ## Product Promise
-Turn your founder's expertise into a scalable growth engine. The Trinity Growth Kit is not a collection of prompts; it is an **operational operating system** that automates the transition from raw insight to qualified pipeline.
+Turn your founder's expertise into a scalable growth engine. The Trinity Growth Kit is not a collection of prompts; it is an **operational operating system** designed to streamline the transition from raw insight to qualified pipeline.
 
 ## Ideal Buyer
 - **Founder-led B2B companies** ($1M–$10M ARR) where the founder is the primary subject matter expert but the bottleneck for marketing and sales.
 - **Lean Growth Teams** looking for high-leverage workflows to scale content and outbound without increasing headcount.
 
 ## Outcomes
-- **Consistency:** A weekly content engine that never misses a post, maintaining your brand's authority.
+- **Consistency:** A weekly content engine designed to maintain a regular publishing cadence, supporting your brand's authority.
 - **Precision:** AI-driven ICP definition and lead scoring that ensures you only talk to high-intent prospects.
-- **Scale:** Automated outbound drafting that sounds like you, significantly increasing your manual output capacity.
+- **Scale:** Automated outbound drafting designed to increase your output capacity while maintaining your unique voice.
 - **Operational Leverage:** Move from "doing the work" to "reviewing the work."
 
 ## What's Included

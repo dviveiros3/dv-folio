@@ -9,8 +9,8 @@ High-leverage business intelligence for the founder-operator. The Trinity Execut
 - **Chiefs of Staff** tasked with synthesizing cross-departmental data into executive summaries and decision frameworks.
 
 ## Outcomes
-- **Decision Speed:** Transition from identifying a problem to having a structured decision memo in a fraction of the time usually required for manual synthesis.
-- **Reporting Consistency:** A reliable weekly cadence of business intelligence that identifies anomalies before they become crises.
+- **Decision Speed:** Designed to accelerate the transition from identifying a problem to having a structured decision memo.
+- **Reporting Consistency:** A structured weekly cadence of business intelligence designed to help identify anomalies earlier.
 - **Stakeholder Confidence:** Board updates and investor narratives that tie operational metrics to long-term value creation.
 - **Clarity of Action:** Meeting briefs that ensure every high-stakes conversation is prepared, focused, and documented.
 

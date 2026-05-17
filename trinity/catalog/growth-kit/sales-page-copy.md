@@ -23,10 +23,10 @@ We don't just give you the "what"—we give you the "how."
 - **Logic-First:** We focus on the *reasoning* behind the growth, not just the text generation.
 - **Scalable:** Designed to be run by a junior marketer or VA, with the founder only acting as the final "Quality Filter."
 
-### Outcomes You Can Expect:
-- **Scalable Content Production:** Significantly increase your content throughput without increasing your time spent.
-- **Higher Lead Quality:** Reduce time wasted on "tire kickers" through precise, AI-driven scoring.
-- **Reliable Pipeline:** A system that runs even when you're on vacation or focused on the product.
+### Design Goals & Potential Outcomes:
+- **Scalable Content Production:** Designed to significantly increase content throughput without a linear increase in time spent.
+- **Higher Lead Quality:** Aimed at reducing time spent on "tire kickers" through precise, AI-driven lead scoring.
+- **Reliable Pipeline:** A system built to maintain consistency even when the founder is focused on other priorities.
 
 ### Call to Action:
 **[Get the Trinity Growth Kit Now]**
