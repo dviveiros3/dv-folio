@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ArrowUpRight, Menu, X } from 'lucide-react'
+import Link from "next/link"
+import { usePathname, useRouter } from "next/navigation"
 
 interface StickyHeaderProps {
   scrollToSection: (sectionId: string) => void
@@ -12,6 +14,8 @@ interface StickyHeaderProps {
 export function StickyHeader({ scrollToSection, activeSection }: StickyHeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,15 +26,23 @@ export function StickyHeader({ scrollToSection, activeSection }: StickyHeaderPro
   }, [])
 
   const navItems = [
-    { id: "impact", label: "Impact" },
-    { id: "services", label: "Services" },
-    { id: "pricing", label: "Pricing" },
-    { id: "faq", label: "FAQ" },
+    { id: "impact", label: "Impact", href: "/#impact" },
+    { id: "services", label: "Services", href: "/#services" },
+    { id: "pricing", label: "Pricing", href: "/#pricing" },
+    { id: "faq", label: "FAQ", href: "/#faq" },
+    { id: "trinity", label: "Trinity", href: "/trinity" },
   ]
 
-  const handleNavClick = (sectionId: string) => {
-    scrollToSection(sectionId)
+  const handleNavClick = (item: { id: string; href: string }) => {
     setIsMobileMenuOpen(false)
+
+    if (pathname === "/" && item.href.startsWith("/#")) {
+      scrollToSection(item.id)
+    } else if (pathname === "/trinity" && item.href === "/trinity") {
+      scrollToSection("hero")
+    } else {
+      router.push(item.href)
+    }
   }
 
   return (
@@ -44,8 +56,8 @@ export function StickyHeader({ scrollToSection, activeSection }: StickyHeaderPro
         transition={{ duration: 0.5 }}
       >
         <div className="max-w-6xl mx-auto px-6 sm:px-8 flex items-center justify-between">
-          <button
-            onClick={() => handleNavClick("hero")}
+          <Link
+            href="/"
             className="flex items-center gap-2 group"
             aria-label="Go to home"
           >
@@ -57,13 +69,13 @@ export function StickyHeader({ scrollToSection, activeSection }: StickyHeaderPro
             }`}>
               Daniel Viveiros
             </span>
-          </button>
+          </Link>
 
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
+                onClick={() => handleNavClick(item)}
                 className={`text-sm font-medium transition-colors hover:text-slate-900 ${
                   activeSection === item.id ? "text-slate-900" : "text-slate-500"
                 }`}
@@ -75,7 +87,7 @@ export function StickyHeader({ scrollToSection, activeSection }: StickyHeaderPro
 
           <div className="flex items-center gap-3">
             <button
-              onClick={() => scrollToSection("pricing")}
+              onClick={() => handleNavClick({ id: "pricing", href: "/#pricing" })}
               className="flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white text-sm font-medium px-4 py-2 rounded-sm transition-colors"
             >
               <span className="hidden sm:inline">Book Call</span>
@@ -108,7 +120,7 @@ export function StickyHeader({ scrollToSection, activeSection }: StickyHeaderPro
               {navItems.map((item) => (
                 <button
                   key={item.id}
-                  onClick={() => handleNavClick(item.id)}
+                  onClick={() => handleNavClick(item)}
                   className={`text-left px-4 py-3 rounded-sm transition-colors ${
                     activeSection === item.id
                       ? "bg-slate-100 text-slate-900 font-medium"
