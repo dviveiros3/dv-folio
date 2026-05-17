@@ -4,7 +4,7 @@
 Trinity is an applied AI lab that converts technical leadership into business leverage through high-conviction product builds and strategic implementation.
 
 ## Narrative
-In an era of generic "AI agencies" and prompt-engineered wrappers, Trinity stands apart as a practitioner-led lab. We don't just "implement AI"; we build the systems that redefine a company's unit economics. Founded by Daniel Viveiros, Trinity combines deep technical taste with the pragmatism of a seasoned operator. We focus on the "Applied" in AI—moving beyond experimental chatter to deployments that generate revenue, reduce CAC, and create defensible moats. Trinity is where sophisticated engineering meets strategic capital, building products that solve hard problems and services that make companies acquirable.
+In an era of generic "AI agencies" and prompt-engineered wrappers, Trinity stands apart as a practitioner-led lab. We don't just "implement AI"; we architect the systems that redefine a company's unit economics. Founded by Daniel Viveiros, Trinity combines deep technical taste with the pragmatism of a seasoned operator who has scaled analytics for 150+ users and identified millions in revenue optimization. We focus on the "Applied" in AI—moving beyond experimental chatter to workflows designed for revenue impact, operational efficiency, and defensible moats. Trinity is where sophisticated engineering meets strategic capital, building products that solve hard problems and services that make companies acquirable.
 
 ## Target Buyer Types
 1.  **The Scale-Up Founder:** Needs AI to maintain growth without linear headcount increases.
@@ -32,13 +32,13 @@ In an era of generic "AI agencies" and prompt-engineered wrappers, Trinity stand
 *   **Message:** We de-risk the technical stack of your portfolio companies. By implementing rigorous AI infrastructure and proprietary product engines, we turn legacy tech debt into modern, acquirable assets with higher valuation multiples.
 
 ## Landing Page Headlines
-1.  Applied AI for the Post-Hype Era.
-2.  Build Leverage, Not Just Automation.
-3.  The Applied AI Lab for High-Conviction Founders.
-4.  Technical Leadership for Your Most Ambitious AI Builds.
-5.  Convert Data into Defensible Moats.
-6.  Where Engineering Taste Meets Business Leverage.
-7.  AI Implementation with Acquisition-Level Credibility.
+1.  Architecting the AI-Powered Growth Engine.
+2.  Applied AI for the Post-Hype Era.
+3.  Build Leverage, Not Just Automation.
+4.  The Applied AI Lab for High-Conviction Founders.
+5.  Technical Leadership for Your Most Ambitious AI Builds.
+6.  Convert Data into Defensible Moats.
+7.  Where Engineering Taste Meets Business Leverage.
 
 ## Brand Principles
 
@@ -54,7 +54,7 @@ In an era of generic "AI agencies" and prompt-engineered wrappers, Trinity stand
 *   We don't chase every trend. We say "no" to shallow integrations. Our value is in what we choose *not* to build as much as what we do.
 
 ### Proof
-*   Case studies are quantitative. We lead with ARR impact, CAC reduction, and deployment speed. No "fluff" testimonials.
+*   We lead with Daniel's verified historical impact—including $4.2M in new ARR and 40% CAC reduction—while framing Trinity's AI work through qualified, high-conviction design goals. No "fluff" testimonials.
 
 ### Ambition
 *   We aren't just a service provider; we are a product lab. We build for the long term, with the goal of creating independent, profitable AI assets.
