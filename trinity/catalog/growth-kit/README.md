@@ -6,6 +6,9 @@ Turn your founder's expertise into a scalable growth engine. The Trinity Growth 
 ## Entry Offer: AI Growth Audit
 Before a full implementation, we recommend starting with the [AI Growth Audit](./growth-audit.md). It is a 1-week diagnostic designed to roadmap your Distribution OS and identify the highest-leverage AI workflows for your specific market.
 
+- **Sample Output:** See what a completed audit looks like in the [Sample Diagnostic Artifact](./examples/growth-audit-artifact-sample.md).
+- **Preparation:** Review the [Buyer Intake Checklist](./growth-audit-intake.md) to see what is required to get started.
+
 ## Ideal Buyer
 - **Founder-led B2B companies** ($1M–$10M ARR) where the founder is the primary subject matter expert but the bottleneck for marketing and sales.
 - **Lean Growth Teams** looking for high-leverage workflows to scale content and outbound without increasing headcount.
