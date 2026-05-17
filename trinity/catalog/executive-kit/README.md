@@ -8,11 +8,11 @@ High-leverage business intelligence for the founder-operator. The Trinity Execut
 - **Fractional COOs/CFOs** looking for a standardized, AI-enhanced reporting engine to deploy across multiple clients.
 - **Chiefs of Staff** tasked with synthesizing cross-departmental data into executive summaries and decision frameworks.
 
-## Outcomes
-- **Decision Speed:** Transition from identifying a problem to having a structured decision memo in a fraction of the time usually required for manual synthesis.
-- **Reporting Consistency:** A reliable weekly cadence of business intelligence that identifies anomalies before they become crises.
-- **Stakeholder Confidence:** Board updates and investor narratives that tie operational metrics to long-term value creation.
-- **Clarity of Action:** Meeting briefs that ensure every high-stakes conversation is prepared, focused, and documented.
+## Target Outcomes
+- **Decision Speed:** Designed to accelerate the transition from identifying a problem to having a structured decision memo by reducing manual synthesis time.
+- **Reporting Consistency:** Aims to provide a reliable weekly cadence of business intelligence to identify operational anomalies early.
+- **Stakeholder Confidence:** Frameworks for board updates and investor narratives that tie operational metrics to long-term value creation.
+- **Clarity of Action:** Meeting briefs designed to ensure high-stakes conversations are prepared, focused, and documented.
 
 ## What's Included
 1.  **Skills (AI Instructions):** Modular system prompts for:

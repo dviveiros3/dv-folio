@@ -1,4 +1,6 @@
-# Sample Output: Outbound Email Sequence
+# Sample Output: Outbound Email Sequence (Simulated)
+
+*Note: This is a fictional example for illustrative purposes. All data, organizations, and names are hypothetical.*
 
 **Trigger:** Prospect (Head of Sales) just posted on LinkedIn about the difficulty of maintaining "sales quality" during rapid hiring.
 

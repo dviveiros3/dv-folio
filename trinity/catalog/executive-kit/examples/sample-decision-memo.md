@@ -1,4 +1,4 @@
-# Example: Decision Memo
+# Example: Decision Memo (Simulated)
 *Note: This is a fictional example for illustrative purposes. All data, organizations, and names are hypothetical.*
 
 **Decision:** Should we sunset the "Basic" plan ($49/mo) to focus exclusively on Mid-Market ($299/mo+)?

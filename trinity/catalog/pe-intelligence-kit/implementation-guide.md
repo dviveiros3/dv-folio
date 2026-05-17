@@ -27,4 +27,4 @@ AI-generated diligence materials should **never** be sent to an Investment Commi
 1. **Verification (Primary Source):** Cross-check all extracted KPIs and financial figures against the original source documents (audited financials, tax returns).
 2. **Contextualization:** AI cannot 'know' the reputation of a management team, the nuances of a specific regional market, or the political landscape of a deal. These must be added by the analyst.
 3. **Tone Check:** Ensure the AI hasn't been overly optimistic or pessimistic. Maintain a neutral, professional 'Diligence Tone' as defined by your firm’s standards.
-4. **Compliance Approval:** Ensure final outputs adhere to internal compliance and legal guidelines regarding investment recommendations.
+4. **Compliance Approval:** Ensure final outputs adhere to internal compliance and legal guidelines. Note that Trinity provides intelligence tools, not investment, legal, or compliance advice.

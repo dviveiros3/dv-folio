@@ -4,7 +4,7 @@
 **Stop "Running" the Business. Start Leading It.**
 
 ## Sub-headline
-Standardize your leadership intelligence with the AI-powered Executive Kit. Turn fragmented data into board-ready narratives and high-stakes decision memos in a fraction of the usual time.
+Standardize your leadership intelligence with the AI-powered Executive Kit. Turn fragmented data into board-ready narratives and high-stakes decision memos while significantly reducing manual synthesis effort.
 
 ---
 
@@ -20,19 +20,19 @@ This is not a dashboard. It's a **Reporting & Decision Engine**. Built on the lo
 ### What You Get:
 - **The Weekly Intelligence Packet:** A synthesized view of your KPIs, wins, and blockers that actually tells you *what to do next*.
 - **The Decision Memo Framework:** Stop making decisions in Slack. Use our AI-enhanced DACI and 1-Way Door frameworks to make choices that stick.
-- **Board-Ready Narratives:** Prepare for your next investor update or board meeting in a fraction of the time, with significantly higher strategic clarity.
+- **Board-Ready Narratives:** Accelerate the preparation of investor updates or board meetings while enhancing strategic clarity through AI-assisted synthesis.
 - **Meeting Preparation on Autopilot:** Never walk into a high-stakes meeting unprepared again.
 
 ## Why Trinity?
 We don't do "generic AI." We do **Applied Leverage**.
 - **No Fluff:** Every output is designed for a business outcome, not just "summarization."
-- **Practitioner-Led:** Built by operators who have led data teams at Series A-C startups.
+- **Practitioner-Led:** Built by operators who have led data teams and scaled self-service analytics to 150+ users.
 - **System-First:** We give you the skills, the workflows, and the implementation guide to make it permanent.
 
-## Qualified Claims
-- **Efficiency:** Significantly reduce the time spent on weekly reporting while increasing output quality.
-- **Clarity:** Eliminate "I didn't know that was a problem" from your leadership syncs.
-- **Documentation:** Create a permanent, searchable record of every major decision and its rationale.
+## Design Goals & Qualified Claims
+- **Efficiency:** Designed to significantly reduce the manual effort required for weekly reporting while maintaining high output quality.
+- **Clarity:** Aims to provide earlier visibility into operational anomalies before they escalate.
+- **Documentation:** Facilitates the creation of a permanent, searchable record of major decisions and their underlying rationale.
 
 ## Call to Action
 **Upgrade Your Executive OS.**

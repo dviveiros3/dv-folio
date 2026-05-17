@@ -24,9 +24,9 @@ Every asset in this catalog is designed to be:
 
 | Kit | Status | Path |
 | :--- | :--- | :--- |
-| **Growth Kit** | v0 Candidate | [`/trinity/catalog/kits/growth-kit/`](./kits/growth-kit/) |
-| **Executive Kit** | v0.5 Candidate | [`/trinity/catalog/kits/executive-kit/`](./kits/executive-kit/) |
-| **PE Intelligence Kit** | v0.5 Candidate | [`/trinity/catalog/kits/pe-intelligence-kit/`](./kits/pe-intelligence-kit/) |
+| **Growth Kit** | v0 Candidate | [`/trinity/catalog/growth-kit/`](./growth-kit/) |
+| **Executive Kit** | v0.5 Candidate | [`/trinity/catalog/executive-kit/`](./executive-kit/) |
+| **PE Intelligence Kit** | v0.5 Candidate | [`/trinity/catalog/pe-intelligence-kit/`](./pe-intelligence-kit/) |
 
 ---
 

@@ -24,4 +24,4 @@ This checklist ensures your environment and data are properly prepared before de
 - [ ] **Final Compliance Pass:** Ensure all final artifacts adhere to internal guidelines for investment committee materials.
 
 ---
-**Disclaimer:** This checklist is a framework for operational readiness and does not constitute legal or compliance advice.
+**Disclaimer:** This checklist is a framework for operational readiness and does not constitute investment, legal, compliance, or HR advice.
