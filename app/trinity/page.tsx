@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, type ReactNode } from "react"
 import {
   ArrowUpRight,
   Beaker,
@@ -125,9 +125,9 @@ const DISTRIBUTION_OS_SPEC = (
 
 export default function TrinityStorefront() {
   const [activeSection, setActiveSection] = useState("hero")
-  const [modalContent, setModalContent] = useState<{ title: string, content: React.ReactNode } | null>(null)
+  const [modalContent, setModalContent] = useState<{ title: string, content: ReactNode } | null>(null)
 
-  const openModal = (title: string, content: React.ReactNode) => {
+  const openModal = (title: string, content: ReactNode) => {
     setModalContent({ title, content })
     document.body.style.overflow = 'hidden'
   }
