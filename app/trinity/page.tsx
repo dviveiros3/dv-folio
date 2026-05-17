@@ -5,7 +5,6 @@ import { motion } from "framer-motion"
 import { ArrowUpRight, Beaker, Zap, Shield, ChevronRight, Menu, X, ArrowRight } from "lucide-react"
 import { LiveTelemetry } from "@/components/live-telemetry"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function TrinityStorefront() {
   const [activeSection, setActiveSection] = useState("hero")
@@ -68,9 +67,24 @@ export default function TrinityStorefront() {
               <span className="font-bold tracking-tighter text-xl uppercase">Trinity</span>
             </Link>
             <div className="hidden md:flex items-center gap-6">
-              <button onClick={() => scrollToSection("lab")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">The Lab</button>
-              <button onClick={() => scrollToSection("forge")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">The Forge</button>
-              <button onClick={() => scrollToSection("implementation")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">Services</button>
+              <button
+                onClick={() => scrollToSection("lab")}
+                className={`text-sm font-bold uppercase tracking-widest transition-colors ${activeSection === "lab" ? "text-slate-900 border-b-2 border-slate-900" : "text-slate-400 hover:text-slate-900"}`}
+              >
+                The Lab
+              </button>
+              <button
+                onClick={() => scrollToSection("forge")}
+                className={`text-sm font-bold uppercase tracking-widest transition-colors ${activeSection === "forge" ? "text-slate-900 border-b-2 border-slate-900" : "text-slate-400 hover:text-slate-900"}`}
+              >
+                The Forge
+              </button>
+              <button
+                onClick={() => scrollToSection("implementation")}
+                className={`text-sm font-bold uppercase tracking-widest transition-colors ${activeSection === "implementation" ? "text-slate-900 border-b-2 border-slate-900" : "text-slate-400 hover:text-slate-900"}`}
+              >
+                Services
+              </button>
             </div>
           </div>
           <div className="flex items-center gap-4">
@@ -93,9 +107,24 @@ export default function TrinityStorefront() {
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-40 bg-white pt-24 px-6 md:hidden">
           <div className="flex flex-col gap-8">
-            <button onClick={() => scrollToSection("lab")} className="text-2xl font-bold uppercase tracking-tighter text-left">The Lab</button>
-            <button onClick={() => scrollToSection("forge")} className="text-2xl font-bold uppercase tracking-tighter text-left">The Forge</button>
-            <button onClick={() => scrollToSection("implementation")} className="text-2xl font-bold uppercase tracking-tighter text-left">Services</button>
+            <button
+              onClick={() => scrollToSection("lab")}
+              className={`text-4xl font-bold uppercase tracking-tighter text-left ${activeSection === "lab" ? "text-slate-900" : "text-slate-300"}`}
+            >
+              The Lab
+            </button>
+            <button
+              onClick={() => scrollToSection("forge")}
+              className={`text-4xl font-bold uppercase tracking-tighter text-left ${activeSection === "forge" ? "text-slate-900" : "text-slate-300"}`}
+            >
+              The Forge
+            </button>
+            <button
+              onClick={() => scrollToSection("implementation")}
+              className={`text-4xl font-bold uppercase tracking-tighter text-left ${activeSection === "implementation" ? "text-slate-900" : "text-slate-300"}`}
+            >
+              Services
+            </button>
             <a href="https://calendly.com/daniel-viveiros/15min-intro" target="_blank" className="bg-slate-900 text-white p-4 text-center font-bold uppercase tracking-widest">Request Audit</a>
           </div>
         </div>
@@ -290,22 +319,8 @@ export default function TrinityStorefront() {
           </div>
           <div className="flex items-center gap-8">
             <Link href="/" className="text-xs font-bold uppercase tracking-widest hover:text-slate-500 transition-colors">Back to DanielViveiros.com</Link>
-            <button
-              onClick={() => {
-                alert("The full Terms and Privacy policy is being finalized for Trinity Lab. All current work follows Daniel's standard professional services agreement.")
-              }}
-              className="text-xs font-bold uppercase tracking-widest hover:text-slate-500 transition-colors"
-            >
-              Terms
-            </button>
-            <button
-              onClick={() => {
-                alert("Privacy Policy: Trinity Lab does not collect personal data from visitors. For client implementations, we follow strict redaction and MNPI protocols as defined in our Implementation Guides.")
-              }}
-              className="text-xs font-bold uppercase tracking-widest hover:text-slate-500 transition-colors"
-            >
-              Privacy
-            </button>
+            <Link href="/trinity/terms" className="text-xs font-bold uppercase tracking-widest hover:text-slate-500 transition-colors">Terms</Link>
+            <Link href="/trinity/privacy" className="text-xs font-bold uppercase tracking-widest hover:text-slate-500 transition-colors">Privacy</Link>
           </div>
         </div>
         <div className="mt-8 text-center text-[10px] font-mono text-slate-400 uppercase tracking-[0.2em]">
