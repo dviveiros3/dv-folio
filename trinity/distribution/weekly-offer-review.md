@@ -50,7 +50,15 @@ Every Friday, update this file with:
 - Cut:
 - Test next:
 
-## First Review: 2026-05-22
+## Weekly Review Log
+
+| Week Ending | Theme | Artifact | Status |
+| --- | --- | --- | --- |
+| 2026-05-22 | Distribution as a founder constraint | [2026-05-22 Review](./weekly-reviews/2026-05-22-review.md) | Planned |
+
+## First Review: 2026-05-22 (Summary)
+
+**Artifact:** [Full Review Artifact](./weekly-reviews/2026-05-22-review.md)
 
 **Theme:**
 Distribution is the constraint for founders building with AI.

@@ -20,6 +20,7 @@ This log separates real proof from ideas, samples, and hypotheses. It prevents T
 | 2026-05-17 | Trinity Distribution OS created | Observed | `trinity/catalog/growth-kit/distribution-os.md` | Trinity has a documented Distribution OS | Surface it in publishing |
 | 2026-05-17 | AI Growth Audit entry offer created | Observed | `trinity/catalog/growth-kit/growth-audit.md` | Trinity has an entry diagnostic offer | Add sample deliverable |
 | 2026-05-17 | Growth Audit sample diagnostic requested | Hypothesis | Issue #71 | Not public until proof-safe sample is merged | Remove fictional verified claims before merge |
+| 2026-05-19 | Weekly Review Loop Operational | Observed | `trinity/distribution/weekly-reviews/2026-05-22-review.md` | Trinity has a weekly learning and offer improvement loop | Execute first review on 2026-05-22 |
 
 ## Weekly Review Questions
 - What did we publish?
