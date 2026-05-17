@@ -9,7 +9,7 @@ The AI Growth Audit is a high-conviction entry offer designed to help founders t
 - **The Early-Stage Operator:** Responsible for growth but stuck in manual, unscalable workflows.
 
 ## Deliverables
-The audit is a 1-week diagnostic engagement resulting in:
+The audit is a 1-week diagnostic engagement. A buyer can inspect the simulated [Sample Diagnostic Artifact](./examples/growth-audit-artifact-sample.md) before booking.
 
 1.  **POV & Thesis Audit:** A critical review of your current market positioning and authority signals. We identify where your "Point of View" is generic and how to sharpen it for AI extraction.
 2.  **Distribution Loop Diagnostic:** Mapping your current "Proof," "Conversation," and "Offer" loops to identify the primary bottleneck (e.g., you have proof but no conversations, or conversations but no offers).
@@ -17,7 +17,7 @@ The audit is a 1-week diagnostic engagement resulting in:
 4.  **90-Day Implementation Roadmap:** A prioritized sequence for deploying the Growth Kit modules, starting with the highest-leverage loop first.
 
 ## What the Audit Requires
-To ensure high-conviction outputs, the buyer must provide:
+To ensure high-conviction outputs, the buyer completes the [Buyer Intake Checklist](./growth-audit-intake.md), including:
 - **Founder Context:** A 15-minute recorded brief on market thesis and ideal buyer pain.
 - **Asset Access:** Samples of previous successful content, sales decks, or customer success stories.
 - **Tech Stack Review:** Overview of current CRM, LinkedIn usage, and email tools.
