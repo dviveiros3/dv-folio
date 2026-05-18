@@ -33,7 +33,7 @@ This worksheet is for the manual selection, research, and preparation of the fir
 *Verify these 5 points before sending any message.*
 
 - [ ] **Proof Verification:** Can I point to at least one specific artifact (post, repo, case study, video) they created?
-- [ ] **Loop Leak Identification:** Have I identified which of the 5 loops (POV, Proof, Conv, Offer, Conversion) is their primary bottleneck?
+- [ ] **Loop Leak Identification:** Have I identified which of the 5 loops (POV, Proof, Conversations, Offers, Conversion) is their primary bottleneck?
 - [ ] **Recency Check:** Have they posted or been active in the last 14 days?
 - [ ] **Context Alignment:** Is there a recent post or event I can reference that isn't a generic "I liked your profile"?
 - [ ] **Tone Check:** Does the message sound like one operator talking to another, or does it sound like a "pitch"?
