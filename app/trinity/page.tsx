@@ -326,7 +326,7 @@ export default function TrinityStorefront() {
       id: "growth",
       name: "Growth Kit",
       status: "v0 / Hardening",
-      description: "Distribution mastery for founders. An AI operating system for POV, proof, conversations, and offers.",
+      description: "The implementation path for mastering founder-led distribution. Deploy the Distribution OS after an AI Growth Audit.",
       tags: ["Distribution OS", "POV", "Outbound"],
       highlight: true
     },
@@ -465,7 +465,7 @@ export default function TrinityStorefront() {
                   Growth Engine
                 </h1>
                 <p className="text-xl text-slate-600 max-w-xl leading-relaxed">
-                  Trinity is an applied AI lab and product storefront. We build the high-conviction workflows that turn technical leadership into business leverage.
+                  Trinity is Daniel Viveiros' applied AI lab and product engine. We build the high-conviction workflows that turn technical leadership into business leverage.
                 </p>
                 <div className="flex flex-wrap gap-4 pt-4">
                   <button
@@ -591,7 +591,7 @@ export default function TrinityStorefront() {
                   Distribution Is the Constraint.
                 </h2>
                 <p className="text-slate-400 leading-relaxed">
-                  The Growth Kit is not generic marketing automation. It is a solopreneur distribution system for turning expertise into visible authority, qualified conversations, and productized offers.
+                  The Growth Kit is the implementation path for mastering founder-led distribution. It is a systematic Distribution OS for turning expertise into visible authority, qualified conversations, and productized offers.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <button
@@ -643,7 +643,7 @@ export default function TrinityStorefront() {
                   <span className="text-slate-400">Audit</span>
                 </h2>
                 <p className="text-xl text-slate-600 leading-relaxed max-w-lg">
-                  A 1-week high-conviction diagnostic designed to roadmap your Distribution OS and identify the highest-leverage AI workflows for your specific market.
+                  The primary entry offer. A 1-week high-conviction diagnostic designed to roadmap your Distribution OS and identify the highest-leverage AI workflows for your specific market.
                 </p>
 
                 <div className="space-y-4">
@@ -809,7 +809,7 @@ export default function TrinityStorefront() {
 
             <div className="mt-16 p-8 border border-dashed border-slate-300 bg-slate-50 text-center">
               <p className="text-sm text-slate-500 italic max-w-2xl mx-auto">
-                Trinity is being built in public. These are inspectable artifacts from the active Growth Distribution Sprint, demonstrating how the lab captures signal and improves the offer weekly.
+                Trinity is built in public. These are inspectable artifacts from the active Growth Distribution Sprint, demonstrating how we publish, converse, capture proof, and improve the offer weekly.
               </p>
             </div>
           </div>
