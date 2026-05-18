@@ -30,7 +30,7 @@ These are for people Daniel is already connected with or has engaged with recent
 > "Enjoyed the [Specific Artifact/Result] you shared recently. Most people just talk (the 'Guru' trap), but you're actually showing the work. I'm codifying a 'Proof Loop' as part of a Distribution OS—basically turning those wins into a repeatable engine. If you're open to it, I'd love to show you the visual spec I’m working on."
 
 **Option 4: The Bottleneck Inquiry**
-> "Hey [Name], I've been thinking about the four loops of distribution (POV, Proof, Conversations, Offers). I’ve noticed a lot of founders have the Proof but lack the Conversation loop. Where do you feel the biggest leak is in your own engine right now?"
+> "Hey [Name], I've been thinking about the five loops of distribution (POV, Proof, Conversations, Offers, Conversion). I’ve noticed a lot of founders have the Proof but lack the Conversation loop. Where do you feel the biggest leak is in your own engine right now?"
 
 **Option 5: The Lab Note Follow-up (Direct)**
 > "[Name], just published a lab note on the 'Distribution OS' framework. It’s a bit of an 'anti-automation' take on founder growth. Given your focus on [Their Focus], I thought the 'POV Loop' section might resonate. Happy to send over the link if you're curious."
@@ -41,8 +41,8 @@ These are for people Daniel is already connected with or has engaged with recent
 Use these when someone likes or comments on the Week 1 LinkedIn posts.
 
 **Pattern 1: The "Which Loop" Follow-up**
-(If they commented on the "4 loops" post or liked it)
-> "Thanks for the signal on the Distribution OS post, [Name]. When you look at those four loops (POV, Proof, Conversation, Offer), which one feels like the biggest bottleneck for you right now? I'm trying to see where the common friction points are for founders."
+(If they commented on the "5 loops" post or liked it)
+> "Thanks for the signal on the Distribution OS post, [Name]. When you look at those five loops (POV, Proof, Conversation, Offer, Conversion), which one feels like the biggest bottleneck for you right now? I'm trying to see where the common friction points are for founders."
 
 **Pattern 2: The "Slop vs. System" Follow-up**
 (If they engaged with the "AI Slop" or "Taste" posts)
