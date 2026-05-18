@@ -21,7 +21,7 @@ The goal is not vanity engagement; it is identifying bottlenecks, capturing obje
 **Goal:** Move high-intent signals from the public feed into the [Proof Capture Log](./proof-capture-log.md).
 
 *   **Review "Hidden Buyers":** Look for ICPs who liked the post but didn't comment. These are prime candidates for [Warm Outbound](./week-1-warm-outbound-pack.md).
-*   **DM Outreach:** Reach out to anyone who asked a "how-to" question or expressed a bottleneck. Use the adaptation notes in the [Publishing Packet](./week-1-publishing-packet.md).
+*   **DM Outreach:** Reach out only when someone asked a "how-to" question, expressed a bottleneck, or is a clearly relevant ICP. Use the adaptation notes in the [Publishing Packet](./week-1-publishing-packet.md).
 *   **Objection Capture:** If anyone questioned the feasibility or cost, record their *exact phrasing* in the [Objection Bank](./growth-audit-objection-bank.md).
 *   **Log the Artifact:** Record the post performance in the [Proof Capture Log](./proof-capture-log.md) as "Observed" signal.
 
@@ -31,7 +31,7 @@ The goal is not vanity engagement; it is identifying bottlenecks, capturing obje
 | Signal Type | Classification | Action |
 | --- | --- | --- |
 | **Generic Like** | Noise | Ignore unless from a high-value ICP. |
-| **ICP Like** | Soft Signal | Use as "permission" for a warm DM (e.g., "Saw you caught the note on [Thesis]...") |
+| **ICP Like** | Soft Signal | Consider a warm DM only if there is specific context beyond the like. |
 | **Validation Comment** | Reputation | Acknowledge/Thank. Reinforce the POV. |
 | **Inquiry Comment** | Hard Signal | Answer briefly, then **move to DM** for context. |
 | **Objection Comment** | Intelligence | Respond with a proof-safe answer. Log exact phrasing in Objection Bank. |
@@ -75,8 +75,8 @@ Run this checklist for every post in the [Content Backlog](./content-backlog.md)
 
 - [ ] **30m:** Replied to all initial comments.
 - [ ] **30m:** Checked LinkedIn "Analytics" for initial ICP alignment.
-- [ ] **24h:** Followed up with all "Inquiry" commenters via DM.
-- [ ] **24h:** Checked likes for "Hidden Buyers" and initiated 3+ warm DMs.
-- [ ] **Log:** Captured 1+ exact objection phrase in the [Objection Bank](./growth-audit-objection-bank.md).
+- [ ] **24h:** Followed up with relevant "Inquiry" commenters via DM.
+- [ ] **24h:** Checked likes for "Hidden Buyers" and initiated only context-specific warm DMs.
+- [ ] **Log:** Captured exact objection phrases in the [Objection Bank](./growth-audit-objection-bank.md) only when real objections appeared.
 - [ ] **Log:** Updated [Proof Capture Log](./proof-capture-log.md) with the post link and confidence level.
 - [ ] **Review:** Noted which [Distribution OS Loop](../catalog/growth-kit/distribution-os.md) the post targeted and if it hit.
