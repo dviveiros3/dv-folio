@@ -25,9 +25,9 @@ To capture high-signal data from every conversation generated during the Growth 
 
 ## Conversation Tracker
 
-| Date | Source | Buyer Profile | Qual Score (1-5) | Exact Buyer Language | Objection | Value Signal | Price Reaction | Decision | Next Action | Confidence |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | | | | | |
+| Date | Source | Buyer Profile | Qual Score (1-5) | Exact Buyer Language | Objection | Value Signal | Price Hypothesis | Price Reaction (Exact Language) | Price Friction (1-5) | Anchor/Alternative | Decision | Next Action | Confidence |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | | | | | | |
 
 ## Weekly Rollup Template
 *Every Friday, aggregate the tracker data into this template and use it to update [Weekly Offer Review](./weekly-offer-review.md).*
@@ -45,6 +45,8 @@ To capture high-signal data from every conversation generated during the Growth 
 - "[Which deliverable or loop resonated?]"
 
 **Price Feedback Summary:**
+- [Average Price Friction Score]
+- [Common Anchor/Alternative mentions]
 - [Resistance/Acceptance/Friction points]
 
 **Offer Pivot Hypothesis:**
