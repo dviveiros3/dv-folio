@@ -13,7 +13,7 @@ The Growth Audit follows a 7-step loop to turn expertise into signal and signal 
 3.  **Capture:** Log exact buyer language and objections in the [Manual CRM Specification](./growth-audit-manual-crm-spec.md) (Tab 2: Conversation Tracker).
 4.  **Qualify:** Run 15-minute diagnostic calls using the [Discovery Call Script](./growth-audit-discovery-call-script.md).
 5.  **Onboard:** Kick off the 1-week diagnostic using the [Buyer Onboarding Checklist](../catalog/growth-kit/growth-audit-buyer-onboarding.md).
-6.  **Deliver:** Perform the audit and hand over the [Sample Deliverable](../catalog/growth-kit/examples/growth-audit-artifact-sample.md).
+6.  **Deliver:** Perform the audit, run the [Delivery QA Checklist](../catalog/growth-kit/growth-audit-delivery-qa-checklist.md), then hand over the buyer-specific diagnostic.
 7.  **Review:** Update the offer every Friday using the [Beta Decision Dashboard](./growth-audit-beta-decision-dashboard.md).
 
 ---
@@ -34,6 +34,7 @@ The Growth Audit follows a 7-step loop to turn expertise into signal and signal 
 | **Offers** | [Paid Beta Offer Sheet](../catalog/growth-kit/growth-audit-paid-beta-offer-sheet.md) | The definitive "what you get" for the beta. |
 | **Onboarding** | [Buyer Onboarding Checklist](../catalog/growth-kit/growth-audit-buyer-onboarding.md) | Manual sequence from "Yes" to "Kickoff." |
 | **Onboarding** | [Intake Checklist](../catalog/growth-kit/growth-audit-intake.md) | Asset collection (Founder Tape, Proof Inventory). |
+| **Delivery** | [Delivery QA Checklist](../catalog/growth-kit/growth-audit-delivery-qa-checklist.md) | Final send / hold / revise gate before buyer delivery. |
 | **Nurture** | [No-Fit Nurture Guide](../catalog/growth-kit/growth-audit-no-fit-nurture.md) | High-status deferral and readiness steps. |
 | **Decisions** | [Beta Decision Dashboard](./growth-audit-beta-decision-dashboard.md) | Friday review matrix and pivot triggers. |
 
