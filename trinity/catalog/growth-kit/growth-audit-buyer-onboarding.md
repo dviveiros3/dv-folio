@@ -7,15 +7,15 @@ This document outlines the manual, high-conviction onboarding process for the Tr
 ## 1. The Handoff: From "Yes" to Kickoff
 Once the [Discovery Call](../../distribution/growth-audit-discovery-call-script.md) concludes with a "Yes," the transition follows this manual sequence:
 
-1. **Daniel sends the Onboarding Brief:** A single DM or email containing the payment link and this checklist.
-2. **Buyer confirms payment:** The audit is officially "booked" once payment is received.
+1. **Daniel sends the Onboarding Brief:** A single DM or email containing payment instructions, intake instructions, and this checklist.
+2. **Buyer confirms terms:** The audit is officially "booked" once payment terms are confirmed.
 3. **The "Truth" Window opens:** The 1-week timeline begins the moment the [Intake Checklist](./growth-audit-intake.md) is returned.
 
 ## 2. What Daniel Sends (Post-Yes)
 You will receive a single message containing:
-- **Payment Link:** Secure checkout via Stripe (Manual invoice available upon request).
-- **Secure Intake Link:** A private, time-limited link for uploading sensitive assets and the [Founder Tape](./growth-audit-intake.md#4-high-signal-buyer-inputs).
-- **Scheduling Link:** To book your 30-minute Roadmap Review call (exactly 7 days from the kickoff date).
+- **Payment Instructions:** `[PAYMENT_INSTRUCTIONS_PLACEHOLDER]`
+- **Intake Instructions:** `[INTAKE_HANDOFF_PLACEHOLDER]` for sharing sensitive assets and the [Founder Tape](./growth-audit-intake.md#4-high-signal-buyer-inputs).
+- **Scheduling Instructions:** `[REVIEW_CALL_SCHEDULING_PLACEHOLDER]` for the 30-minute Roadmap Review call.
 
 ## 3. What the Buyer Returns (Pre-Audit)
 Before the diagnostic begins, the buyer must provide the following "Raw Material":
@@ -68,9 +68,9 @@ Great speaking today. I’m looking forward to digging into the [Specific Loop, 
 
 To get the 1-week clock started, here are the next steps:
 
-1. **Secure Your Slot:** [Link to Stripe/Payment]
-2. **Complete the Intake:** Please review the [Intake Checklist](./growth-audit-intake.md) and upload your **Founder Tape** and **Proof Inventory** here: [Secure Upload Link]
-3. **Book the Review:** Use this link to book our Roadmap Review for 7 days from today: [Calendly Link]
+1. **Confirm Payment Terms:** [Payment Instructions Placeholder]
+2. **Complete the Intake:** Please review the [Intake Checklist](./growth-audit-intake.md) and send your **Founder Tape** and **Proof Inventory** using the intake handoff instructions here: [Intake Handoff Placeholder]
+3. **Schedule the Review:** Use this scheduling instruction for our Roadmap Review: [Review Call Scheduling Placeholder]
 
 Once I have the Intake assets, I’ll confirm receipt and we’ll move into the diagnostic phase.
 
