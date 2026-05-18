@@ -52,7 +52,7 @@ If you aren't a fit today, do these three things to build the foundation for a D
 >
 > The Audit is designed to map existing expertise and proof into a system. Since you're still in the [Building Proof / Validating Offer] phase, a diagnostic would be premature.
 >
-> I’d recommend focusing on [Step 1 or 2 above] for the next 4-6 weeks. Once you have those first 3-5 proof artifacts ready, the Audit will be 10x more useful. Sound fair?"
+> I’d recommend focusing on [Step 1 or 2 above] for the next 4-6 weeks. Once you have those first 3-5 proof artifacts ready, the Audit will have better raw material to work from. Sound fair?"
 
 ### Declining a "Magic Button" Request
 > "I appreciate you reaching out. To be clear, the Trinity approach isn't about fully automated lead-gen or 'hands-off' revenue. We build systems that scale a founder's judgment, which requires you to be 'in the loop.'
@@ -65,7 +65,7 @@ If you aren't a fit today, do these three things to build the foundation for a D
 We want you to come back when the timing is right.
 
 - **Follow the Lab:** Watch how we publish [Lab Notes](../../lab/README.md) and proof artifacts. This is the "Open Source" version of the system we build in the Audit.
-- **The "Proof Signal":** When you have your first 3 case studies or a clear "Founder Thesis" recorded, reach out. That is the signal that an Audit will now provide a high ROI.
+- **The "Proof Signal":** When you have your first 3 case studies or a clear "Founder Thesis" recorded, reach out. That is the signal that an Audit can produce a more specific diagnostic and roadmap.
 
 ---
 
