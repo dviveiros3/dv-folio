@@ -1,33 +1,88 @@
-# Sales Page Copy: The Trinity Growth Kit
+# Sales Page Copy: Trinity Growth Kit
 
-## Headline: Turn Your Founder's Brain into a Scalable Revenue Engine
+## Page Purpose
+This page should sell the **AI Growth Audit** as the entry offer and position the **Growth Kit** as the implementation path. The promise is not "instant pipeline." The promise is a sharper distribution system a founder can inspect, operate, and improve.
 
-### The Problem: The Founder Bottleneck
-You are the best salesperson in your company. You are the best marketer. But you are only one person. Every hour you spend drafting a LinkedIn post or researching a prospect is an hour you aren't spent closing deals or building product.
+## Primary Headline
+Build a Distribution OS for Founder-Led Growth
 
-The result? Growth is "spiky." You post when you have time. You prospect when the pipeline is dry. You are the bottleneck.
+## Subheadline
+The Trinity Growth Kit helps technical founders and subject matter experts turn expertise into point of view, proof artifacts, qualified conversations, productized offers, and conversion learning.
 
-### The Solution: Operational Leverage via Trinity
-The **Trinity Growth Kit** is not another "prompt pack" of generic templates. It is an end-to-end AI operating module designed specifically for founder-led B2B companies.
+Start with the AI Growth Audit: a 1-week diagnostic that maps where your distribution engine is leaking and designs the workflows to improve it.
 
-We don't just give you the "what"—we give you the "how."
+## The Problem
+Most founders do not have a content problem. They have an operating system problem.
 
-### What You Get:
-- **6 Precision AI Skills:** Modular instructions for ICP Definition, Positioning, Offer Design, Lead Scoring, Content Ideation, and Outbound Drafting.
-- **The Weekly Content Engine:** A workflow designed to transform brief founder insights into a consistent stream of high-authority content.
-- **The Outbound Prospecting Engine:** A framework for identifying high-intent prospects and drafting personalized outreach designed to increase engagement rates.
-- **Full Implementation Guide:** Step-by-step instructions to set this up in ChatGPT, Claude, Make, or Zapier.
+They post when they have time. They share proof only after a win is already stale. They start conversations manually, inconsistently, and without a feedback loop. Then they ask AI to generate more output on top of a weak system.
 
-### Why It’s Different:
-- **Built for B2B:** No "fluff." This is built for high-ticket, complex sales.
-- **Logic-First:** We focus on the *reasoning* behind the growth, not just the text generation.
-- **Scalable:** Designed to be run by a junior marketer or VA, with the founder only acting as the final "Quality Filter."
+That creates louder randomness, not leverage.
 
-### Target Outcomes:
-- **Scalable Content Production:** Designed to significantly increase your content throughput while minimizing additional time investment.
-- **Higher Lead Quality:** Aims to reduce time spent on low-intent prospects through precise, AI-driven scoring frameworks.
-- **Reliable Pipeline:** A systematic approach to pipeline maintenance that continues to function even when the founder is focused on other priorities.
+## The Trinity Point Of View
+AI should not replace founder judgment. It should help extract, package, distribute, and improve it.
 
-### Call to Action:
-**[Get the Trinity Growth Kit Now]**
-*Stop doing the work. Start reviewing the work.*
+The Growth Kit is built around five loops:
+
+1. **POV:** sharpen what the founder believes.
+2. **Proof:** turn work into inspectable artifacts.
+3. **Conversations:** move attention into qualified buyer signal.
+4. **Offers:** convert repeated pain into productized entry points.
+5. **Conversion:** feed replies, objections, and calls back into the system.
+
+## Entry Offer: AI Growth Audit
+The AI Growth Audit is the first step. It is a diagnostic and roadmap, not a promise of leads or revenue.
+
+### What The Audit Produces
+- **POV & Thesis Audit:** where the founder's current positioning is generic, unclear, or hard to extract.
+- **Distribution Loop Diagnostic:** where proof, conversations, offers, or conversion learning are leaking.
+- **Custom AI Skill Design:** the first workflow specs for turning founder insight into reusable distribution assets.
+- **90-Day Implementation Roadmap:** the sequence for building the highest-leverage loop first.
+
+### What The Buyer Provides
+- A short founder context brief.
+- Existing proof assets, content, sales material, or customer language.
+- A view of the current channel and sales workflow.
+- Human review and judgment.
+
+## Implementation Path
+After the audit, there are three practical paths:
+
+1. **Founder-Led Build:** use the roadmap and specs internally.
+2. **Growth Kit Implementation:** install the content, outbound, proof capture, and offer review workflows.
+3. **Custom Trinity Engagement:** scope a deeper implementation for complex workflows, data, or team adoption.
+
+## What Makes This Different
+- **Workflow-first:** artifacts and operating cadence over generic strategy slides.
+- **Proof-safe:** no invented traction, fake case studies, or unsupported revenue claims.
+- **Founder-specific:** the system packages the founder's actual expertise instead of replacing it with generic AI output.
+- **Signal-driven:** publishing, conversations, objections, and offer changes are logged weekly.
+
+## Proof-Safe Outcomes
+Use these claims carefully:
+
+- Designed to reduce random acts of content.
+- Intended to make founder proof easier to inspect.
+- Creates a roadmap for AI-assisted distribution workflows.
+- Helps identify which distribution loop deserves attention first.
+- Builds a weekly learning system for improving the Growth Audit offer.
+
+Avoid these claims:
+
+- Guaranteed leads.
+- Guaranteed revenue.
+- Automated growth without founder input.
+- Proven client outcomes for Trinity before they exist.
+- Any metric that is not verified or clearly labeled simulated.
+
+## Primary CTA
+Inspect the sample AI Growth Audit, then book a short discovery call.
+
+**CTA Label:** Request Growth Audit
+
+## Secondary CTA
+Review the Distribution OS.
+
+**CTA Label:** Inspect Distribution OS
+
+## Buyer Qualification Note
+The best fit is a founder, subject matter expert, or operator with real expertise and some existing proof. Trinity can help package and distribute proof; it should not invent proof from nothing.
