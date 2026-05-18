@@ -353,12 +353,12 @@ const CONVERSATION_TRACKER = (
             <tr className="border-b border-slate-100">
               <td className="p-2 text-slate-600">SME / AI Skeptic</td>
               <td className="p-2 text-slate-600">"Is this just prompts?"</td>
-              <td className="p-2 text-slate-600 font-bold text-amber-600">Observed</td>
+              <td className="p-2 text-slate-600 font-bold text-amber-600">Sample</td>
             </tr>
             <tr className="border-b border-slate-100">
               <td className="p-2 text-slate-600">Founder</td>
               <td className="p-2 text-slate-600">"Can you guarantee leads?"</td>
-              <td className="p-2 text-slate-600 font-bold text-green-600">Verified</td>
+              <td className="p-2 text-slate-600 font-bold text-slate-500">Hypothesis</td>
             </tr>
           </tbody>
         </table>
@@ -838,7 +838,7 @@ export default function TrinityStorefront() {
               <div className="space-y-4">
                 <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400">// Beta Operating Artifacts</div>
                 <h2 className="text-4xl lg:text-6xl font-bold tracking-tighter uppercase">The Operating Loop</h2>
-                <p className="text-slate-500 max-w-md">Our active Growth Distribution Sprint is manual-first and proof-disciplined. Inspect the live artifacts below.</p>
+                <p className="text-slate-500 max-w-md">Our active Growth Distribution Sprint is manual-first and proof-disciplined. Inspect the beta operating artifacts below.</p>
                 <div className="flex flex-wrap items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-slate-400 pt-2">
                   <span>Publishing</span>
                   <ArrowRight className="w-3 h-3" />
@@ -875,7 +875,7 @@ export default function TrinityStorefront() {
                 },
                 {
                   title: "Conversation Tracker",
-                  desc: "Capturing exact buyer language and mapping loop leaks in real-time.",
+                  desc: "Capturing exact buyer language and mapping loop leaks during weekly review.",
                   content: CONVERSATION_TRACKER,
                   tag: "Conversations"
                 },
