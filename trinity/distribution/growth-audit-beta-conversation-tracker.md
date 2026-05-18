@@ -1,7 +1,7 @@
 # Growth Audit: Beta Conversation Tracker
 
 ## Mission
-To capture high-signal data from every conversation generated during the Growth Audit paid beta. This tracker operationalizes the "Offer Intelligence Loop" by preserving exact buyer language and identifying offer-market fit leaks before they are obscured by internal jargon.
+To capture high-signal data from every conversation generated during the Growth Audit paid beta. This tracker operationalizes the "Offer Intelligence Loop" in the [Distribution OS](../catalog/growth-kit/distribution-os.md) by preserving exact buyer language and identifying offer-market fit leaks before they are obscured by internal jargon.
 
 ## Operational Standards
 - **Capture First:** Log the raw language before interpreting it.
@@ -12,6 +12,7 @@ To capture high-signal data from every conversation generated during the Growth 
 
 | Label | Meaning |
 | --- | --- |
+| **Verified** | Confirmed by source evidence such as a signed agreement, payment, approved screenshot, or attributable public source. |
 | **Observed** | Directly witnessed in a recorded call, email, or DM thread. |
 | **Anecdotal** | Recalled from a conversation or reported third-hand. |
 | **Hypothesis** | An assumption about buyer behavior or intent being tested. |
