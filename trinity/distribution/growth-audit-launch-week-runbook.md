@@ -25,31 +25,31 @@ Operationalize the Growth Audit paid beta launch. This runbook ensures Daniel fo
 - **Action:** Publish Post 1 (The Flagship Announcement).
 - **Focus:** Broad POV on "System over Slop" and the "Engineering Diagnostic."
 - **Proof-Safety:** Ensure no revenue guarantees. Use "designed to" framing.
-- **Signal Goal:** Identify 5-10 "Efficiency-Seeker" or "Technical Founder" profiles in the engagement list.
+- **Signal Goal:** Identify whether any "Efficiency-Seeker" or "Technical Founder" profiles appear in the engagement list.
 
 ### Tuesday: The Signal Response
 - **Action:** Publish Post 2 (Judgment vs. Automation).
 - **Focus:** Address the "AI Slop" pain point. Pivot to the Distribution OS framework.
 - **Proof-Safety:** Frame AI as leverage for founder judgment, not a replacement.
-- **Signal Goal:** 2+ qualified DM conversations initiated.
+- **Signal Goal:** Capture any qualified DM language that confirms or challenges the "AI as leverage for judgment" thesis.
 
 ### Wednesday: The Engine Room
 - **Action:** Publish Post 3 (Artifact-Led / Evidence).
 - **Focus:** Show the internal rigor (e.g., Outreach Worksheet or Deliverable Walkthrough).
 - **Proof-Safety:** Label all artifacts as "Simulated" or "Sample." Redact real names/companies.
-- **Signal Goal:** 1+ request for the "Audit Specs" or "Sample Walkthrough."
+- **Signal Goal:** Watch for requests for the "Audit Specs" or "Sample Walkthrough."
 
 ### Thursday: Warm Outbound & Follow-ups
 - **Action:** Direct Outreach / Manual Follow-ups.
 - **Focus:** Reach out to high-signal engagers from Mon-Wed who haven't moved to DM yet.
 - **Proof-Safety:** Personalized, low-pressure, operator-to-operator tone.
-- **Signal Goal:** 1+ Discovery Call booked.
+- **Signal Goal:** Determine whether high-signal engagers are ready for a discovery call or need the sample deliverable first.
 
 ### Friday: Offer Intelligence & Decision
 - **Action:** Weekly Offer Review & Dashboard Update.
 - **Focus:** Run the [20-minute review sequence](./growth-audit-beta-decision-dashboard.md#4-friday-20-minute-review-sequence). Make the "Matrix Action" decision.
 - **Time Block:** 09:00 - 10:00 (Extended review).
-- **Signal Goal:** Update the Growth Audit offer based on exact buyer language from the week.
+- **Signal Goal:** Decide whether exact buyer language from the week is strong enough to update the Growth Audit offer.
 
 ---
 
@@ -65,8 +65,8 @@ Operationalize the Growth Audit paid beta launch. This runbook ensures Daniel fo
 - **Action:** Pause standard posting. Run 5-10 manual outbound messages to friendly ICPs asking for "Feedback on the diagnostic specs" rather than a sale.
 - **Dashboard Trigger:** Prepare to "Change CTA" or "Change ICP" in the Friday review.
 
-### If Strong Signal (>3 Qualified DMs/Day)
-- **Diagnosis:** Offer-Market Fit found.
+### If Strong Signal
+- **Diagnosis:** The launch is producing qualified buyer language worth prioritizing.
 - **Action:** Prioritize DMs over public replies. Stick to the [Discovery Call Script](./growth-audit-discovery-call-script.md).
 - **Caution:** Do not over-book. Maintain the 1-week diagnostic timeline promise.
 - **Dashboard Trigger:** "Continue" or "Raise Price" if friction is zero.
