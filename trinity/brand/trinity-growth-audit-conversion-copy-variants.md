@@ -8,7 +8,7 @@ This document provides proof-safe conversion copy options for the AI Growth Audi
 
 ### Variant A: The "System over Slop" Operator
 *   **Headline:** Stop Buying Content. Start Building a Distribution Engine.
-*   **Sub-headline:** Most founders are stuck on the content treadmill—random acts of visibility that don't compound. The AI Growth Audit is a 1-week diagnostic designed to identify your loop leaks and roadmap your automated distribution architecture.
+*   **Sub-headline:** Most founders are stuck on the content treadmill—random acts of visibility that don't compound. The AI Growth Audit is a 1-week diagnostic designed to identify your loop leaks and roadmap your AI-assisted distribution architecture.
 *   **Buyer Psychology:** Targets the "Efficiency-Seeker" who is frustrated with high-effort/low-return manual content work. Appeals to the desire for compounding systems over one-off tasks.
 *   **Proof-Safety:** Frames the value as a "diagnostic" and "roadmap." Avoids any mention of lead counts or revenue growth. Uses the "Distribution OS" framework as the underlying logic.
 
@@ -20,7 +20,7 @@ This document provides proof-safe conversion copy options for the AI Growth Audi
 
 ### Variant C: The "Engineering Diagnostic" Technical Founder
 *   **Headline:** An Engineering-Grade Diagnostic for Your Growth Engine.
-*   **Sub-headline:** We don't do "AI Strategy" theater. We map your Proof, Conversation, and Offer loops to identify the technical bottlenecks preventing your growth. A 1-week deep-dive resulting in a 90-day implementation blueprint.
+*   **Sub-headline:** We don't do "AI Strategy" theater. We map your Proof, Conversation, and Offer loops to identify the operating bottlenecks weakening your distribution. A 1-week deep-dive resulting in a 90-day implementation blueprint.
 *   **Buyer Psychology:** Targets the "Skeptical Technical Founder" who dislikes marketing fluff. Appeals to the desire for precision, architecture, and actionable blueprints over vague advice.
 *   **Proof-Safety:** Frames the offer as an "architectural deep-dive" and "blueprint." Explicitly rejects "strategy theater" and sets a concrete 1-week timeline for the deliverable.
 
@@ -38,7 +38,7 @@ This document provides proof-safe conversion copy options for the AI Growth Audi
 
 ### Variant 3: Beta Access
 *   **Button Text:** Apply for Paid Beta Audit
-*   **Micro-copy:** We are currently accepting 2 technical founders for the next Growth Audit cohort.
+*   **Micro-copy:** For founders with enough expertise, proof, and buyer signal to make a diagnostic useful.
 
 ---
 
