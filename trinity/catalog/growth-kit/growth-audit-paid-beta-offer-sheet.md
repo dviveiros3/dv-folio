@@ -60,6 +60,8 @@ We will decline the audit if:
 2. The buyer requires guaranteed ROI or revenue outcomes from a diagnostic.
 3. The bottleneck is product-market fit, not distribution systems.
 
+If you aren't sure if you are a fit, review the [Readiness & No-Fit Nurture](./growth-audit-no-fit-nurture.md) guide.
+
 ## 5 Sharp Sales-Call Talking Points
 1. **"You don't have a content problem; you have an operating system problem."** (Focus on the system, not the output volume).
 2. **"AI should leverage your judgment, not replace it."** (Positioning AI as an assistant for the founder's "taste").
