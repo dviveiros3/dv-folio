@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, type ReactNode } from "react"
 import {
   ArrowUpRight,
   Beaker,
@@ -14,12 +14,128 @@ import {
   MessageSquare,
   Gift,
   RefreshCw,
+  Eye,
+  FileText,
 } from "lucide-react"
 import { LiveTelemetry } from "@/components/live-telemetry"
 import Link from "next/link"
 
+const GROWTH_AUDIT_SAMPLE = (
+  <div className="space-y-6 text-sm">
+    <div className="p-4 bg-amber-50 border border-amber-100 text-amber-800 text-[10px] font-bold uppercase tracking-widest mb-4">
+      Simulated Data // Fictional Example
+    </div>
+
+    <section className="space-y-2">
+      <h4 className="font-bold uppercase tracking-tight text-slate-900 underline decoration-slate-200 underline-offset-4">1. Executive Summary</h4>
+      <p className="text-slate-600 leading-relaxed">
+        Acme has a strong "Proof Loop" (pending source verification) but a broken "Conversation Loop." Content feels like a portfolio, not a conversation starter.
+      </p>
+    </section>
+
+    <section className="space-y-2">
+      <h4 className="font-bold uppercase tracking-tight text-slate-900 underline decoration-slate-200 underline-offset-4">2. POV & Thesis Audit</h4>
+      <ul className="list-disc pl-4 space-y-1 text-slate-600">
+        <li>Current POV: "We help e-commerce brands scale with data." (Generic)</li>
+        <li>Recommendation: "Attribution is a lie; focus on the Incremental Margin Loop."</li>
+      </ul>
+    </section>
+
+    <section className="space-y-2">
+      <h4 className="font-bold uppercase tracking-tight text-slate-900 underline decoration-slate-200 underline-offset-4">3. Distribution OS Mapping</h4>
+      <div className="border border-slate-200 overflow-hidden">
+        <table className="w-full text-left border-collapse">
+          <thead>
+            <tr className="bg-slate-50 border-b border-slate-200">
+              <th className="p-2 text-[10px] font-bold uppercase tracking-widest text-slate-400">Loop</th>
+              <th className="p-2 text-[10px] font-bold uppercase tracking-widest text-slate-400">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-slate-100">
+              <td className="p-2 font-mono text-[10px]">POV</td>
+              <td className="p-2 text-red-600 font-bold text-[10px]">WEAK</td>
+            </tr>
+            <tr className="border-b border-slate-100">
+              <td className="p-2 font-mono text-[10px]">Proof</td>
+              <td className="p-2 text-green-600 font-bold text-[10px]">STRONG</td>
+            </tr>
+            <tr>
+              <td className="p-2 font-mono text-[10px]">Conversations</td>
+              <td className="p-2 text-red-600 font-bold text-[10px]">BROKEN</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section className="space-y-2">
+      <h4 className="font-bold uppercase tracking-tight text-slate-900 underline decoration-slate-200 underline-offset-4">4. 90-Day Roadmap</h4>
+      <div className="space-y-3">
+        <div className="pl-3 border-l-2 border-slate-200">
+          <div className="text-[10px] font-bold uppercase text-slate-400">Day 1-30</div>
+          <p className="text-slate-600">Operationalize the Weekly Content Engine.</p>
+        </div>
+        <div className="pl-3 border-l-2 border-slate-200">
+          <div className="text-[10px] font-bold uppercase text-slate-400">Day 31-60</div>
+          <p className="text-slate-600">Deploy the Buyer Signal Scanner for 50 high-intent targets/week.</p>
+        </div>
+      </div>
+    </section>
+
+    <div className="pt-6 border-t border-slate-100 text-[10px] italic text-slate-400">
+      *This is a simulated diagnostic report. All company names and metrics are fictional examples of the Trinity AI Growth Audit output.
+    </div>
+  </div>
+)
+
+const DISTRIBUTION_OS_SPEC = (
+  <div className="space-y-8 text-sm">
+    <div className="p-4 bg-slate-900 text-slate-400 font-mono text-[10px] leading-relaxed">
+      // SYSTEM_ARCHITECTURE_SPEC_V1<br/>
+      // STATUS: HARDENING_IN_LAB
+    </div>
+
+    <div className="grid gap-6">
+      {[
+        { title: "POV Loop", desc: "Scale Your Taste. Extract a defensible market thesis from founder insight." },
+        { title: "Proof Loop", desc: "Show the Work. Turn builds and experiments into inspectable artifacts." },
+        { title: "Conversation Loop", desc: "Listen for Signal. Convert audience signals into qualified DMs." },
+        { title: "Offer Loop", desc: "Productize Pain. Translate repeated pain into productized audits." },
+        { title: "Conversion Loop", desc: "Close the Circuit. Feed market signal back into the system." }
+      ].map((item, i) => (
+        <div key={i} className="flex gap-4 items-start">
+          <div className="w-8 h-8 flex-shrink-0 bg-slate-100 flex items-center justify-center font-mono text-xs font-bold">{i+1}</div>
+          <div className="space-y-1">
+            <div className="font-bold uppercase tracking-tight text-slate-900">{item.title}</div>
+            <p className="text-slate-600 leading-relaxed">{item.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div className="p-6 border border-dashed border-slate-300 bg-slate-50 space-y-4">
+      <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Strategic Intent</div>
+      <p className="text-xs text-slate-500 leading-relaxed">
+        Distribution for founders isn't about "posting more." It's about building an engine that compounds. Move from generic advice to a clear market thesis. Move from "trust me" to "inspect this."
+      </p>
+    </div>
+  </div>
+)
+
 export default function TrinityStorefront() {
   const [activeSection, setActiveSection] = useState("hero")
+  const [modalContent, setModalContent] = useState<{ title: string, content: ReactNode } | null>(null)
+
+  const openModal = (title: string, content: ReactNode) => {
+    setModalContent({ title, content })
+    document.body.style.overflow = 'hidden'
+  }
+
+  const closeModal = () => {
+    setModalContent(null)
+    document.body.style.overflow = 'auto'
+  }
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const kits = [
@@ -292,13 +408,22 @@ export default function TrinityStorefront() {
                 <p className="text-slate-400 leading-relaxed">
                   The Growth Kit is not generic marketing automation. It is a solopreneur distribution system for turning expertise into visible authority, qualified conversations, and productized offers.
                 </p>
-                <button
-                  onClick={() => scrollToSection("growth-audit")}
-                  className="inline-flex items-center gap-2 bg-white text-slate-950 px-6 py-3 text-xs font-bold uppercase tracking-widest hover:bg-slate-200 transition-colors"
-                >
-                  Request Growth Audit
-                  <ArrowUpRight className="w-4 h-4" />
-                </button>
+                <div className="flex flex-wrap gap-4">
+                  <button
+                    onClick={() => scrollToSection("growth-audit")}
+                    className="inline-flex items-center gap-2 bg-white text-slate-950 px-6 py-3 text-xs font-bold uppercase tracking-widest hover:bg-slate-200 transition-colors"
+                  >
+                    Request Growth Audit
+                    <ArrowUpRight className="w-4 h-4" />
+                  </button>
+                  <button
+                    onClick={() => openModal("Distribution OS Visual Spec", DISTRIBUTION_OS_SPEC)}
+                    className="inline-flex items-center gap-2 border border-slate-700 text-slate-300 px-6 py-3 text-xs font-bold uppercase tracking-widest hover:bg-slate-900 transition-colors"
+                  >
+                    Review Visual Spec
+                    <Eye className="w-4 h-4" />
+                  </button>
+                </div>
               </div>
 
               <div className="lg:col-span-8 grid md:grid-cols-2 gap-4">
@@ -335,6 +460,20 @@ export default function TrinityStorefront() {
                 <p className="text-xl text-slate-600 leading-relaxed max-w-lg">
                   A 1-week high-conviction diagnostic designed to roadmap your Distribution OS and identify the highest-leverage AI workflows for your specific market.
                 </p>
+
+                <div className="space-y-4">
+                  <button
+                    onClick={() => openModal("Growth Audit: Sample Diagnostic", GROWTH_AUDIT_SAMPLE)}
+                    className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-900 border-b-2 border-slate-900 pb-1 hover:text-slate-500 hover:border-slate-500 transition-all"
+                  >
+                    Inspect Sample Deliverable
+                    <FileText className="w-4 h-4" />
+                  </button>
+                  <p className="text-[10px] font-mono text-slate-400 uppercase tracking-widest leading-relaxed">
+                    The entry point to the Trinity monetizable loop:<br/>
+                    Trinity Page → Growth Kit → Growth Audit → Publishing → Proof Capture
+                  </p>
+                </div>
 
                 <div className="space-y-6 pt-4">
                   <div className="space-y-2">
@@ -479,6 +618,29 @@ export default function TrinityStorefront() {
           All metrics simulated unless explicitly labeled as verified.
         </div>
       </footer>
+
+      {/* Artifact Modal */}
+      {modalContent && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center px-6 overflow-hidden">
+          <div className="absolute inset-0 bg-slate-950/80 backdrop-blur-sm" onClick={closeModal} />
+          <div className="relative bg-white w-full max-w-2xl max-h-[85vh] overflow-hidden flex flex-col shadow-2xl border border-slate-200">
+            <div className="flex items-center justify-between p-6 border-b border-slate-100">
+              <h3 className="text-xl font-bold uppercase tracking-tighter">{modalContent.title}</h3>
+              <button onClick={closeModal} className="p-2 hover:bg-slate-100 transition-colors">
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+            <div className="p-8 overflow-y-auto">
+              {modalContent.content}
+            </div>
+            <div className="p-6 border-t border-slate-100 bg-slate-50 flex justify-end">
+              <button onClick={closeModal} className="bg-slate-900 text-white px-6 py-2 text-xs font-bold uppercase tracking-widest hover:bg-slate-800 transition-colors">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
