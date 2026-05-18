@@ -8,7 +8,7 @@ Before making a change, categorize the signal using these levels:
 
 | Label | Meaning | Threshold for Change |
 | --- | --- | --- |
-| **Verified** | Confirmed by payment, signed agreement, or attributable public source. | High: Immediate update to core claims. |
+| **Verified** | Confirmed by payment, signed agreement, approved screenshot, or attributable public source. | High: Eligible for core copy updates if the claim stays evidence-backed. |
 | **Observed** | Directly witnessed in a recorded call, email, or DM thread. | Medium: Update to deliverables or intake. |
 | **Anecdotal** | Reported qualitatively or from a single unverified conversation. | Low: Add to "test next" but don't change core copy. |
 | **Simulated** | Fictional or sample data used for demonstration. | N/A: Never use to justify a public claim. |
@@ -23,9 +23,9 @@ Before making a change, categorize the signal using these levels:
 
 | Date | Signal Source | Confidence | Buyer Language | Decision | Changed Asset | Follow-up Test |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-05-22 | SAMPLE: DM Thread | Observed | "I don't have time for a 3-month project." | Pivot from 'Strategy' to '1-Week Diagnostic'. | [Growth Audit](../catalog/growth-kit/growth-audit.md) | Track CTR on '1-week' vs 'roadmap'. |
-| 2026-05-22 | SAMPLE: Objection Bank | Observed | "Is this just a bunch of ChatGPT prompts?" | Add 'Custom AI Skill Design' to deliverables. | [Sales Page](../catalog/growth-kit/sales-page-copy.md) | Mention 'Architecture' in next POV post. |
-| 2026-05-22 | SAMPLE: Discovery Call | Anecdotal | "How do I know what this actually looks like?" | Link to sample artifact in primary CTA. | [Storefront Page](../../app/trinity/page.tsx) | Monitor 'Inspect Artifact' button clicks. |
+| Sample / hypothetical | Demo DM thread | Simulated | "I don't have time for a 3-month project." | Test '1-week diagnostic' language before treating it as market signal. | [Growth Audit](../catalog/growth-kit/growth-audit.md) | Track whether real conversations repeat this phrase. |
+| Sample / hypothetical | Demo objection bank | Simulated | "Is this just a bunch of ChatGPT prompts?" | Test 'Custom AI Skill Design' language as an objection response. | [Sales Page](../catalog/growth-kit/sales-page-copy.md) | Only promote if observed in real replies or calls. |
+| Sample / hypothetical | Demo discovery call | Simulated | "How do I know what this actually looks like?" | Test whether linking to the sample artifact improves buyer clarity. | [Storefront Page](../../app/trinity/page.tsx) | Replace with real signal only after documented conversations. |
 
 ## Improvement Rules: When to Update
 
