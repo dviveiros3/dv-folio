@@ -15,7 +15,7 @@ The AI Growth Audit is not a report to be filed away. It is an operational diagn
 
 ## Who This Is NOT For
 - **The Magic-Button Seeker:** If you are looking for "100% automated leads" without providing your own expertise and taste, this audit will fail.
-- **The Pre-Proof Founder:** If you have no customers, no case studies, and no market thesis, there is no "raw truth" for the audit to weaponize.
+- **The No-Signal Founder:** If you have no market thesis, buyer conversations, proof artifacts, or operating history to inspect, there is not enough raw material for the audit to operationalize.
 
 ---
 
