@@ -161,7 +161,7 @@ const WEEK_2_CONTENT = (
       </div>
       <div className="grid grid-cols-2 gap-4">
         <div className="p-3 border border-slate-100 bg-white space-y-2">
-          <div className="text-[9px] font-bold uppercase text-slate-400">Post Loop</div>
+          <div className="text-[9px] font-bold uppercase text-slate-400">POV Loop</div>
           <div className="text-[11px] font-bold">Thesis Sharpness</div>
         </div>
         <div className="p-3 border border-slate-100 bg-white space-y-2">
@@ -190,7 +190,7 @@ const OBJECTION_BANK = (
         },
         {
           objection: "Can you guarantee 10 new leads a month?",
-          response: "No. We build the system; the market provides the signal. We guarantee systematic capability, not market outcomes."
+          response: "No. The audit is designed to improve the system and capture market signal; it does not guarantee market outcomes."
         }
       ].map((item, i) => (
         <div key={i} className="p-4 border-l-2 border-slate-200 space-y-2 bg-white">
@@ -232,7 +232,7 @@ const OPERATING_LOG = (
           <tr>
             <td className="p-2">05-22</td>
             <td className="p-2">Weekly Review #1</td>
-            <td className="p-2">Observed</td>
+            <td className="p-2">Planned</td>
           </tr>
         </tbody>
       </table>
@@ -257,7 +257,7 @@ const OFFER_REVIEW_SAMPLE = (
       <div className="grid grid-cols-2 gap-4">
         <div className="p-3 bg-slate-50 border border-slate-100">
           <div className="text-[9px] font-bold uppercase text-slate-400">Signals</div>
-          <div className="text-[11px] font-bold">5+ Objections</div>
+          <div className="text-[11px] font-bold">Objections Logged</div>
         </div>
         <div className="p-3 bg-slate-50 border border-slate-100">
           <div className="text-[9px] font-bold uppercase text-slate-400">Decision</div>
@@ -265,8 +265,8 @@ const OFFER_REVIEW_SAMPLE = (
         </div>
       </div>
       <div className="p-4 bg-green-50 border border-green-100 text-green-800 text-[10px] font-mono">
-        &gt; UPDATING_OFFER_HEADLINE...<br/>
-        &gt; DEPLOYING_BETA_V0.2
+        &gt; REVIEWING_SIGNAL...<br/>
+        &gt; UPDATING_OFFER_LANGUAGE
       </div>
     </div>
   </div>
