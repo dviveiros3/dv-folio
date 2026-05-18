@@ -41,42 +41,42 @@ This objection bank is a living artifact to help Daniel convert buyer skepticism
 ## 5. The "Time to Value" Doubt
 **Objection:** "I don't have time for another 3-month consulting engagement."
 **Diagnosis:** The founder is overwhelmed and needs quick, actionable wins.
-**Proof-Safe Response:** "This is a 1-week diagnostic, not a 3-month project. We require one 15-minute brief from you. The goal is to give you a 90-day roadmap you can start executing immediately, starting with your highest-leverage loop."
+**Proof-Safe Response:** "This is designed as a 1-week diagnostic, not a 3-month project. The first input is a short founder brief, then the work turns into a 90-day operating roadmap around the highest-leverage distribution loop."
 **Offer Lesson:** Keep the intake process strictly capped at 15-30 minutes of founder time.
 **Buyer Signal (Exact Language):** [Record here]
 
 ## 6. The "Outcome Guarantee" Request
 **Objection:** "Can you guarantee this will get me 10 new leads a month?"
 **Diagnosis:** The buyer is looking for a "magic button" or is risk-averse.
-**Proof-Safe Response:** "I can't guarantee leads because I don't control your market or your product. What I can guarantee is an engineering-grade diagnostic of your distribution engine and a blueprint to fix the bottlenecks. We build the system; the market provides the results."
+**Proof-Safe Response:** "I can't guarantee leads because I don't control your market, offer, or execution cadence. The audit is built to produce an engineering-grade diagnostic of your distribution engine and a practical blueprint for the bottlenecks we can see. We build the system; the market provides the signal."
 **Offer Lesson:** Be extremely clear that the Audit is a roadmap/diagnostic, not a lead-gen service.
 **Buyer Signal (Exact Language):** [Record here]
 
 ## 7. The "Implementation Gap"
 **Objection:** "An audit is great, but who is going to actually build this?"
 **Diagnosis:** The buyer realizes they don't have the technical skills to implement the AI workflows themselves.
-**Proof-Safe Response:** "The Audit creates the roadmap. From there, you have three paths: your team builds it using our specs, you buy the full Growth Kit, or we handle a custom implementation. The Audit ensures you don't build the wrong thing."
+**Proof-Safe Response:** "The Audit creates the roadmap. From there, you have three paths: your team builds from the specs, you buy the full Growth Kit, or we scope a custom implementation. The point is to reduce the chance you build the wrong thing before you invest in the workflow."
 **Offer Lesson:** Ensure the Audit roadmap points directly to "Next Step" implementation options.
 **Buyer Signal (Exact Language):** [Record here]
 
 ## 8. The "Expertise" Question
 **Objection:** "Does this work for my specific niche (e.g., Biotech, SaaS, FinTech)?"
 **Diagnosis:** The buyer wants to know if the system is flexible enough for their vertical.
-**Proof-Safe Response:** "The Distribution OS is sector-agnostic because it's based on human psychology and architectural loops. However, the *POV* and *Proof* we extract are 100% yours. The system doesn't provide the expertise; it scales *your* expertise."
+**Proof-Safe Response:** "The Distribution OS is designed to be sector-flexible because it is built around repeatable operating loops. The *POV* and *Proof* still have to come from your market and expertise. The system doesn't provide the expertise; it helps package and distribute *your* expertise."
 **Offer Lesson:** Use the "POV & Thesis Audit" to show how we adapt the system to their niche.
 **Buyer Signal (Exact Language):** [Record here]
 
 ## 9. The "Cost vs. ROI" Math
 **Objection:** "It's expensive for a 1-week audit."
 **Diagnosis:** The buyer is evaluating this as a cost rather than an investment in their operating engine.
-**Proof-Safe Response:** "The cost of the Audit is the cost of *not* fixing a broken distribution engine. If you spend 10 hours a week on manual content that doesn't convert, you're already paying for this audit in lost time and missed pipeline. We're compressing that 10 hours into 1."
+**Proof-Safe Response:** "The clean way to evaluate the audit is against founder time and distribution drag. If you're spending hours each week on content that does not create conversations, there is already a cost. The audit is meant to identify where that time is leaking and what workflow would make the next 90 days more deliberate."
 **Offer Lesson:** Frame the price against "Founder Time Saved" and "Pipeline Velocity."
 **Buyer Signal (Exact Language):** [Record here]
 
 ## 10. The "Early Days" Hesitation
 **Objection:** "Trinity seems new. Do you have case studies for this yet?"
 **Diagnosis:** The buyer is looking for "Verified" proof levels.
-**Proof-Safe Response:** "Trinity is my public lab where I’m productizing the exact systems I’ve used to scale previous projects (like $4.2M in ARR via high-LTV segmentation). You can inspect the [Sample Diagnostic Artifact](../catalog/growth-kit/examples/growth-audit-artifact-sample.md) to see the quality of work before we start."
+**Proof-Safe Response:** "Trinity is my public lab where I’m productizing the operating systems behind my prior work. Some proof points are documented in the internal proof inventory and still need attribution/context checks before being used externally. You can inspect the [Sample Diagnostic Artifact](../catalog/growth-kit/examples/growth-audit-artifact-sample.md) to judge the quality of the diagnostic before we start."
 **Offer Lesson:** Lean heavily on the "Proof Inventory" of the founder and the "Inspectable Artifact" of the lab.
 **Buyer Signal (Exact Language):** [Record here]
 
