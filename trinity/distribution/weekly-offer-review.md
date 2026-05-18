@@ -1,10 +1,10 @@
 # Trinity Weekly Offer Review
 
 ## Purpose
-The Growth Audit offer should improve every week from market signal. This document is the review ritual.
+The Growth Audit offer should improve every week from market signal. This document is the review ritual. It pulls data from the [Proof Capture Log](./proof-capture-log.md) to ensure changes are based on real signal.
 
 ## Review Cadence
-Every Friday, update this file with:
+Every Friday, update this file using data captured in the [Proof Capture Log](./proof-capture-log.md) throughout the week:
 
 - published assets;
 - replies and conversations;
@@ -25,20 +25,20 @@ Every Friday, update this file with:
 - [ ] Conversation post:
 - [ ] Build note:
 
-**Signals Captured:**
+**Signals Captured (From [Proof Capture Log](./proof-capture-log.md)):**
 - Qualified conversations:
 - Useful replies:
 - Objections:
 - Exact buyer language:
 
-**Proof Captured:**
+**Proof Captured (From [Proof Capture Log](./proof-capture-log.md)):**
 - Verified:
 - Observed:
 - Anecdotal:
 - Simulated:
 - Hypothesis:
 
-**Offer Changes Made:**
+**Offer Changes Made (From [Proof Capture Log](./proof-capture-log.md)):**
 - Headline:
 - Deliverables:
 - CTA:
