@@ -10,6 +10,39 @@
 This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
 Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
 
+## Development
+
+This project uses `pnpm` as the package manager.
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or later)
+- [pnpm](https://pnpm.io/) (v10 or later)
+
+### Setup
+
+```bash
+pnpm install
+```
+
+### Running the app
+
+```bash
+pnpm dev
+```
+
+### Linting
+
+```bash
+pnpm lint
+```
+
+### Building
+
+```bash
+pnpm build
+```
+
 ## Deployment
 
 Your project is live at:
