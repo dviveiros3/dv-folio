@@ -2,12 +2,12 @@
 
 **Sprint:** Growth Distribution Sprint v1
 **Owner:** Daniel Viveiros
-**Goal:** Demonstrate the rigor of the "Offer Intelligence Loop" and position the Growth Audit as the bridge between raw visibility and qualified revenue signal.
+**Goal:** Demonstrate the rigor of the "Offer Intelligence Loop" and position the Growth Audit as the bridge between raw visibility and qualified buyer signal.
 
 ---
 
 ## Weekly Thesis
-High-context outreach and systematic conversation tracking are the bridge between "visibility" and "revenue." Most founders fail because they treat distribution as a megaphone rather than a lab. The Growth Audit installs the operating loop required to capture, categorize, and convert market signal into a sharper offer.
+High-context outreach and systematic conversation tracking are the bridge between visibility and qualified buyer conversations. Most founders fail because they treat distribution as a megaphone rather than a lab. The Growth Audit installs the operating loop required to capture, categorize, and convert market signal into a sharper offer.
 
 ---
 
@@ -71,8 +71,8 @@ In the Trinity Distribution OS, an objection is the highest-value signal you can
 If 3 people tell you they "don't have time for a 3-month project," you don't argue with them.
 You update your offer.
 
-That’s why the Growth Audit is a 1-week diagnostic, not a long-term consulting engagement.
-It was built from the signal that founders need "Speed to Workflow" over "Strategy Theater."
+That is why the Growth Audit is being tested as a 1-week diagnostic, not a long-term consulting engagement.
+The hypothesis is that founders need speed to workflow over strategy theater.
 
 Tell me: what is the one reason people say "no" to your offer right now?
 Drop it in the comments. I’ll give you a first-pass read on which of the 5 Distribution Loops it’s actually pointing to.
