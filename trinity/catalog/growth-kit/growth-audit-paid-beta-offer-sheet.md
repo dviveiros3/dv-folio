@@ -24,7 +24,7 @@ We provide a **diagnostic and roadmap**, not a guarantee of leads or revenue.
 Once the audit is booked, the buyer follows the [Onboarding Checklist](./growth-audit-buyer-onboarding.md) and completes the [Intake Checklist](./growth-audit-intake.md). This includes providing the "Founder Tape" (raw voice/video brief) and access to existing proof assets.
 
 ### Phase 2: During (The Diagnostic)
-Trinity performs a deep-dive analysis of your current POV, Proof, Conversation, and Offer loops. We identify the primary leak and design the custom AI workflows required to plug it.
+Trinity performs a deep-dive analysis of your current POV, Proof, Conversation, and Offer loops. We identify the primary leak and design the custom AI workflows required to plug it. All diagnostics must pass the [Delivery QA Checklist](./growth-audit-delivery-qa-checklist.md) before the review.
 
 ### Phase 3: After (The Roadmap Review)
 A 30-minute high-signal review call to walk through the diagnostic report, architectural specs, and the 90-day implementation sequence.
