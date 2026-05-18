@@ -1,6 +1,6 @@
 # Lab Note 001: The Distribution OS
 **Status:** In-Progress / Observed
-**Date:** 2026-05-20
+**Week of:** 2026-05-18
 **Category:** Proof / Strategy
 
 ## Thesis
@@ -29,7 +29,7 @@ To maintain our proof discipline, we categorize the components of this system as
 | Distribution OS Framework | **Observed** | Actively used to drive Trinity's own market presence. |
 | Five-Loop Methodology | **Observed** | Codified based on historical growth patterns and operator experience. |
 | Growth Audit Deliverable | **Simulated** | The current sample is a fictionalized representation of the target output. |
-| 80% Content Reduction | **Hypothesis** | We believe the "Insight Extractor" workflow will achieve this, but it is currently being tested. |
+| Shorter path from founder insight to publishable artifact | **Hypothesis** | We believe the Insight Extractor workflow can reduce manual drafting friction, but it is currently being tested. |
 
 ## Public Claim Guardrails
 **What can be claimed:**
