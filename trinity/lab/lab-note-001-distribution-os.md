@@ -29,7 +29,7 @@ To maintain our proof discipline, we categorize the components of this system as
 | Distribution OS Framework | **Observed** | Actively used to drive Trinity's own market presence. |
 | Five-Loop Methodology | **Observed** | Codified based on historical growth patterns and operator experience. |
 | Growth Audit Deliverable | **Simulated** | The current sample is a fictionalized representation of the target output. |
-| Reduced founder drafting time | **Hypothesis** | We believe the "Insight Extractor" workflow will achieve this, but it is currently being tested. |
+| Reduced founder drafting time | **Hypothesis** | We believe the Insight Extractor workflow can reduce manual drafting friction, but it is currently being tested. |
 
 ## Public Claim Guardrails
 **What can be claimed:**
