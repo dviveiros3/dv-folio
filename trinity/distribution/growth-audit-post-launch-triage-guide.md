@@ -78,7 +78,7 @@ Categorize every interaction before responding. Use the [Target Account Rubric](
 1.  **No Outcome Guarantees:** Never promise leads, revenue, or specific ROI.
 2.  **Use Diagnostic Language:** Use "Map," "Identify," "Audit," "Roadmap," and "Blueprint."
 3.  **Frame AI as Leverage:** AI scales the founder's *judgment*; it does not replace the founder's *voice*.
-4.  **No Scarcity Faking:** If you say "3 spots left," there must actually be exactly 3 spots left in the operational calendar.
+4.  **No Scarcity Faking:** Do not mention spots, seats, cohorts, or capacity unless that limit is operationally real and current.
 5.  **Artifact Integrity:** If sharing a screenshot, ensure it is clearly labeled as a "Sample" or "Simulated Artifact" if it’s not from a verified client.
 6.  **Polite Boundary:** If a buyer is aggressive or demanding, disqualify. Trinity is a lab for serious operators, not a commodity service provider.
 
