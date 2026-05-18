@@ -272,6 +272,101 @@ const OFFER_REVIEW_SAMPLE = (
   </div>
 )
 
+const OUTREACH_WORKSHEET = (
+  <div className="space-y-6 text-sm">
+    <div className="p-4 bg-slate-100 border border-slate-200 text-slate-500 text-[10px] font-bold uppercase tracking-widest">
+      Lab Artifact // Beta Outreach Worksheet
+    </div>
+    <div className="space-y-4">
+      <div className="p-4 bg-amber-50 border border-amber-100 text-amber-800 text-[10px] font-bold uppercase tracking-widest">
+        Proof-Safe Rule: Do not log targets as "leads" until a real reply or two-way conversation starts.
+      </div>
+      <div className="border border-slate-200 overflow-hidden">
+        <table className="w-full text-left border-collapse text-[10px]">
+          <thead>
+            <tr className="bg-slate-50 border-b border-slate-200 font-mono">
+              <th className="p-2 text-slate-400 uppercase">Target Segment</th>
+              <th className="p-2 text-slate-400 uppercase">Likely Loop Leak</th>
+              <th className="p-2 text-slate-400 uppercase">Angle</th>
+            </tr>
+          </thead>
+          <tbody className="font-mono">
+            <tr className="border-b border-slate-100">
+              <td className="p-2 text-slate-600">Technical Founder</td>
+              <td className="p-2 text-slate-600">Conversation Loop</td>
+              <td className="p-2 text-slate-600">Random Acts</td>
+            </tr>
+            <tr className="border-b border-slate-100">
+              <td className="p-2 text-slate-600">SME</td>
+              <td className="p-2 text-slate-600">POV Loop</td>
+              <td className="p-2 text-slate-600">Ghost Town</td>
+            </tr>
+            <tr>
+              <td className="p-2 text-slate-600">Operator</td>
+              <td className="p-2 text-slate-600">Proof Loop</td>
+              <td className="p-2 text-slate-600">Manual Friction</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div className="space-y-2">
+        <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Research Checklist</div>
+        <ul className="space-y-1 text-[11px] text-slate-600 font-mono">
+          <li className="flex gap-2"><span>[ ]</span> Proof Verification (Specific Artifact)</li>
+          <li className="flex gap-2"><span>[ ]</span> Loop Leak Identification</li>
+          <li className="flex gap-2"><span>[ ]</span> Context Alignment (Not generic)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+)
+
+const CONVERSATION_TRACKER = (
+  <div className="space-y-6 text-sm">
+    <div className="p-4 bg-slate-100 border border-slate-200 text-slate-500 text-[10px] font-bold uppercase tracking-widest">
+      Lab Artifact // Beta Conversation Tracker
+    </div>
+    <div className="space-y-4">
+      <div className="grid grid-cols-2 gap-2">
+        {[
+          { label: "Verified", desc: "Source evidence confirmed" },
+          { label: "Observed", desc: "Directly witnessed" },
+          { label: "Anecdotal", desc: "Recalled/Reported" },
+          { label: "Hypothesis", desc: "Assumption being tested" }
+        ].map((item) => (
+          <div key={item.label} className="p-2 border border-slate-100 bg-white">
+            <div className="text-[9px] font-bold uppercase text-slate-400">{item.label}</div>
+            <div className="text-[10px] text-slate-600 leading-tight">{item.desc}</div>
+          </div>
+        ))}
+      </div>
+      <div className="border border-slate-200 overflow-hidden">
+        <table className="w-full text-left border-collapse text-[10px]">
+          <thead>
+            <tr className="bg-slate-50 border-b border-slate-200 font-mono">
+              <th className="p-2 text-slate-400 uppercase">Buyer Profile</th>
+              <th className="p-2 text-slate-400 uppercase">Objection</th>
+              <th className="p-2 text-slate-400 uppercase">Confidence</th>
+            </tr>
+          </thead>
+          <tbody className="font-mono">
+            <tr className="border-b border-slate-100">
+              <td className="p-2 text-slate-600">SME / AI Skeptic</td>
+              <td className="p-2 text-slate-600">"Is this just prompts?"</td>
+              <td className="p-2 text-slate-600 font-bold text-amber-600">Sample</td>
+            </tr>
+            <tr className="border-b border-slate-100">
+              <td className="p-2 text-slate-600">Founder</td>
+              <td className="p-2 text-slate-600">"Can you guarantee leads?"</td>
+              <td className="p-2 text-slate-600 font-bold text-slate-500">Hypothesis</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+)
+
 const DISTRIBUTION_OS_SPEC = (
   <div className="space-y-8 text-sm">
     <div className="p-4 bg-slate-900 text-slate-400 font-mono text-[10px] leading-relaxed">
@@ -637,16 +732,21 @@ export default function TrinityStorefront() {
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-12 gap-12 items-start">
               <div className="lg:col-span-5 space-y-8">
-                <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400">// Entry Offer</div>
+                <div className="flex flex-col gap-4">
+                  <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400">// Entry Offer</div>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 bg-slate-900 w-fit">
+                    <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white">Paid Beta // Manual-First</span>
+                  </div>
+                </div>
                 <h2 className="text-4xl lg:text-7xl font-bold tracking-tighter uppercase leading-[0.9]">
                   AI Growth <br/>
                   <span className="text-slate-400">Audit</span>
                 </h2>
                 <p className="text-xl text-slate-600 leading-relaxed max-w-lg">
-                  The primary entry offer. A 1-week high-conviction diagnostic designed to roadmap your Distribution OS and identify the highest-leverage AI workflows for your specific market.
+                  The high-conviction wedge into the Trinity Distribution OS. A 1-week engineering-grade diagnostic designed to roadmap your distribution architecture and identify high-leverage AI workflows.
                 </p>
 
-                <div className="space-y-4">
+                <div className="space-y-4 flex flex-col items-start">
                   <button
                     onClick={() => openModal("Growth Audit: Sample Diagnostic", GROWTH_AUDIT_SAMPLE)}
                     className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-900 border-b-2 border-slate-900 pb-1 hover:text-slate-500 hover:border-slate-500 transition-all"
@@ -654,7 +754,14 @@ export default function TrinityStorefront() {
                     Inspect Sample Deliverable
                     <FileText className="w-4 h-4" />
                   </button>
-                  <p className="text-[10px] font-mono text-slate-400 uppercase tracking-widest leading-relaxed">
+                  <button
+                    onClick={() => scrollToSection("loop")}
+                    className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400 border-b-2 border-slate-400 pb-1 hover:text-slate-900 hover:border-slate-900 transition-all"
+                  >
+                    Inspect Beta Operating Artifacts
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                  <p className="text-[10px] font-mono text-slate-400 uppercase tracking-widest leading-relaxed pt-2">
                     The entry point to the Trinity monetizable loop:<br/>
                     Trinity Page → Growth Kit → Growth Audit → Publishing → Proof Capture
                   </p>
@@ -707,8 +814,8 @@ export default function TrinityStorefront() {
 
                 <div className="md:col-span-2 p-8 bg-slate-900 text-white flex flex-col md:flex-row items-center justify-between gap-8">
                   <div className="space-y-1">
-                    <div className="text-2xl font-bold uppercase tracking-tight">Ready to Roadmap?</div>
-                    <p className="text-slate-400 text-sm">Start with a 15-minute discovery call.</p>
+                    <div className="text-2xl font-bold uppercase tracking-tight">Interested in the Paid Beta?</div>
+                    <p className="text-slate-400 text-sm">Start with a serious Growth Audit conversation.</p>
                   </div>
                   <a
                     href="https://calendly.com/daniel-viveiros/15min-intro"
@@ -729,8 +836,9 @@ export default function TrinityStorefront() {
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
               <div className="space-y-4">
-                <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400">// Offer Intelligence Loop</div>
+                <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400">// Beta Operating Artifacts</div>
                 <h2 className="text-4xl lg:text-6xl font-bold tracking-tighter uppercase">The Operating Loop</h2>
+                <p className="text-slate-500 max-w-md">Our active Growth Distribution Sprint is manual-first and proof-disciplined. Inspect the beta operating artifacts below.</p>
                 <div className="flex flex-wrap items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-slate-400 pt-2">
                   <span>Publishing</span>
                   <ArrowRight className="w-3 h-3" />
@@ -754,9 +862,21 @@ export default function TrinityStorefront() {
                   tag: "Publishing"
                 },
                 {
+                  title: "Beta Outreach Worksheet",
+                  desc: "Manual research and research-backed openers for the first 10 beta accounts.",
+                  content: OUTREACH_WORKSHEET,
+                  tag: "Conversations"
+                },
+                {
                   title: "Warm Outbound Pack",
                   desc: "Qualified DMs designed to transition from POV to conversation.",
                   content: WEEK_1_OUTBOUND,
+                  tag: "Conversations"
+                },
+                {
+                  title: "Conversation Tracker",
+                  desc: "Capturing exact buyer language and mapping loop leaks during weekly review.",
+                  content: CONVERSATION_TRACKER,
                   tag: "Conversations"
                 },
                 {
@@ -809,7 +929,7 @@ export default function TrinityStorefront() {
 
             <div className="mt-16 p-8 border border-dashed border-slate-300 bg-slate-50 text-center">
               <p className="text-sm text-slate-500 italic max-w-2xl mx-auto">
-                Trinity is built in public. These are inspectable artifacts from the active Growth Distribution Sprint, demonstrating how we publish, converse, capture proof, and improve the offer weekly.
+                Trinity is built in public. These are inspectable artifacts from the active, manual-first Growth Distribution Sprint, demonstrating how we publish, converse, capture proof, and improve the offer weekly with strict proof discipline.
               </p>
             </div>
           </div>
