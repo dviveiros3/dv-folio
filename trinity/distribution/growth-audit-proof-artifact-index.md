@@ -15,6 +15,7 @@ This index maintains the "Proof Discipline" for the Trinity Growth Audit beta. I
 | **10-Account Worksheet** | `trinity/distribution/growth-audit-10-account-outreach-worksheet.md` | Active | Observed | **Screenshot-Safe** (Redact Names) | Conversation |
 | **Beta Conversation Tracker** | `trinity/distribution/growth-audit-beta-conversation-tracker.md` | Active | Observed | **Internal Only** (Confidential) | Offer |
 | **Objection Bank** | `trinity/distribution/growth-audit-objection-bank.md` | Active | Observed | **Screenshot-Safe** (Partial) | Offer |
+| **Manual CRM Spec** | `trinity/distribution/growth-audit-manual-crm-spec.md` | Active | Observed | **Internal Only** | Offer |
 | **Proof Capture Log** | `trinity/distribution/proof-capture-log.md` | Active | Observed | **Internal Only** | Proof |
 | **Week 3 Publishing Packet** | `trinity/distribution/week-3-publishing-packet.md` | Active | Observed | **Internal Only** | POV |
 
