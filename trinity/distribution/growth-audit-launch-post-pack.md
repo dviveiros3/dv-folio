@@ -21,7 +21,7 @@ But if you don't have a systematic way to turn expertise into signal, you aren't
 I've been building Trinity as an applied AI lab to solve this.
 The core wedge is the **Distribution OS**—a 5-loop operating system for founders who want to scale their judgment without ruining their brand.
 
-Today, I’m opening the first 5 spots for the **AI Growth Audit** paid beta.
+Today, I’m opening paid beta conversations for the **AI Growth Audit**.
 
 This is not a lead-gen agency service.
 It is an engineering-grade diagnostic for your growth engine.
@@ -101,7 +101,7 @@ We prioritize manual-first rigor because AI without a proven workflow is just a 
 > "Glad that resonated, [Name]. Most people ignore the [Loop Name, e.g., Proof Loop] until it's too late. I actually have a walkthrough of how we diagnose that specific leak in the Growth Audit. Mind if I DM you the link?"
 
 ### DM Follow-up (The "Yes" Path)
-> "Hey [Name], following up on your comment. I'm running the **AI Growth Audit** paid beta for 5 founders right now. It's a 1-week diagnostic designed to identify your distribution bottlenecks and give you a 90-day implementation blueprint. Given your focus on [Specific Pain Point], I think the 'Custom AI Skill Design' would be high-leverage for you. Open to seeing the sample deliverable?"
+> "Hey [Name], following up on your comment. I'm running the **AI Growth Audit** paid beta for founders with enough expertise, proof, and buyer signal to make a diagnostic useful. It's a 1-week diagnostic designed to identify your distribution bottlenecks and give you a 90-day implementation blueprint. Given your focus on [Specific Pain Point], I think the 'Custom AI Skill Design' would be high-leverage for you. Open to seeing the sample deliverable?"
 
 ### Handling the "Leads" Question
 > "Great question. To be clear: the Audit is a **diagnostic and roadmap**, not a lead-gen service. We don't guarantee lead volume because we don't control your market or execution. What we do is identify exactly where your system is leaking so you can stop wasting time on the wrong activities. Does that distinction make sense?"
@@ -120,7 +120,7 @@ We prioritize manual-first rigor because AI without a proven workflow is just a 
 ---
 
 ## 6. Launch Day Proof-Safety Checklist
-- [ ] **No Scarcity Faking:** If we say "5 spots," we mean 5 real spots we can actually handle this week.
+- [ ] **No Scarcity Faking:** Do not mention spots, seats, cohorts, or capacity unless that limit is operationally real and current.
 - [ ] **No Revenue Promises:** Ensure every post uses "Diagnostic," "Roadmap," or "Architecture" instead of "Growth," "ROI," or "Revenue."
 - [ ] **Artifact Labeling:** Ensure any screenshots of samples are clearly labeled as "Simulated" or "Sample."
 - [ ] **Privacy First:** Ensure no real client names or MNPI are mentioned in the "build-in-public" commentary.
