@@ -21,7 +21,7 @@ We provide a **diagnostic and roadmap**, not a guarantee of leads or revenue.
 ## The 1-Week Audit Timeline
 
 ### Phase 1: Before (The Signal Intake)
-Once the audit is booked, the buyer completes the [Intake Checklist](./growth-audit-intake.md). This includes providing the "Founder Tape" (raw voice/video brief) and access to existing proof assets.
+Once the audit is booked, the buyer follows the [Onboarding Checklist](./growth-audit-buyer-onboarding.md) and completes the [Intake Checklist](./growth-audit-intake.md). This includes providing the "Founder Tape" (raw voice/video brief) and access to existing proof assets.
 
 ### Phase 2: During (The Diagnostic)
 Trinity performs a deep-dive analysis of your current POV, Proof, Conversation, and Offer loops. We identify the primary leak and design the custom AI workflows required to plug it.
