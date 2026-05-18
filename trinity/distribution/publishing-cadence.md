@@ -31,6 +31,17 @@ The Growth Audit is the entry point for founder-led distribution systems.
 | Thursday | Conversation prompt: "Send me your current offer and I will tell you which distribution loop is weak" | LinkedIn | Start conversations |
 | Friday | Review note: objections, questions, and offer changes | Newsletter / LinkedIn | Build trust |
 
+### Week 3 Theme
+The High-Signal Operating Loop.
+
+| Day | Asset | Channel | Purpose |
+| --- | --- | --- | --- |
+| Monday | POV post: "Stop treating LinkedIn like a billboard. Start treating it like a lab." | LinkedIn | Contrast models |
+| Tuesday | Short post: "The difference between 'content' and 'distribution' is a feedback loop." | X / LinkedIn | Define loop |
+| Wednesday | Proof artifact: Outreach Worksheet & Conversation Tracker | LinkedIn / Trinity | Show rigor |
+| Thursday | Conversation prompt: "What is the last buyer objection that actually made your offer better?" | LinkedIn | Generate signal |
+| Friday | Review note: High-signal operating loops and offer pivots | LinkedIn / Newsletter | Show learning |
+
 ## Post Types
 
 ### POV Post

@@ -56,6 +56,7 @@ Every Friday, update this file using data captured in the [Proof Capture Log](./
 | --- | --- | --- | --- |
 | 2026-05-22 | Distribution as a founder constraint | [2026-05-22 Review](./weekly-reviews/2026-05-22-review.md) | In Progress |
 | 2026-05-29 | Growth Audit as the entry point | [2026-05-29 Review](./weekly-reviews/2026-05-29-review.md) | Planned |
+| 2026-06-05 | The High-Signal Operating Loop | [2026-06-05 Review](./weekly-reviews/2026-06-05-review.md) | Planned |
 
 ## First Review: 2026-05-22 (Summary)
 
