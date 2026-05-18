@@ -1,7 +1,7 @@
 # AI Growth Audit: Paid Beta Test Plan
 
 ## Mission
-To test the market viability of the AI Growth Audit as a high-conviction entry wedge. This plan focuses on identifying 3-5 early adopters willing to pay for a diagnostic and roadmap before Trinity scales into full kit implementations.
+To test the market viability of the AI Growth Audit as a high-conviction entry wedge. This plan focuses on identifying 3-5 qualified beta conversations with buyers who may be willing to pay for a diagnostic and roadmap before Trinity scales into full kit implementations.
 
 ## 1. Beta Hypothesis
 We are testing whether technical founders and subject matter experts (SMEs) perceive enough value in a **diagnostic-only** engagement to pay for it.
@@ -51,10 +51,10 @@ We are testing whether technical founders and subject matter experts (SMEs) perc
 ## 5. Beta Outreach Language
 
 ### Option 1: The "Architectural Wedge" (LinkedIn/DM)
-> "Hey [Name], I’m opening up 3-5 beta spots for an 'AI Growth Audit' I’m hardening at Trinity. It’s a 1-week diagnostic designed to move founders from random content into a repeatable Distribution OS. Given your depth in [Industry], I’d love to see if the roadmap we produce for you actually hits the mark. Open to being an early reviewer?"
+> "Hey [Name], I’m pressure-testing an AI Growth Audit I’m hardening at Trinity. It’s a 1-week diagnostic designed to move founders from random content into a repeatable Distribution OS. Given your depth in [Industry], I’d value your read on whether the roadmap would be useful for someone in your position. Open to being an early reviewer?"
 
 ### Option 2: The "System vs. Slop" (Direct Message)
-> "[Name], been seeing a lot of AI content slop lately. I’m testing a paid beta for a 'Growth Audit' that does the opposite: it uses AI to extract your specific taste and proof into a system. Looking for 3 operators to pressure-test the diagnostic output. If you’re open to a 'blueprint-first' approach to distribution, I can send over the details."
+> "[Name], been seeing a lot of AI content slop lately. I’m testing a paid beta for a Growth Audit that does the opposite: it uses AI to extract specific taste and proof into a system. I’m looking for operator feedback on the diagnostic output. If you’re open to a blueprint-first approach to distribution, I can send over the details."
 
 ### Option 3: The "Bottleneck" Inquiry
 > "Enjoyed your recent post on [Topic]. It’s clear you have the Proof, but I’m curious if you feel like your 'Conversation Loop' is keeping up. I’m running a small beta group for a diagnostic that maps these leaks. No outcome guarantees—just an engineering-grade roadmap of your distribution engine. Interested?"
