@@ -510,7 +510,7 @@ export default function TrinityStorefront() {
               <button onClick={() => scrollToSection("forge")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">The Forge</button>
               <button onClick={() => scrollToSection("distribution")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">Distribution</button>
               <button onClick={() => scrollToSection("loop")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">The Loop</button>
-              <button onClick={() => scrollToSection("growth-audit")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">Audit</button>
+              <button onClick={() => scrollToSection("growth-audit")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">Diagnostic</button>
               <button onClick={() => scrollToSection("implementation")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">Services</button>
             </div>
           </div>
@@ -519,7 +519,7 @@ export default function TrinityStorefront() {
               onClick={() => scrollToSection("growth-audit")}
               className="hidden md:flex items-center gap-2 bg-slate-900 text-white px-4 py-2 text-xs font-bold uppercase tracking-widest hover:bg-slate-800 transition-colors"
             >
-              Request Audit
+              Request Diagnostic
               <ArrowUpRight className="w-3 h-3" />
             </button>
             <button className="md:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
@@ -537,9 +537,9 @@ export default function TrinityStorefront() {
             <button onClick={() => scrollToSection("forge")} className="text-2xl font-bold uppercase tracking-tighter text-left">The Forge</button>
             <button onClick={() => scrollToSection("distribution")} className="text-2xl font-bold uppercase tracking-tighter text-left">Distribution</button>
             <button onClick={() => scrollToSection("loop")} className="text-2xl font-bold uppercase tracking-tighter text-left">The Loop</button>
-            <button onClick={() => scrollToSection("growth-audit")} className="text-2xl font-bold uppercase tracking-tighter text-left">Audit</button>
+            <button onClick={() => scrollToSection("growth-audit")} className="text-2xl font-bold uppercase tracking-tighter text-left">Diagnostic</button>
             <button onClick={() => scrollToSection("implementation")} className="text-2xl font-bold uppercase tracking-tighter text-left">Services</button>
-            <button onClick={() => scrollToSection("growth-audit")} className="bg-slate-900 text-white p-4 text-center font-bold uppercase tracking-widest">Request Audit</button>
+            <button onClick={() => scrollToSection("growth-audit")} className="bg-slate-900 text-white p-4 text-center font-bold uppercase tracking-widest">Request Diagnostic</button>
           </div>
         </div>
       )}
@@ -693,7 +693,7 @@ export default function TrinityStorefront() {
                     onClick={() => scrollToSection("growth-audit")}
                     className="inline-flex items-center gap-2 bg-white text-slate-950 px-6 py-3 text-xs font-bold uppercase tracking-widest hover:bg-slate-200 transition-colors"
                   >
-                    Request Growth Audit
+                    Request Diagnostic
                     <ArrowUpRight className="w-4 h-4" />
                   </button>
                   <button
@@ -733,20 +733,24 @@ export default function TrinityStorefront() {
             <div className="grid lg:grid-cols-12 gap-12 items-start">
               <div className="lg:col-span-5 space-y-8">
                 <div className="flex flex-col gap-4">
-                  <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400">// Entry Offer</div>
+                  <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400">// AI Growth Audit</div>
                   <div className="inline-flex items-center gap-2 px-3 py-1 bg-slate-900 w-fit">
                     <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white">Paid Beta // Manual-First</span>
                   </div>
                 </div>
                 <h2 className="text-4xl lg:text-7xl font-bold tracking-tighter uppercase leading-[0.9]">
-                  AI Growth <br/>
-                  <span className="text-slate-400">Audit</span>
+                  An Engineering-Grade <br/>
+                  <span className="text-slate-400 italic">Diagnostic</span> for your <br/>
+                  Growth Engine
                 </h2>
                 <p className="text-xl text-slate-600 leading-relaxed max-w-lg">
-                  The high-conviction wedge into the Trinity Distribution OS. A 1-week engineering-grade diagnostic designed to roadmap your distribution architecture and identify high-leverage AI workflows.
+                  We don't do "AI Strategy" theater. We map your Proof, Conversations, and Offer loops to identify the operating bottlenecks weakening your distribution. A 1-week deep-dive resulting in a 90-day implementation blueprint.
                 </p>
 
                 <div className="space-y-4 flex flex-col items-start">
+                  <p className="text-xs text-slate-500 leading-relaxed bg-amber-50 border-l-2 border-amber-400 pl-3 py-1">
+                    <span className="font-bold text-amber-800 uppercase tracking-widest text-[10px]">Beta Notice:</span> The Growth Audit provides a roadmap and diagnostic based on your unique expertise. It does not guarantee lead volume or revenue outcomes.
+                  </p>
                   <button
                     onClick={() => openModal("Growth Audit: Sample Diagnostic", GROWTH_AUDIT_SAMPLE)}
                     className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-900 border-b-2 border-slate-900 pb-1 hover:text-slate-500 hover:border-slate-500 transition-all"
@@ -815,14 +819,14 @@ export default function TrinityStorefront() {
                 <div className="md:col-span-2 p-8 bg-slate-900 text-white flex flex-col md:flex-row items-center justify-between gap-8">
                   <div className="space-y-1">
                     <div className="text-2xl font-bold uppercase tracking-tight">Interested in the Paid Beta?</div>
-                    <p className="text-slate-400 text-sm">Start with a serious Growth Audit conversation.</p>
+                    <p className="text-slate-400 text-sm">A serious conversation about your distribution architecture. No pitch deck, just signal.</p>
                   </div>
                   <a
                     href="https://calendly.com/daniel-viveiros/15min-intro"
                     target="_blank"
                     className="bg-white text-slate-900 px-8 py-4 font-bold uppercase tracking-widest hover:bg-slate-200 transition-all flex items-center gap-2"
                   >
-                    Book Call
+                    Request 15-Min Diagnostic Call
                     <ArrowUpRight className="w-4 h-4" />
                   </a>
                 </div>
@@ -838,7 +842,7 @@ export default function TrinityStorefront() {
               <div className="space-y-4">
                 <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400">// Beta Operating Artifacts</div>
                 <h2 className="text-4xl lg:text-6xl font-bold tracking-tighter uppercase">The Operating Loop</h2>
-                <p className="text-slate-500 max-w-md">Our active Growth Distribution Sprint is manual-first and proof-disciplined. Inspect the beta operating artifacts below.</p>
+                <p className="text-slate-500 max-w-md">Inspect the Engine. We don't hide our process behind a login. These are the same operating artifacts we use to run the Growth Audit beta, from outreach worksheets to conversation trackers.</p>
                 <div className="flex flex-wrap items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-slate-400 pt-2">
                   <span>Publishing</span>
                   <ArrowRight className="w-3 h-3" />
