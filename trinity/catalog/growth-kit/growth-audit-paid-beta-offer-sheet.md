@@ -43,9 +43,10 @@ To produce a high-conviction roadmap, the buyer must provide:
 - **Human Judgment:** Review and refinement of the AI-assisted outputs.
 
 ## Pricing (Paid Beta)
-As this is a paid beta, pricing is optimized for rapid signal capture and iterative improvement.
+As this is a paid beta, pricing should be set deliberately before outreach and reviewed weekly against buyer signal.
 - **Beta Entry Price:** `$[BETA_PRICE_PLACEHOLDER]`
-- **Terms:** Paid upfront. No refunds on diagnostic work. Includes a credit toward full Growth Kit implementation if moved forward within 30 days.
+- **Terms:** `[PAYMENT_TERMS_PLACEHOLDER]`
+- **Optional implementation credit:** `[IMPLEMENTATION_CREDIT_PLACEHOLDER]`
 
 ## Implementation Paths
 Post-audit, you choose the speed of implementation:
