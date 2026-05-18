@@ -7,7 +7,7 @@ This matrix defines the pricing hypotheses for the AI Growth Audit paid beta. It
 
 | Hypothesis | Price Point (Test Range) | Rationale | Buyer Signal | Objections to Listen For |
 | --- | --- | --- | --- | --- |
-| **The Wedge** | $500 - $950 | Minimize friction for rapid signal capture. Optimized for high-volume intake testing and hardening the diagnostic workflows. | "This is a low-risk experiment to see if the Trinity system can find my leaks." | "Is this just a generic AI-generated report?" / "Is it too cheap to be deep?" |
+| **The Wedge** | $500 - $950 | Minimize friction for early signal capture. Optimized for testing whether the diagnostic language, intake, and deliverables create serious buyer conversations. | "This is a low-risk experiment to see if the Trinity system can find my leaks." | "Is this just a generic AI-generated report?" / "Is it too cheap to be deep?" |
 | **The Operator** | $1,500 - $2,500 | Anchored against the opportunity cost of founder/operator time. Positions the audit as an efficiency gain for manual distribution. | "This is an investment in operational clarity and a blueprint for my team." | "I can probably do this myself with ChatGPT." / "Can you show me the direct ROI?" |
 | **The Architect** | $3,500 - $5,000 | Positioned as high-conviction architectural design. Implies deep diagnostic depth and a long-term strategic implementation roadmap. | "This is the master blueprint for my distribution engine for the next 12 months." | "Why does a 1-week diagnostic cost $5k?" / "Does this include the build?" |
 
@@ -16,7 +16,7 @@ This matrix defines the pricing hypotheses for the AI Growth Audit paid beta. It
 | Action | Triggers (Evidence-Based) |
 | --- | --- |
 | **Raise Price** | 3 consecutive "Yes" decisions with zero price friction; Buyer suggests the value exceeds the cost; "Observed" quality of audit output is consistently high. |
-| **Hold Price** | 50%+ conversion from qualified discovery calls (Score 4+) to paid audit; Objections are focused on "Timing" or "Founder Inputs" rather than "Value." |
+| **Hold Price** | Qualified buyers understand the value but need timing or founder-input clarity; objections are focused on logistics rather than whether the diagnostic is worth paying for. |
 | **Reduce Price** | 3 consecutive "No" decisions specifically citing "Price" despite high qualification scores; Friction indicates the "Wedge" is too thick for the current "Verified" proof. |
 
 ## 3. Evidence Required for Public Offer Update
