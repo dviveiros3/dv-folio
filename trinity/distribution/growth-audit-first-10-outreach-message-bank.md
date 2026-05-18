@@ -5,7 +5,7 @@ This bank provides high-status, manually personalized message skeletons for the 
 
 ---
 
-## 🛑 Proof-Safe Guardrails
+## Proof-Safe Guardrails
 *Refer to these before any outreach.*
 
 1. **No Outcome Guarantees:** Never promise leads, revenue, or specific ROI.
@@ -52,7 +52,7 @@ Each skeleton requires a manual **Research Note** before sending to ensure high-
 
 ### 4. Subject Matter Expert (Angle: The "Trapped Expertise" Extraction)
 - **Research Note:** [Identify a whitepaper, long-form article, or podcast appearance that hasn't been atomized.]
-- **Message:** "Hey [Name], enjoyed your deep-dive on [Source]. There's so much 'trapped expertise' in that one piece. I’m codifying an AI workflow to atomize that kind of depth into a month of distribution signal. I’m looking for one more SME to eye-test the output—interested in seeing how we'd break down your [Source]?"
+- **Message:** "Hey [Name], enjoyed your deep-dive on [Source]. There's so much 'trapped expertise' in that one piece. I’m codifying an AI workflow to atomize that kind of depth into a month of distribution signal. I’m looking for a skeptical SME eye-test on the output. Interested in seeing how we'd break down your [Source]?"
 
 ### 5. High-Leverage Operator (Angle: The "Manual Friction" Audit)
 - **Research Note:** [Find an operator sharing a win that clearly required a massive amount of manual effort.]
