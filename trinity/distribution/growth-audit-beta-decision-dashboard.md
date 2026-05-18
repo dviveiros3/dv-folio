@@ -41,7 +41,7 @@ This dashboard is the command center for the Growth Audit paid beta. It forces D
 ## 3. Proof Label Guardrails
 *What can Daniel safely say publicly this week? Refer to the [Proof Artifact Index](./growth-audit-proof-artifact-index.md) for full guardrails.*
 
-- **Verified:** "X companies paid for this diagnostic." (Only if 1+ payment exists).
+- **Verified:** "A paid diagnostic has been booked." (Only if payment is confirmed and the buyer has approved the level of attribution).
 - **Observed:** "We identified [Specific Leak] in a technical founder's distribution loop."
 - **Anecdotal:** "Founders are telling us they struggle most with [X]."
 - **Simulated:** "Here is a sample of the 90-day roadmap we design." (Must include disclaimer).
