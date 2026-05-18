@@ -54,7 +54,8 @@ Every Friday, update this file with:
 
 | Week Ending | Theme | Artifact | Status |
 | --- | --- | --- | --- |
-| 2026-05-22 | Distribution as a founder constraint | [2026-05-22 Review](./weekly-reviews/2026-05-22-review.md) | Planned |
+| 2026-05-22 | Distribution as a founder constraint | [2026-05-22 Review](./weekly-reviews/2026-05-22-review.md) | In Progress |
+| 2026-05-29 | Growth Audit as the entry point | [2026-05-29 Review](./weekly-reviews/2026-05-29-review.md) | Planned |
 
 ## First Review: 2026-05-22 (Summary)
 
