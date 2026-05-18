@@ -1,7 +1,12 @@
 # Trinity Proof Capture Log
 
 ## Purpose
-This log separates real proof from ideas, samples, and hypotheses. It prevents Trinity from overclaiming while giving us a place to capture useful signal.
+This log separates real proof from ideas, samples, and hypotheses. It prevents Trinity from overclaiming while giving us a place to capture useful signal from distribution activities.
+
+## Operational Resources
+Use these while capturing signal to ensure alignment with the distribution strategy:
+- [Warm Outbound Pack](./week-1-warm-outbound-pack.md): Use for transitioning from POV to qualified conversations.
+- [Objection Bank](./growth-audit-objection-bank.md): Record exact buyer language and refine offer responses.
 
 ## Proof Categories
 
@@ -13,14 +18,20 @@ This log separates real proof from ideas, samples, and hypotheses. It prevents T
 | Simulated | Fictional or sample data | Must be labeled simulated |
 | Hypothesis | Intended outcome or belief to test | Frame as hypothesis |
 
+## Weekly Capture Template
+*Copy and paste this row into the log below after each distribution or outbound session.*
+
+**Template:**
+`| [YYYY-MM-DD] | [Fill: Published Artifact Proof] | [Fill: Qualified Conversation Signal] | "[Fill: exact buyer phrasing]" | [Fill: Growth Audit Offer Change] | [Fill: Proof Confidence Level] | [Fill: Source Link / Ref] |`
+
 ## Log
 
-| Date | Artifact / Signal | Category | Source | Public Claim Allowed | Next Action |
-| --- | --- | --- | --- | --- | --- |
-| 2026-05-17 | Trinity Distribution OS created | Observed | `trinity/catalog/growth-kit/distribution-os.md` | Trinity has a documented Distribution OS | Surface it in publishing |
-| 2026-05-17 | AI Growth Audit entry offer created | Observed | `trinity/catalog/growth-kit/growth-audit.md` | Trinity has an entry diagnostic offer | Add sample deliverable |
-| 2026-05-17 | Growth Audit sample diagnostic requested | Hypothesis | Issue #71 | Not public until proof-safe sample is merged | Remove fictional verified claims before merge |
-| 2026-05-19 | Weekly Review Loop Operational | Observed | `trinity/distribution/weekly-reviews/2026-05-22-review.md` | Trinity has a weekly learning and offer improvement loop | Execute first review on 2026-05-22 |
+| Date | Published Artifact Proof | Qualified Conversation Signal | Exact Buyer Objection Language | Growth Audit Offer Change | Proof Confidence Level | Source Link / Ref |
+| --- | --- | --- | --- | --- | --- | --- |
+| 2026-05-17 | Trinity Distribution OS | N/A | N/A | N/A | Observed | `trinity/catalog/growth-kit/distribution-os.md` |
+| 2026-05-17 | AI Growth Audit Offer | N/A | N/A | N/A | Observed | `trinity/catalog/growth-kit/growth-audit.md` |
+| 2026-05-17 | Growth Audit Sample | N/A | N/A | N/A | Hypothesis | Issue #71 |
+| 2026-05-19 | Weekly Review Loop | N/A | N/A | N/A | Observed | `trinity/distribution/weekly-reviews/2026-05-22-review.md` |
 
 ## Weekly Review Questions
 - What did we publish?
