@@ -21,7 +21,7 @@ Focus on manual outreach to individuals where Daniel has existing context or whe
 These are for people Daniel is already connected with or has engaged with recently.
 
 **Option 1: The "Random Acts" Observation**
-> "Hey [Name], saw your post on [Topic]—really solid technical depth. I’ve been mapping out a 'Distribution OS' at my lab (Trinity) to help founders move away from 'Random Acts of Content' and into a more systematic engine. Curious, do you feel like you have a repeatable system for your POV yet, or is it still mostly manual lifting?"
+> "Hey [Name], saw your post on [Topic] and the technical depth stood out. I’m mapping a Distribution OS at Trinity for founders who want to move from random acts of content into a repeatable operating engine. Curious: do you feel like you have a clear system for turning your POV into proof and conversations, or is it still mostly manual lifting?"
 
 **Option 2: The "Taste vs. Automation" Wedge**
 > "[Name], I've been seeing a lot of 'AI content' slop lately and it's making me double down on the idea that AI should scale founder *judgment*, not replace it. I’m building a 'Growth Kit' around this right now. Would love to get your operator's take on whether 'scaling taste' is even on your radar this quarter?"
@@ -58,13 +58,13 @@ Use these when someone likes or comments on the Week 1 LinkedIn posts.
 The goal is to move from "chat" to "inspectable artifact."
 
 **Offer 1: The Sample Deliverable**
-> "I’m not looking to hop on a 'discovery call' yet, but I just finished a sample deliverable for the Trinity Growth Audit. It’s basically a diagnostic of a founder’s distribution engine. Would you be open to giving it a quick 'eye test' to see if the output looks useful for someone in your position?"
+> "I’m not trying to force a discovery call here. I just finished a sample deliverable for the Trinity Growth Audit: a diagnostic of a founder’s distribution engine. Would you be open to giving it a quick eye test and telling me whether the output would be useful for someone in your position?"
 
 **Offer 2: The Visual Spec Feedback**
 > "I’ve mapped out the 'Distribution OS' visually. It's less of a marketing plan and more of a systems architecture for founder growth. If I sent you the spec, would you be willing to tell me if the 'Conversation Loop' makes sense the way I've framed it?"
 
 **Offer 3: The Beta Diagnostic**
-> "I'm looking for 2-3 founders to run through the 'Buyer Intake' portion of my new Growth Audit. It’s a 15-minute diagnostic to find the leak in your distribution engine. No pitch—I just need to see if my 'Proof-First' diagnostic actually catches the right bottlenecks. Interested in being a guinea pig?"
+> "I'm looking for 2-3 founders to pressure-test the Buyer Intake portion of the Growth Audit. It’s a short diagnostic designed to identify the weakest loop in your distribution engine. No pitch; I’m trying to see whether the proof-first diagnostic catches the right bottlenecks. Would you be open to being an early reviewer?"
 
 ---
 
