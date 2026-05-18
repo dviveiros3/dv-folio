@@ -7,7 +7,7 @@
 ---
 
 ## Weekly Thesis
-The AI Growth Audit is not "consulting." It is a systems diagnostic designed to identify where a founder's distribution engine is leaking and provide the exact AI workflow blueprints to fix it. We sell workflows, not slide decks.
+The AI Growth Audit is not a generic consulting deck. It is a systems diagnostic designed to identify where a founder's distribution engine is leaking and produce practical AI workflow blueprints for the next 90 days. We sell workflows, not slide decks.
 
 ---
 
@@ -17,15 +17,17 @@ The AI Growth Audit is not "consulting." It is a systems diagnostic designed to 
 **Body:**
 Most AI audits end with a 40-page slide deck that sits in a folder.
 You don't need more "strategy" slides.
-You need a diagnostic that identifies your distribution bottleneck and the architecture to automate the friction.
+You need a diagnostic that identifies your distribution bottleneck and the architecture to remove the repeatable friction.
 
 At Trinity, the Growth Audit isn't a chat. It's an engineering diagnostic of your Distribution OS.
 
 We don't just tell you that you need more content.
-We identify which loop is broken:
+We identify which loop is leaking:
 - Is your POV too generic for AI to extract?
 - Is your Proof hidden in your head instead of inspectable artifacts?
 - Are your Conversations failing because you're using "bot-speak"?
+- Are your Offers disconnected from the proof buyers can inspect?
+- Is your Conversion learning missing because the signal never gets logged?
 
 The output isn't a deck. It's a roadmap of workflows designed to scale your judgment.
 
@@ -68,11 +70,13 @@ It shows exactly how we map a founder's distribution loops and where we identify
 
 [Visual Asset: Link to trinity/catalog/growth-kit/examples/growth-audit-artifact-sample.md]
 
-This isn't a template. It’s a blueprint.
+This isn't a magic template. It’s a sample blueprint.
 We look at:
 1. Thesis Sharpness (POV)
 2. Asset Accessibility (Proof)
 3. Signal Quality (Conversations)
+4. Offer Fit (Offers)
+5. Learning Loop (Conversion)
 
 **Channel:** LinkedIn
 **Intended Buyer Signal:** High-intent clicks/interest in the actual deliverable.
@@ -90,9 +94,9 @@ Most distribution engines leak because the "Offer" doesn't match the "Proof."
 You have a high-ticket service, but your public proof doesn't reflect that depth.
 Or you have world-class proof, but no way for a buyer to start a low-friction conversation.
 
-I have 3 slots this week to do a "Mini-Audit" in the DMs.
+I’m pressure-testing a few manual Mini-Audits in the DMs this week.
 Drop your offer or website in the comments.
-I’ll tell you which of the 5 Distribution Loops is your biggest bottleneck.
+I’ll give you a first-pass read on which of the 5 Distribution Loops looks weakest from the outside.
 
 **Channel:** LinkedIn
 **Intended Buyer Signal:** Direct access to founder offers; high-intent lead generation.
@@ -110,10 +114,10 @@ This week in the lab, I realized the biggest friction in the Growth Audit wasn't
 Founders have proof, but it's scattered across dozens of recordings and messages.
 To fix this, I’ve updated the Trinity **Buyer Intake Checklist**.
 
-It’s now designed to help extract "Proof Artifacts" in under 15 minutes.
+It’s now designed to help surface the first set of proof artifacts from a short founder intake.
 Better input = better AI extraction = sharper distribution.
 
-Iteration based on real-world friction. That’s the lab way.
+Iteration based on observed friction. That’s the lab way.
 
 **Channel:** LinkedIn / X
 **Intended Buyer Signal:** Trust in the iterative, practitioner-led nature of Trinity.
@@ -129,10 +133,10 @@ Iteration based on real-world friction. That’s the lab way.
 Founders don't have 3 months to "find out" if AI works.
 They need to know *now* where the leverage is.
 
-We designed the Growth Audit to be a 7-day high-intensity diagnostic.
-- 15 min intake.
-- 48 hours of analysis.
-- 1 roadmap.
+The current Growth Audit shape is a short, high-intensity diagnostic:
+- founder intake;
+- distribution loop analysis;
+- 90-day roadmap.
 
 The goal is to get you out of "exploration" and into "implementation."
 Applied AI is about speed to signal.
@@ -147,7 +151,7 @@ Applied AI is about speed to signal.
 ## DM Adaptation Notes
 - **For POV Post:** If someone likes/comments, ask: "Do you currently have more 'strategy decks' or more 'active workflows' in your business right now?"
 - **For Proof Artifact:** "Saw you caught the sample diagnostic. Does that level of detail match what you'd expect from an AI audit, or is there a specific metric you'd want to see included?"
-- **For Conversation Prompt:** Move the public comment to DM immediately: "I took a look at [Site]. Your Proof loop is actually strong, but I don't see a clear path to a Conversation. Have you tried an 'Audit' wedge before?"
+- **For Conversation Prompt:** Move the public comment to DM immediately: "I took a first pass at [Site]. Your Proof loop looks stronger than your Conversation loop from the outside. Have you tried an audit-style entry offer before?"
 - **For Build Note:** "The 'Asset Debt' issue I mentioned—do you feel like your best insights are currently trapped in Zoom calls or are they actually being used in your distribution?"
 - **For Short-form (Post 2):** "Saw you caught the note on the operating loop asset. Are you currently building any distribution assets that have a >90 day shelf life, or is it mostly daily output right now?"
 - **For Offer Learning (Post 6):** "I mentioned the 7-day sprint for the audit—does that speed-to-signal feel right for where you are, or do you usually prefer a longer exploration phase when looking at AI?"
