@@ -13,7 +13,7 @@ This intake ensures we have the necessary "raw truth" to perform a high-convicti
 ## 2. Proof Inventory (The Raw Material)
 *Trinity builds on truth. Label your existing assets using the Trinity Proof Categories so we know what we can safely "weaponize" in your content.*
 
-- **Verified:** Hard results confirmed by data or evidence (e.g., "$4.2M ARR", "40% CAC reduction").
+- **Verified:** Results confirmed by source evidence (for example: analytics exports, CRM reports, signed customer references, or approved screenshots).
 - **Observed:** Patterns seen internally but not yet externally validated.
 - **Anecdotal:** Qualitative feedback, testimonials, or "one-off" wins.
 - **Simulated:** Examples used for demonstration using fictional data.
@@ -61,4 +61,4 @@ This intake ensures we have the necessary "raw truth" to perform a high-convicti
 - You require guaranteed ROI or revenue outcomes from a 1-week diagnostic.
 
 ---
-*Next Step: Once complete, upload all assets to the secure Dropbox link provided in your welcome email.*
+*Next Step: Once complete, share assets through the agreed secure intake channel. Do not send sensitive customer data through ad hoc links or unapproved tools.*
