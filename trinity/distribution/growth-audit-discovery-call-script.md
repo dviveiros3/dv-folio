@@ -26,7 +26,7 @@ To transition inbound interest or DM signals into a high-conviction diagnostic e
 - "If I asked your ideal buyer what you stand for, would they have a clear answer or a generic one?"
 
 ### Proof Loop (Evidence & Artifacts)
-- "Do you have a library of 'inspectable' proof—teardowns, data, or customer wins—that we can weaponize, or is most of your expertise 'trapped' in your head?"
+- "Do you have a library of inspectable proof, such as teardowns, data, or customer wins, that we can turn into public artifacts, or is most of your expertise still trapped in your head?"
 - "What's the most recent 'Proof Artifact' you published?"
 
 ### Conversation Loop (Signal & Intent)
@@ -65,7 +65,7 @@ It’s a 1-week diagnostic where we:
 3. Design your first 2 custom AI skills (e.g., Insight Extractor).
 4. Build a 90-day operating roadmap.
 
-It’s a 'Manual-First' engagement. I use the lab to build the blueprint, and you (or your team) execute. It’s [Price] because it's a Beta and I'm looking for high-signal feedback to harden the system."
+It’s a manual-first engagement. I use the lab to build the blueprint, and you or your team execute. Pricing is `[BETA_PRICE_PLACEHOLDER]` until the beta terms are finalized, and the paid beta exists to collect high-signal feedback while hardening the system."
 
 ---
 
@@ -83,7 +83,7 @@ It’s a 'Manual-First' engagement. I use the lab to build the blueprint, and yo
 ## 6. The Close Plan
 
 ### Outcome: YES (High Fit)
-- "Great. I’ll send the payment link and the [Intake Checklist](../catalog/growth-kit/growth-audit-intake.md). Once the payment clears and I have your Founder Tape, the 1-week clock starts. When can you get that Tape over?"
+- "Great. I’ll send the payment instructions and the [Intake Checklist](../catalog/growth-kit/growth-audit-intake.md). Once the terms are confirmed and I have your Founder Tape, the 1-week clock starts. When can you get that Tape over?"
 
 ### Outcome: MAYBE (Skeptical/Needs Info)
 - "Totally fair. I'll send you the [Sample Diagnostic Artifact](../catalog/growth-kit/examples/growth-audit-artifact-sample.md) and the [Deliverable Walkthrough](../catalog/growth-kit/examples/growth-audit-deliverable-walkthrough.md). Inspect the quality of the work. If it looks like the level of diagnostic you need, let me know."
