@@ -89,6 +89,189 @@ const GROWTH_AUDIT_SAMPLE = (
   </div>
 )
 
+const WEEK_1_CONTENT = (
+  <div className="space-y-8 text-sm">
+    <div className="p-4 bg-slate-100 border border-slate-200 text-slate-500 text-[10px] font-bold uppercase tracking-widest">
+      Lab Artifact // Week 1 Publishing Packet
+    </div>
+    <div className="space-y-6">
+      {[
+        {
+          type: "LinkedIn POV",
+          hook: "AI will not save a founder who cannot distribute.",
+          body: "Every day, I see founders looking for the 'magic button' to automate their growth. But if you haven't mastered the five loops of distribution, AI just makes you loud and invisible."
+        },
+        {
+          type: "Short-form Thesis",
+          hook: "Most 'AI Content' is just high-speed noise.",
+          body: "If a human wouldn't defend the take in public, a model shouldn't publish it. Use AI to atomize your best insights, not generate generic slop."
+        },
+        {
+          type: "Proof Artifact",
+          hook: "Stop telling people you're an expert. Show them the artifacts.",
+          body: "Authority isn't what you say in your bio. It’s what you produce in your lab. Today, I'm introducing the Trinity Distribution OS."
+        }
+      ].map((post, i) => (
+        <div key={i} className="p-4 border border-slate-200 space-y-3 bg-[#fafafa]">
+          <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400">{post.type}</div>
+          <div className="font-bold text-slate-900 underline decoration-slate-200 underline-offset-4">{post.hook}</div>
+          <p className="text-slate-600 text-xs leading-relaxed">{post.body}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+)
+
+const WEEK_1_OUTBOUND = (
+  <div className="space-y-8 text-sm">
+    <div className="p-4 bg-slate-100 border border-slate-200 text-slate-500 text-[10px] font-bold uppercase tracking-widest">
+      Lab Artifact // Week 1 Warm Outbound Pack
+    </div>
+    <div className="space-y-4 font-mono text-[11px] leading-relaxed">
+      <div className="p-4 border border-slate-200 bg-white">
+        <div className="text-slate-400 mb-2 uppercase tracking-widest text-[10px] font-bold">// Opener: The Bottleneck Inquiry</div>
+        "Hey [Name], I've been thinking about the five loops of distribution (POV, Proof, Conversations, Offers, Conversion). I’ve noticed a lot of founders have the Proof but lack the Conversation loop. Where do you feel the biggest leak is in your own engine right now?"
+      </div>
+      <div className="p-4 border border-slate-200 bg-white">
+        <div className="text-slate-400 mb-2 uppercase tracking-widest text-[10px] font-bold">// Opener: The Taste vs. Automation Wedge</div>
+        "[Name], I've been seeing a lot of 'AI content' slop lately and it's making me double down on the idea that AI should scale founder judgment, not replace it. Would love to get your operator's take on whether 'scaling taste' is on your radar?"
+      </div>
+    </div>
+    <div className="p-4 bg-amber-50 border border-amber-100 text-amber-800 text-[10px] font-bold uppercase tracking-widest">
+      Guardrails: No Fake Urgency // No Outcome Promises // Human-to-Human Tone
+    </div>
+  </div>
+)
+
+const WEEK_2_CONTENT = (
+  <div className="space-y-8 text-sm">
+    <div className="p-4 bg-slate-100 border border-slate-200 text-slate-500 text-[10px] font-bold uppercase tracking-widest">
+      Lab Artifact // Week 2 Publishing Packet
+    </div>
+    <div className="space-y-6">
+      <div className="p-4 border border-slate-200 bg-[#fafafa] space-y-3">
+        <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Primary Thesis</div>
+        <div className="text-lg font-bold tracking-tight text-slate-900 leading-tight uppercase">
+          Stop buying AI "Strategy." <br/>
+          Start buying AI Workflows.
+        </div>
+        <p className="text-slate-600 text-xs leading-relaxed">
+          The Growth Audit isn't a consulting deck. It's an engineering diagnostic. We don't just tell you that you need more content; we identify which loop is leaking.
+        </p>
+      </div>
+      <div className="grid grid-cols-2 gap-4">
+        <div className="p-3 border border-slate-100 bg-white space-y-2">
+          <div className="text-[9px] font-bold uppercase text-slate-400">Post Loop</div>
+          <div className="text-[11px] font-bold">Thesis Sharpness</div>
+        </div>
+        <div className="p-3 border border-slate-100 bg-white space-y-2">
+          <div className="text-[9px] font-bold uppercase text-slate-400">Proof Loop</div>
+          <div className="text-[11px] font-bold">Asset Accessibility</div>
+        </div>
+      </div>
+    </div>
+  </div>
+)
+
+const OBJECTION_BANK = (
+  <div className="space-y-6 text-sm">
+    <div className="p-4 bg-slate-100 border border-slate-200 text-slate-500 text-[10px] font-bold uppercase tracking-widest">
+      Lab Artifact // Objection Bank
+    </div>
+    <div className="space-y-4">
+      {[
+        {
+          objection: "I don't want to ruin my brand with AI slop.",
+          response: "We don't use AI to generate; we use AI to extract. We automate atomization, not thinking."
+        },
+        {
+          objection: "Is this just a bunch of ChatGPT prompts?",
+          response: "Prompts are commodities. This is a diagnostic of your distribution architecture and custom skill design."
+        },
+        {
+          objection: "Can you guarantee 10 new leads a month?",
+          response: "No. We build the system; the market provides the signal. We guarantee systematic capability, not market outcomes."
+        }
+      ].map((item, i) => (
+        <div key={i} className="p-4 border-l-2 border-slate-200 space-y-2 bg-white">
+          <div className="text-[10px] font-bold uppercase text-slate-400 tracking-wider">Objection:</div>
+          <div className="text-xs font-bold text-slate-900 italic">"{item.objection}"</div>
+          <div className="text-[10px] font-bold uppercase text-slate-400 tracking-wider mt-2">Response:</div>
+          <div className="text-xs text-slate-600">{item.response}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+)
+
+const OPERATING_LOG = (
+  <div className="space-y-6 text-sm">
+    <div className="p-4 bg-slate-100 border border-slate-200 text-slate-500 text-[10px] font-bold uppercase tracking-widest">
+      Lab Artifact // Proof Capture Log
+    </div>
+    <div className="border border-slate-200 overflow-hidden">
+      <table className="w-full text-left border-collapse text-[10px]">
+        <thead>
+          <tr className="bg-slate-50 border-b border-slate-200 font-mono">
+            <th className="p-2 text-slate-400 uppercase">Date</th>
+            <th className="p-2 text-slate-400 uppercase">Artifact Proof</th>
+            <th className="p-2 text-slate-400 uppercase">Confidence</th>
+          </tr>
+        </thead>
+        <tbody className="font-mono">
+          <tr className="border-b border-slate-100">
+            <td className="p-2">05-17</td>
+            <td className="p-2">Distribution OS Spec</td>
+            <td className="p-2">Observed</td>
+          </tr>
+          <tr className="border-b border-slate-100 bg-slate-50">
+            <td className="p-2">05-18</td>
+            <td className="p-2">Growth Audit Sample</td>
+            <td className="p-2">Hypothesis</td>
+          </tr>
+          <tr>
+            <td className="p-2">05-22</td>
+            <td className="p-2">Weekly Review #1</td>
+            <td className="p-2">Observed</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div className="p-4 bg-slate-900 text-slate-400 font-mono text-[10px] leading-relaxed">
+      // CAPTURING_SIGNAL...<br/>
+      // REFINING_PROOF_CLAIMS
+    </div>
+  </div>
+)
+
+const OFFER_REVIEW_SAMPLE = (
+  <div className="space-y-6 text-sm">
+    <div className="p-4 bg-slate-100 border border-slate-200 text-slate-500 text-[10px] font-bold uppercase tracking-widest">
+      Lab Artifact // Weekly Offer Review
+    </div>
+    <div className="space-y-4">
+      <div className="p-4 border border-slate-200 bg-white space-y-2">
+        <div className="text-[10px] font-bold uppercase text-slate-400 tracking-wider">Week Ending: 2026-05-22</div>
+        <div className="text-xs font-bold text-slate-900">Theme: Distribution as a founder constraint</div>
+      </div>
+      <div className="grid grid-cols-2 gap-4">
+        <div className="p-3 bg-slate-50 border border-slate-100">
+          <div className="text-[9px] font-bold uppercase text-slate-400">Signals</div>
+          <div className="text-[11px] font-bold">5+ Objections</div>
+        </div>
+        <div className="p-3 bg-slate-50 border border-slate-100">
+          <div className="text-[9px] font-bold uppercase text-slate-400">Decision</div>
+          <div className="text-[11px] font-bold">Iterate Intake</div>
+        </div>
+      </div>
+      <div className="p-4 bg-green-50 border border-green-100 text-green-800 text-[10px] font-mono">
+        &gt; UPDATING_OFFER_HEADLINE...<br/>
+        &gt; DEPLOYING_BETA_V0.2
+      </div>
+    </div>
+  </div>
+)
+
 const DISTRIBUTION_OS_SPEC = (
   <div className="space-y-8 text-sm">
     <div className="p-4 bg-slate-900 text-slate-400 font-mono text-[10px] leading-relaxed">
@@ -231,6 +414,7 @@ export default function TrinityStorefront() {
               <button onClick={() => scrollToSection("lab")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">The Lab</button>
               <button onClick={() => scrollToSection("forge")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">The Forge</button>
               <button onClick={() => scrollToSection("distribution")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">Distribution</button>
+              <button onClick={() => scrollToSection("loop")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">The Loop</button>
               <button onClick={() => scrollToSection("growth-audit")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">Audit</button>
               <button onClick={() => scrollToSection("implementation")} className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">Services</button>
             </div>
@@ -257,6 +441,7 @@ export default function TrinityStorefront() {
             <button onClick={() => scrollToSection("lab")} className="text-2xl font-bold uppercase tracking-tighter text-left">The Lab</button>
             <button onClick={() => scrollToSection("forge")} className="text-2xl font-bold uppercase tracking-tighter text-left">The Forge</button>
             <button onClick={() => scrollToSection("distribution")} className="text-2xl font-bold uppercase tracking-tighter text-left">Distribution</button>
+            <button onClick={() => scrollToSection("loop")} className="text-2xl font-bold uppercase tracking-tighter text-left">The Loop</button>
             <button onClick={() => scrollToSection("growth-audit")} className="text-2xl font-bold uppercase tracking-tighter text-left">Audit</button>
             <button onClick={() => scrollToSection("implementation")} className="text-2xl font-bold uppercase tracking-tighter text-left">Services</button>
             <button onClick={() => scrollToSection("growth-audit")} className="bg-slate-900 text-white p-4 text-center font-bold uppercase tracking-widest">Request Audit</button>
@@ -535,6 +720,97 @@ export default function TrinityStorefront() {
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* The Operating Loop Section */}
+        <section id="loop" className="py-24 px-6 bg-white border-b border-slate-200">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+              <div className="space-y-4">
+                <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400">// Offer Intelligence Loop</div>
+                <h2 className="text-4xl lg:text-6xl font-bold tracking-tighter uppercase">The Operating Loop</h2>
+                <div className="flex flex-wrap items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-slate-400 pt-2">
+                  <span>Publishing</span>
+                  <ArrowRight className="w-3 h-3" />
+                  <span>Conversations</span>
+                  <ArrowRight className="w-3 h-3" />
+                  <span>Objections</span>
+                  <ArrowRight className="w-3 h-3" />
+                  <span>Proof Capture</span>
+                  <ArrowRight className="w-3 h-3" />
+                  <span className="text-slate-900 font-bold">Offer Improvement</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                {
+                  title: "Week 1 Publishing",
+                  desc: "Establishing the Trinity POV and introducing the Distribution OS.",
+                  content: WEEK_1_CONTENT,
+                  tag: "Publishing"
+                },
+                {
+                  title: "Warm Outbound Pack",
+                  desc: "Qualified DMs designed to transition from POV to conversation.",
+                  content: WEEK_1_OUTBOUND,
+                  tag: "Conversations"
+                },
+                {
+                  title: "Week 2 Publishing",
+                  desc: "Positioning the Growth Audit as a high-signal diagnostic.",
+                  content: WEEK_2_CONTENT,
+                  tag: "Publishing"
+                },
+                {
+                  title: "Objection Bank",
+                  desc: "10 proof-safe responses to common founder skepticism.",
+                  content: OBJECTION_BANK,
+                  tag: "Objections"
+                },
+                {
+                  title: "Proof Capture Log",
+                  desc: "The central repository for tracking published artifacts and market signal.",
+                  content: OPERATING_LOG,
+                  tag: "Proof Capture"
+                },
+                {
+                  title: "Weekly Offer Review",
+                  desc: "The Friday ritual for improving the Growth Audit from market signal.",
+                  content: OFFER_REVIEW_SAMPLE,
+                  tag: "Offer Improvement"
+                }
+              ].map((artifact, i) => (
+                <div key={i} className="p-8 border border-slate-200 bg-[#fafafa] flex flex-col justify-between hover:border-slate-400 transition-colors">
+                  <div className="space-y-6">
+                    <div className="flex justify-between items-center">
+                      <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400">{artifact.tag}</div>
+                      <FileText className="w-4 h-4 text-slate-300" />
+                    </div>
+                    <h3 className="text-xl font-bold uppercase tracking-tight">{artifact.title}</h3>
+                    <p className="text-sm text-slate-500 leading-relaxed">
+                      {artifact.desc}
+                    </p>
+                  </div>
+                  <div className="mt-8 pt-6 border-t border-slate-100">
+                    <button
+                      onClick={() => openModal(artifact.title, artifact.content)}
+                      className="text-xs font-bold uppercase tracking-widest text-slate-900 flex items-center gap-2 hover:gap-3 transition-all"
+                    >
+                      Inspect Artifact <Eye className="w-3 h-3" />
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-16 p-8 border border-dashed border-slate-300 bg-slate-50 text-center">
+              <p className="text-sm text-slate-500 italic max-w-2xl mx-auto">
+                Trinity is being built in public. These are inspectable artifacts from the active Growth Distribution Sprint, demonstrating how the lab captures signal and improves the offer weekly.
+              </p>
             </div>
           </div>
         </section>
