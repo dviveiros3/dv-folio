@@ -36,9 +36,12 @@ export function EngageSection({ isVisible, sectionRef }: EngageSectionProps) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4">
-            <CalendlyEmbed url="https://calendly.com/daniel-viveiros/15min-intro">
+            <CalendlyEmbed
+              url="https://calendly.com/daniel-viveiros/15min-intro"
+              className="col-span-1 md:col-span-2 lg:col-span-8"
+            >
               <motion.div
-                className="col-span-1 md:col-span-2 lg:col-span-8 bg-slate-800 p-10 lg:p-12 flex flex-col justify-between group hover:bg-slate-700 transition-colors relative overflow-hidden cursor-pointer"
+                className="bg-slate-800 p-10 lg:p-12 flex flex-col justify-between group hover:bg-slate-700 transition-colors relative overflow-hidden cursor-pointer"
                 whileHover={{ scale: 1.01 }}
                 whileTap={{ scale: 0.99 }}
               >

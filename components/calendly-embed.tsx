@@ -8,6 +8,8 @@ interface CalendlyEmbedProps {
     url: string
     buttonText?: string
     buttonClassName?: string
+    /** Applied to the wrapper div around `children` so layout utilities (e.g. grid col-span) that need to sit on the direct child of a parent still work. */
+    className?: string
     children?: React.ReactNode
 }
 
@@ -15,6 +17,7 @@ export function CalendlyEmbed({
     url,
     buttonText = "Book Strategy Audit",
     buttonClassName,
+    className,
     children
 }: CalendlyEmbedProps) {
     const [isOpen, setIsOpen] = useState(false)
@@ -78,7 +81,7 @@ export function CalendlyEmbed({
         <>
             {/* Trigger button */}
             {children ? (
-                <div onClick={openCalendly} className="cursor-pointer">
+                <div onClick={openCalendly} className={`cursor-pointer${className ? ` ${className}` : ""}`}>
                     {children}
                 </div>
             ) : (
