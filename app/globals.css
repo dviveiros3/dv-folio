@@ -40,6 +40,23 @@
   }
 }
 
+@layer components {
+  /* Card: "Board Report" Style. Lives in the components layer (not
+     utilities) so utility modifiers applied alongside it, e.g. the
+     isFeatured bg-slate-900 override in ImpactSection, still win the
+     cascade instead of losing to this class's own bg-white. */
+  .card-executive {
+    @apply bg-white border border-slate-100 transition-all duration-300;
+  }
+
+  .card-executive:hover {
+    @apply border-slate-300;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.03);
+    /* Extremely diffuse shadow */
+    transform: translateY(-2px);
+  }
+}
+
 @layer utilities {
 
   /* Subtle Executive Grid */
@@ -62,18 +79,6 @@
 
   .text-balance {
     text-wrap: balance;
-  }
-
-  /* Card: "Board Report" Style */
-  .card-executive {
-    @apply bg-white border border-slate-100 transition-all duration-300;
-  }
-
-  .card-executive:hover {
-    @apply border-slate-300;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.03);
-    /* Extremely diffuse shadow */
-    transform: translateY(-2px);
   }
 
   /* Section Dividers */

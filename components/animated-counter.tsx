@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useState, useEffect, useCallback, useMemo, useRef } from "react"
 
 interface AnimatedCounterProps {
     target: string
@@ -51,9 +51,13 @@ function getInitialValue(parsed: { prefix: string; suffix: string; isNegative: b
 }
 
 export const AnimatedCounter = ({ target, duration = 2000, isVisible }: AnimatedCounterProps) => {
-    const parsed = parseMetric(target)
+    const parsed = useMemo(() => parseMetric(target), [target])
     const [count, setCount] = useState(() => getInitialValue(parsed))
-    const [hasAnimated, setHasAnimated] = useState(false)
+    // An imperative "already started" guard, not display state -- it must not
+    // itself be a reactive effect dependency. Setting it via useState put it in
+    // this effect's own dependency array, so the state update it caused re-ran
+    // the effect, whose cleanup killed the interval before its first tick.
+    const hasAnimatedRef = useRef(false)
 
     const animate = useCallback(() => {
         const frames = duration / 16 // ~60fps
@@ -74,16 +78,16 @@ export const AnimatedCounter = ({ target, duration = 2000, isVisible }: Animated
     }, [target, duration, parsed])
 
     useEffect(() => {
-        if (isVisible && !hasAnimated) {
-            setHasAnimated(true)
+        if (isVisible && !hasAnimatedRef.current) {
+            hasAnimatedRef.current = true
             const timer = animate()
             return () => clearInterval(timer)
         } else if (!isVisible) {
             // Reset when scrolled out of view
-            setHasAnimated(false)
+            hasAnimatedRef.current = false
             setCount(getInitialValue(parsed))
         }
-    }, [isVisible, hasAnimated, animate, parsed])
+    }, [isVisible, animate, parsed])
 
     return <span>{count}</span>
 }
