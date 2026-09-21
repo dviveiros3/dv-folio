@@ -111,8 +111,11 @@ export function LiveTelemetry() {
     return (
         <div className="relative w-full h-[160px] border border-slate-200 bg-slate-50/50 rounded overflow-hidden">
             <div className="absolute top-2 left-4 text-[10px] font-mono text-slate-400 uppercase tracking-widest flex items-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-                Live Revenue Optimization Stream
+                <div className="w-1.5 h-1.5 rounded-full bg-slate-400" />
+                Distribution Signal (Illustrative)
+            </div>
+            <div className="absolute top-2 right-4 text-[9px] font-mono text-amber-700 uppercase tracking-widest">
+                Simulated Data
             </div>
             <canvas ref={canvasRef} className="w-full h-full" />
         </div>
