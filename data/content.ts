@@ -222,11 +222,13 @@ export const faqs: FAQ[] = [
 export const educationCredentials = [
   {
     institution: "Massachusetts Institute of Technology",
+    abbr: "MIT",
     degree: "MicroMasters in Data, Economics, and Policy",
     year: "2024"
   },
   {
     institution: "Harvard University",
+    abbr: "HBS",
     degree: "Executive Management Program",
     year: "2021"
   }

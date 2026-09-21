@@ -61,7 +61,7 @@ export function ClientsSection({ isVisible, sectionRef }: ClientsSectionProps) {
             {educationCredentials.map((cred, index) => (
               <div key={index} className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-slate-900 rounded-sm flex items-center justify-center text-white text-xs font-bold">
-                  {cred.institution === "Massachusetts Institute of Technology" ? "MIT" : "HBS"}
+                  {cred.abbr}
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900 text-sm">{cred.degree}</p>
