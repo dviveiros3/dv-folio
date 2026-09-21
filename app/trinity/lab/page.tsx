@@ -1,5 +1,23 @@
+import type { Metadata } from "next"
 import { Beaker, ArrowLeft } from "lucide-react"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "The Lab | Trinity",
+  description: "Public experiments in applied AI. Trinity's lab exhibits bridge experimental hype and business leverage through high-velocity R&D.",
+  openGraph: {
+    title: "The Lab | Trinity",
+    description: "Public experiments in applied AI from Daniel Viveiros' Trinity lab.",
+    images: [
+      {
+        url: "/placeholder.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Trinity Lab Exhibits",
+      },
+    ],
+  },
+}
 
 export default function LabIndex() {
   return (
