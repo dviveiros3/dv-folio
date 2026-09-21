@@ -6,11 +6,10 @@ import { useState, RefObject } from "react"
 import { faqs } from "@/data/content"
 
 interface FAQSectionProps {
-  isVisible: boolean
   sectionRef: RefObject<HTMLElement | null>
 }
 
-export function FAQSection({ isVisible, sectionRef }: FAQSectionProps) {
+export function FAQSection({ sectionRef }: FAQSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   return (

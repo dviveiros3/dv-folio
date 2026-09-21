@@ -5,11 +5,10 @@ import { motion } from "framer-motion"
 import { RefObject } from "react"
 
 interface ServicesSectionProps {
-  isVisible: boolean
   sectionRef: RefObject<HTMLElement | null>
 }
 
-export function ServicesSection({ isVisible, sectionRef }: ServicesSectionProps) {
+export function ServicesSection({ sectionRef }: ServicesSectionProps) {
   return (
     <section ref={sectionRef} id="services" className="px-8 py-24 bg-slate-50">
       <div className="max-w-6xl mx-auto w-full">

@@ -6,11 +6,10 @@ import { RefObject } from "react"
 import { Check } from 'lucide-react'
 
 interface ProblemsSectionProps {
-    isVisible: boolean
     sectionRef: RefObject<HTMLElement | null>
 }
 
-export function ProblemsSection({ isVisible, sectionRef }: ProblemsSectionProps) {
+export function ProblemsSection({ sectionRef }: ProblemsSectionProps) {
     return (
         <section
             ref={sectionRef}
