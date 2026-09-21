@@ -35,7 +35,7 @@ export function ImpactSection({ isVisible, sectionRef }: ImpactSectionProps) {
                         <div className="line-accent max-w-xs" />
                     </motion.div>
 
-                    {/* Metrics Grid - Broken Layout */}
+                    {/* Metrics Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {impactData.map((item, index) => {
                             const isFeatured = index === 0;
