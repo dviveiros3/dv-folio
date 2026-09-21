@@ -6,11 +6,10 @@ import { RefObject } from "react"
 import { CalendlyEmbed } from "@/components/calendly-embed"
 
 interface EngageSectionProps {
-  isVisible: boolean
   sectionRef: RefObject<HTMLElement | null>
 }
 
-export function EngageSection({ isVisible, sectionRef }: EngageSectionProps) {
+export function EngageSection({ sectionRef }: EngageSectionProps) {
   return (
     <section
       ref={sectionRef}

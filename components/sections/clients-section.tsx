@@ -5,11 +5,10 @@ import { RefObject } from "react"
 import { clientProof, educationCredentials } from "@/data/content"
 
 interface ClientsSectionProps {
-  isVisible: boolean
   sectionRef: RefObject<HTMLElement | null>
 }
 
-export function ClientsSection({ isVisible, sectionRef }: ClientsSectionProps) {
+export function ClientsSection({ sectionRef }: ClientsSectionProps) {
   return (
     <section ref={sectionRef} id="clients" className="px-8 py-24 bg-white">
       <div className="max-w-6xl mx-auto w-full">

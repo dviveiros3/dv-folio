@@ -8,12 +8,11 @@ import { RefObject } from "react"
 import { AnimatedCounter } from "@/components/animated-counter"
 
 interface HeroSectionProps {
-  isVisible: boolean
   scrollToSection: (sectionId: string) => void
   sectionRef: RefObject<HTMLElement | null>
 }
 
-export function HeroSection({ isVisible, scrollToSection, sectionRef }: HeroSectionProps) {
+export function HeroSection({ scrollToSection, sectionRef }: HeroSectionProps) {
   return (
     <section ref={sectionRef} id="hero" className="min-h-screen flex items-center relative px-8 py-20 bg-grid">
       <div className="max-w-6xl mx-auto w-full">
