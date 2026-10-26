@@ -6,11 +6,10 @@ import { pricingTiers } from "@/data/content"
 import { ArrowUpRight } from "lucide-react"
 
 interface PricingSectionProps {
-  isVisible: boolean
   sectionRef: RefObject<HTMLElement | null>
 }
 
-export function PricingSection({ isVisible, sectionRef }: PricingSectionProps) {
+export function PricingSection({ sectionRef }: PricingSectionProps) {
   return (
     <section ref={sectionRef} id="pricing" className="px-8 py-24 bg-slate-50">
       <div className="max-w-4xl mx-auto w-full">

@@ -86,13 +86,11 @@ export default function ExecutiveBrandSite() {
       <StickyHeader scrollToSection={scrollToSection} activeSection={activeSection} />
 
       <HeroSection
-        isVisible={isVisible}
         scrollToSection={scrollToSection}
         sectionRef={sectionRefs.hero}
       />
 
       <ProblemsSection
-        isVisible={visibleSections.has("problems")}
         sectionRef={sectionRefs.problems}
       />
 
@@ -102,27 +100,22 @@ export default function ExecutiveBrandSite() {
       />
 
       <ServicesSection
-        isVisible={visibleSections.has("services")}
         sectionRef={sectionRefs.services}
       />
 
       <PricingSection
-        isVisible={visibleSections.has("pricing")}
         sectionRef={sectionRefs.pricing}
       />
 
       <FAQSection
-        isVisible={visibleSections.has("faq")}
         sectionRef={sectionRefs.faq}
       />
 
       <ClientsSection
-        isVisible={visibleSections.has("clients")}
         sectionRef={sectionRefs.clients}
       />
 
       <EngageSection
-        isVisible={visibleSections.has("engage")}
         sectionRef={sectionRefs.engage}
       />
     </div>
